@@ -11,35 +11,52 @@ appearance:
   font: native
   font_size: L
 
+# appearance:
+#   theme_day: forest
+#   theme_night: dark
+#   font: custom
+#   font_size: L
+
+
 # SEO
 
 marketing:
   seo:
-    site_type: Organization
+    site_type: Person
+    #site_type: Organization
     local_business_type: ''
-    org_name: ''
-    description: 'A highly-customizable Hugo research group theme powered by Wowchemy website builder.'
-    twitter: 'GetResearchDev'
+    org_name: '이가은'
+    description: '전북대학교 컴퓨터인공지능학부 이가은'
+    twitter: ''
+    open_graph:
+      title: '전북대 이가은'
+      image: 'https://igaeun8.github.io/assets/media/logo.png'
   analytics:
-    google_analytics: ''
+    google: 'a7iVzef2Zp3fd2Fg0BNgp2R7iR-jRh_bZPFrt20xfIE'
+    google_analytics: 'a7iVzef2Zp3fd2Fg0BNgp2R7iR-jRh_bZPFrt20xfIE'
     baidu_tongji: ''
     google_tag_manager: ''
     microsoft_clarity: ''
   verification:
-    google: ''
+    google: 'a7iVzef2Zp3fd2Fg0BNgp2R7iR-jRh_bZPFrt20xfIE'
     baidu: ''
 
 # Site header
-
 header:
   navbar:
     enable: true
-    align: r
+    align: c
+    fixed_to_top: true
     show_logo: true
-    show_language: false
+    show_language: true
     show_day_night: true
     show_search: true
     highlight_active_link: false
+    logo:
+      text: ""  # Text for logo (if any)
+      filename: "logo.png"  # Ensure the file exists in `assets/media/`
+
+      
 
 # Site footer
 
@@ -54,13 +71,12 @@ footer:
 
 # Localization
 
-locale:
-  date_format: 'Jan 2, 2006'
-  time_format: '3:04 PM'
-  address_format: en-us
+locale: #고쳐야하나?
+  date_format: 'Jan 23, 2003'
+  time_format: '11:04 PM'
+  #address_format: en-us
 
 # Site features
-
 features:
   syntax_highlighter:
     enable: false
@@ -71,8 +87,8 @@ features:
     enable: false
   privacy_pack:
     enable: false
-  repository:
-    url: 'https://github.com/<username>/<repository>'
+  repository: 
+    url: 'https://github.com/igaeun8/igaeun8.github.io'
     content_dir: content
     branch: main
   avatar:
@@ -90,7 +106,7 @@ features:
       repo_id: ''
       category: ''
       category_id: ''
-  search:
+  search: 
     provider: wowchemy
     algolia:
       app_id: ''
@@ -114,5 +130,8 @@ extensions:
 # Citation style
 
 publications:
-  date_format: January 2006
+  date_format: January 2006 #고쳐야하나?
   citation_style: apa
+
+ogImage: "assets/media/logo.png"  # Ensure the image exists at this path
+
