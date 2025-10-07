@@ -20,26 +20,26 @@ appearance:
 
 # SEO
 
-marketing:
-  seo:
-    site_type: Person
-    #site_type: Organization
-    local_business_type: ''
-    org_name: '이가은'
-    description: '전북대학교 컴퓨터인공지능학부 이가은'
-    twitter: ''
-    open_graph:
-      title: '전북대 이가은'
-      image: 'https://igaeun8.github.io/assets/media/logo.png'
-  analytics:
-    google: 'a7iVzef2Zp3fd2Fg0BNgp2R7iR-jRh_bZPFrt20xfIE'
-    google_analytics: 'a7iVzef2Zp3fd2Fg0BNgp2R7iR-jRh_bZPFrt20xfIE'
-    baidu_tongji: ''
-    google_tag_manager: ''
-    microsoft_clarity: ''
-  verification:
-    google: 'a7iVzef2Zp3fd2Fg0BNgp2R7iR-jRh_bZPFrt20xfIE'
-    baidu: ''
+# marketing:
+#   seo:
+#     site_type: Person
+#     #site_type: Organization
+#     local_business_type: ''
+#     org_name: '이가은'
+#     description: '전북대학교 컴퓨터인공지능학부 이가은'
+#     twitter: ''
+#     open_graph:
+#       title: '전북대 이가은'
+#       image: 'https://igaeun8.github.io/assets/media/logo.png'
+#   analytics:
+#     google: 'a7iVzef2Zp3fd2Fg0BNgp2R7iR-jRh_bZPFrt20xfIE'
+#     google_analytics: 'a7iVzef2Zp3fd2Fg0BNgp2R7iR-jRh_bZPFrt20xfIE'
+#     baidu_tongji: ''
+#     google_tag_manager: ''
+#     microsoft_clarity: ''
+#   verification:
+#     google: 'a7iVzef2Zp3fd2Fg0BNgp2R7iR-jRh_bZPFrt20xfIE'
+#     baidu: ''
 
 # Site header
 header:
