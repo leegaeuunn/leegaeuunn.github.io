@@ -1,0 +1,86 @@
+{{ $entry := .item }}
+
+{{/* 콘텐츠 유형에 따라 동적으로 뷰를 조정 */}}
+{{ $display_only_authors := false }}{{/* 저자만 표시할지 전체 메타데이터를 표시할지 */}}
+{{ $url := $entry.RelPermalink }}
+{{ $open_in_new_tab := "" }}
+{{ if $entry.Params.external_link }}
+  {{ $url = $entry.Params.external_link }}
+  {{ $open_in_new_tab = "target=\"_blank\" rel=\"noopener\"" }}
+{{ end }}
+
+{{ if or (eq $entry.Type "event") (eq $entry.Type "publication") (eq $entry.Type "project") }}
+  {{ $display_only_authors = true }}
+{{ end }}
+
+{{ $attachments_exist := partial "functions/has_attachments" $entry }}
+
+{{/* 요약 가져오기 */}}
+{{ $excerpt := "" }}
+{{ if $entry.Params.summary }}
+  {{ $excerpt = $entry.Params.summary | markdownify | emojify }}
+{{ else if $entry.Params.abstract }}
+  {{ $excerpt = $entry.Params.abstract | markdownify | emojify | truncate (site.Params.abstract_length | default 135) }}
+{{ else if $entry.Summary }}
+  {{ $excerpt = $entry.Summary }}
+{{ end }}
+
+<div class="media list-item compact-view">
+  <div class="media-content">
+
+    <div class="heading subheading article-title mb-0 mt-0" style="justify-content: center; align-items: center; text-align: justify; text-justify: auto; font-size: 1em;">
+      <a href="{{ $url }}" {{ $open_in_new_tab | safeHTMLAttr }}>{{ $entry.Title }}</a>
+    </div>
+
+    {{ with $excerpt }}
+    <a href="{{ $url }}" {{ $open_in_new_tab | safeHTMLAttr }} class="summary-link">
+      <div class="article-summary">
+        {{.}}
+      </div>
+    </a>
+    {{ end }}
+
+    <div class="meta-data stream-info">
+      {{ if eq $entry.Type "event" }}
+      <div>
+        <span>
+          {{ partial "functions/get_event_dates" $entry }}
+        </span>
+        {{ with $entry.Params.location }}
+        <span class="middot-divider"></span>
+        <span>{{ . }}</span>
+        {{ end }}
+      </div>
+      {{ end }}
+
+      {{ if and $display_only_authors $entry.Params.authors }}
+      <div>
+        {{ partial "page_metadata_authors" $entry }}
+      </div>
+      {{ else if not $display_only_authors }}
+        {{ partial "page_metadata" (dict "page" $entry "is_list" 1) }}
+      {{ end }}
+    </div>
+
+    {{ if $attachments_exist }}
+    <div class="button-links">
+      {{ partial "page_links" (dict "page" $entry "is_list" 1) }}
+    </div>
+    {{ end }}
+
+    <div style="margin-bottom: 50px;"></div>
+  </div>
+
+  <!-- 이미지 블럭 -->
+  <!-- <div class="ml-3">
+    {{ $thumbnail := partial "blox-core/functions/get_featured_image.html" $entry }}
+    {{ with $thumbnail }}
+      {{ $image_resized := .Resize "150x" }}
+      {{ if ne $image_resized.MediaType.SubType "gif" }}{{ $image_resized = $image_resized.Process "webp" }}{{ end }}
+      <a href="{{ $url }}" {{ $open_in_new_tab | safeHTMLAttr }}>
+        <img src="{{ $image_resized.RelPermalink }}" height="{{ $image_resized.Height }}" width="{{ $image_resized.Width }}"
+            alt="{{ $entry.Title }}" loading="lazy">
+      </a>
+    {{ end }}
+  </div> -->
+</div>

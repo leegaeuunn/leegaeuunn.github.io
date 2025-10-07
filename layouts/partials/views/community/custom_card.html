@@ -1,0 +1,58 @@
+{{ $entry := .item }}
+{{ $attachments_exist := partial "functions/has_attachments" $entry }}
+
+{{ $url := $entry.RelPermalink }}
+{{ $open_in_new_tab := "" }}
+{{ if $entry.Params.external_link }}
+  {{ $url = $entry.Params.external_link }}
+  {{ $open_in_new_tab = "target=\"_blank\" rel=\"noopener\"" }}
+{{ end }}
+
+{{/* 요약 정보 가져오기 */}}
+{{ $excerpt := "" }}
+{{ if $entry.Params.summary }}
+  {{ $excerpt = $entry.Params.summary | markdownify | emojify }}
+{{ else if $entry.Params.abstract }}
+  {{ $excerpt = $entry.Params.abstract | markdownify | emojify | truncate (site.Params.abstract_length | default 135) }}
+{{ else if $entry.Summary }}
+  {{ $excerpt = $entry.Summary }}
+{{ end }}
+
+{{ $thumbnail := partial "blox-core/functions/get_featured_image.html" $entry }}
+
+<div class="card-container">
+  {{ with $thumbnail }}
+  {{ $image_resized := .Resize "550x" }}
+  {{ if ne $image_resized.MediaType.SubType "gif" }}{{ $image_resized = $image_resized.Process "webp" }}{{ end }}
+  <a href="{{ $url }}" {{ $open_in_new_tab | safeHTMLAttr }} class="image-link overlay-hover">
+    <img src="{{ $image_resized.RelPermalink }}" height="{{ $image_resized.Height }}" width="{{ $image_resized.Width }}"
+         alt="{{ $entry.Title }}" class="img-responsive" loading="lazy" style="margin-top: 15px;">
+  </a>
+  {{ end }}
+  <div class="content-container">
+    <div class="heading subheading article-title mb-1 mt-3">
+        <h4><a href="{{ $url }}" {{ $open_in_new_tab | safeHTMLAttr }}>{{ $entry.Title | markdownify | emojify }}</a></h4>
+    </div>
+    
+
+    {{ if $entry.Params.authors }}
+    <div class="metadata">
+        <div>
+            {{ partial "page_metadata_authors" $entry }}
+        </div>
+    </div>
+    {{ end }}
+
+    {{ with $excerpt }}
+    <div class="summary-container">
+      <p>{{ . }}</p>
+    </div>
+    {{ end }}
+
+    {{ if $attachments_exist }}
+    <div class="links-container">
+      {{ partial "page_links" (dict "page" $entry "is_list" 1) }}
+    </div>
+    {{ end }}
+  </div>
+</div>
