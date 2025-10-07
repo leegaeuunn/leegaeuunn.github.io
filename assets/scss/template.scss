@@ -7,3 +7,36 @@
 .cta-group {
   justify-content: center;
 }
+
+.navbar a {
+  padding: 10px 20px;        /* 내부 여백 추가 */
+  border-radius: 5px;        /* 모서리를 부드럽게 */
+  transition: all 0.4s ease; /* 모든 변화에 대해 부드러운 전환 */
+}
+
+.navbar a:hover {
+  background-color: #ff63d3; 
+  color: #000000 !important; 
+  transform: scale(1.05);    /* 약간 확대 효과 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 그림자 추가 */
+}
+
+
+/* 메뉴를 감싸는 컨테이너 (예: .navbar)에 플렉스 박스를 적용하고 가운데 정렬 */
+.navbar {
+  display: flex;              /* 플렉스 박스를 활성화 */
+  justify-content: center;     /* 가운데 정렬 */
+  align-items: center;         /* 수직 가운데 정렬 */
+}
+
+/* 각 메뉴 아이템이 간격을 갖도록 함 */
+.navbar ul {
+  display: flex;
+  gap: 20px;                   /* 메뉴 항목 간의 간격 조정 */
+  padding: 0;
+  margin: 0;
+  list-style: none;            /* 기본 목록 스타일 제거 */
+  text-align: center;
+}
+
+
