@@ -1,0 +1,77 @@
+# Navigation Links
+#   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
+#     desired widget in your `content/home/` folder.
+#   The weight parameter defines the order that the links will appear in.
+
+main:
+  # - name: Home
+  #   url: /
+  #   weight: 1
+
+  # 자기소개
+  - name: 소개
+    url: about
+    weight: 100 
+
+  - parent: 소개
+    name: 자기소개
+    url: /author/이가은/
+    weight: 200
+  - parent: 소개
+    name: 연락처
+    url: contact
+    weight: 210
+  - parent: 소개
+    name: 뉴스
+    url: post
+    weight: 210
+
+  # 프로젝트
+  - name: 프로젝트
+    url: project
+    weight: 300
+
+  # 관심 분야
+  - name: 관심 분야
+    url: field
+    weight: 400
+
+  # 여행
+  - name: 여행
+    url: travel_jejudo
+    weight: 500
+
+  - parent: 여행
+    name: 제주도
+    url: travel_jejudo
+    weight: 510
+  - parent: 여행
+    name: 후쿠오카
+    url: travel_fukuoka
+    weight: 520
+  - parent: 여행
+    name: 다낭
+    url: travel_danang
+    weight: 530
+
+  # 즐겨찾기
+  - name: 즐겨찾기
+    url: post 
+    weight: 600
+
+  - parent: 즐겨찾기
+    name: 전북대학교
+    url: bookmarks_jbnu
+    weight: 610
+  - parent: 즐겨찾기
+    name: 코딩
+    url: bookmarks_coding
+    weight: 620
+  - parent: 즐겨찾기
+    name: 유튜브
+    url: bookmarks_youtube
+    weight: 630
+  - parent: 즐겨찾기
+    name: 블로그
+    url: bookmarks_blog
+    weight: 640
