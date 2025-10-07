@@ -10,7 +10,7 @@ baseURL: 'https://igaeun8.github.io # Website URL
 ## LANGUAGE
 ############################
 
-defaultContentLanguage: kor
+defaultContentLanguage: ko
 hasCJKLanguage: false
 defaultContentLanguageInSubdir: false
 removePathAccents: true
