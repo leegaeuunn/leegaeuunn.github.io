@@ -1,5 +1,5 @@
 ---
-title: 작성자
+title: 자기소개
 cms_exclude: true
 
 # View.
