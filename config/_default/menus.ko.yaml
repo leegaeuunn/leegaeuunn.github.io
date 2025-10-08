@@ -15,8 +15,9 @@ main:
 
   - parent: 소개
     name: 자기소개
-    url: /author/이가은/
+    url: author
     weight: 200
+    
   - parent: 소개
     name: 연락처
     url: contact

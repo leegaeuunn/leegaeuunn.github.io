@@ -36,6 +36,10 @@ main:
 
 
   - parent: About
+    name: About Me
+    url: author
+    weight: 200
+  - parent: About
     name: Contact
     url: contact
     weight: 210
