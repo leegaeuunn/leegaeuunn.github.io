@@ -29,7 +29,7 @@ organizations:
 #bio: 저의 연구 관심 분야는 프론트 엔드, 모바일 컴퓨팅 및 프로그래밍 입니다.
 
 interests:
-  - 웹 개발
+  - 인공지능
   - 프론트 엔드
   - 백 엔드
 
@@ -66,9 +66,9 @@ social:
   - icon: youtube
     icon_pack: fab
     link: https://www.youtube.com/@Leegaeuunn
-  - icon: soundcloud
+  - icon: linkedin
     icon_pack: fab
-    link: https://soundcloud.com/leegaeuunn
+    link: https://www.linkedin.com/in/가은-이-7b54b6389/
   - icon: pinterest
     icon_pack: fab
     link: https://kr.pinterest.com/ig5925208/
