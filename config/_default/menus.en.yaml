@@ -27,6 +27,26 @@ main:
   - name: Project
     url: project
     weight: 300
+  - parent: Project
+    name: AI Chatbot System
+    url: project/00-챗봇시스템
+    weight: 300
+  - parent: Project
+    name: Netflix Clone
+    url: project/01-넥플릭스클론
+    weight: 300
+  - parent: Project
+    name: Portfolio Website
+    url: project/02-개인포트폴리오사이트
+    weight: 300
+  - parent: Project
+    name: Java Cookie Run
+    url: project/03-자바쿠키런
+    weight: 300
+  - parent: Project
+    name: Python Capital Quiz Game
+    url: project/04-파이썬게임
+    weight: 300
 
   # Travel
   - name: Travel
