@@ -17,11 +17,7 @@ main:
     name: 자기소개
     url: author/이가은/
     weight: 200
-    
-  - parent: 소개
-    name: 연락처
-    url: contact
-    weight: 210
+
   - parent: 소개
     name: 뉴스
     url: post
@@ -31,11 +27,6 @@ main:
   - name: 프로젝트
     url: project
     weight: 300
-
-  # 관심 분야
-  - name: 관심 분야
-    url: field
-    weight: 400
 
   # 여행
   - name: 여행
@@ -68,3 +59,8 @@ main:
     name: 언어
     url: skill_language
     weight: 620
+
+  # 연락처
+  - name: 연락처
+    url: contact
+    weight: 400
