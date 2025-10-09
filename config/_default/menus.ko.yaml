@@ -31,36 +31,36 @@ main:
   # 여행
   - name: 여행
     url: travel_jejudo
-    weight: 500
+    weight: 400
 
   - parent: 여행
     name: 제주도
     url: travel_jejudo
-    weight: 510
+    weight: 400
   - parent: 여행
     name: 하노이
     url: travel_hanoi
-    weight: 520
+    weight: 400
   - parent: 여행
     name: 필리핀
     url: travel_philippines
-    weight: 530
+    weight: 400
 
   # 기술 스택
   - name: 기술
     url: skill
-    weight: 600
+    weight: 500
 
   - parent: 기술
     name: 기술 스택
     url: skill
-    weight: 610
+    weight: 500
   - parent: 기술
     name: 언어
     url: skill_language
-    weight: 620
+    weight: 500
 
   # 연락처
   - name: 연락처
     url: contact
-    weight: 400
+    weight: 600
