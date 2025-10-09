@@ -33,9 +33,10 @@ tags: ['깃허브', '휴고 템플릿', '개인 프로젝트']
 
 # Display this page in the Featured widget?
 featured: true
-#url_pdf: 'AI 챗봇 시스템 중간 발표 최종.pdf'
+url_pdf: 'AI 챗봇 시스템 중간 발표 최종.pdf'
 
 ---
-{{< icon name="download" pack="fas" >}} {{< staticref "uploads/q1.pdf" >}}Download{{< /staticref >}} pdf 파일입니다.
+
+{{< icon name="download" pack="fas" >}} [발표 자료 PDF 다운로드](AI%20챗봇%20시스템%20중간%20발표%20최종.pdf)
 
 생성형 AI(GPT 등) 기반 문서 질의응답(RAG) 시스템을 활용해 사용자 질문에 대해 관련 문단과 해당 이미지까지 함께 응답하는 하이브리드 AI 챗봇 시스템을 만들었습니다. 

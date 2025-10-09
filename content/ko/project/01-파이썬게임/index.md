@@ -37,7 +37,8 @@ tags: ['파이썬', '게임', '수도퀴즈', '팀프로젝트']
 featured: true
 url_pdf: '수도_퀴즈_레포트.pdf'
 ---
-{{< icon name="download" pack="fas" >}} {{< staticref "uploads/q4.pdf" >}}Download{{< /staticref >}} pdf 파일입니다.
+
+{{< icon name="download" pack="fas" >}} [레포트 PDF 다운로드](수도_퀴즈_레포트.pdf)
 
 파이썬으로 수도 퀴즈 게임을 만들었습니다.
 

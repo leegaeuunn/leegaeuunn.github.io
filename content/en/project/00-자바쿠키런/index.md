@@ -38,6 +38,6 @@ tags: ['Java', 'Cookie Run', 'Chat Room', 'Socket Communication', 'Team Project'
 featured: true
 ---
 
-{{< icon name="download" pack="fas" >}} {{< staticref "uploads/q2.pdf" >}}Download{{< /staticref >}} This is the certificate file.
+{{< icon name="download" pack="fas" >}} [Download Final Report PDF](202312746_이가은_최종_보고서.pdf)
 
 The Cookie Run game has been reconstructed, and a chat room has been created within it.

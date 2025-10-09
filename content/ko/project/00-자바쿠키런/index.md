@@ -36,9 +36,9 @@ tags: ['자바', '쿠키런', '채팅방', '소켓 통신', '팀프로젝트']
 
 # Display this page in the Featured widget?
 featured: true
-#url_pdf: '202312746_이가은_최종_보고서.pdf'
+url_pdf: '202312746_이가은_최종_보고서.pdf'
 ---
 
-{{< icon name="download" pack="fas" >}} {{< staticref "uploads/q2.pdf" >}}Download{{< /staticref >}} pdf 파일입니다.
+{{< icon name="download" pack="fas" >}} [최종 보고서 PDF 다운로드](202312746_이가은_최종_보고서.pdf)
 
 쿠키런 게임을 재구성하였고 그 중 채팅방을 만들었습니다. 
