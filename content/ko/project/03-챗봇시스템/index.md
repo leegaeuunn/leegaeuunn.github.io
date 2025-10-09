@@ -21,8 +21,8 @@ publishDate: '2025-07-31'
 publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
-publication: 챗봇 시스템 (파이썬)
-publication_short: 챗봇 시스템 (파이썬)
+publication: 인턴십
+publication_short: 인턴십
 
 abstract: 생성형 AI(GPT 등) 기반 문서 질의응답(RAG) 시스템을 활용해 사용자 질문에 대해 관련 문단과 해당 이미지까지 함께 응답하는 하이브리드 AI 챗봇 시스템을 만들었습니다. 
 
