@@ -3,98 +3,64 @@
 #     desired widget in your `content/home/` folder.
 #   The weight parameter defines the order that the links will appear in.
 
-# main:
-#   - name: Tour
-#     url: tour
-#     weight: 10
-#   - name: News
-#     url: post
-#     weight: 20
-#   - name: People
-#     url: people
-#     weight: 30
-#   - name: Events
-#     url: event
-#     weight: 40
-#   - name: Publications
-#     url: publication
-#     weight: 50
-#   - name: Contact
-#     url: contact
-#     weight: 60
-
-
 main:
   # - name: Home
   #   url: /
   #   weight: 1
 
-  #자기소개
+  # About
   - name: About
     url: about
     weight: 100 
-
 
   - parent: About
     name: About Me
     url: author/leegaeun/
     weight: 200
-  - parent: About
-    name: Contact
-    url: contact
-    weight: 210
+
   - parent: About
     name: News
     url: post
     weight: 210
 
-#플젝
+  # Project
   - name: Project
     url: project
     weight: 300
 
-
-#관심분야
-  - name: Interests Fields
-    url: field
-    weight: 400
-
-#여행
+  # Travel
   - name: Travel
     url: travel_jejudo
-    weight: 500
+    weight: 400
 
   - parent: Travel
     name: Jejudo
     url: travel_jejudo
-    weight: 510
+    weight: 400
   - parent: Travel
-    name: Fukuoka
-    url: travel_fukuoka
-    weight: 520
+    name: Hanoi
+    url: travel_hanoi
+    weight: 400
   - parent: Travel
-    name: Danang
-    url: travel_danang
-    weight: 530
+    name: Philippines
+    url: travel_philippines
+    weight: 400
 
-#즐겨찾기
-  - name: Bookmarks
-    url: post 
+  # Skill
+  - name: Skill
+    url: skill
+    weight: 500
+
+  - parent: Skill
+    name: Tech Stack
+    url: skill
+    weight: 500
+  - parent: Skill
+    name: Language
+    url: skill_language
+    weight: 500
+
+  # Contact
+  - name: Contact
+    url: contact
     weight: 600
-
-  - parent: Bookmarks
-    name: JBNU
-    url: bookmarks_jbnu
-    weight: 610
-  - parent: Bookmarks
-    name: Coding
-    url: bookmarks_coding
-    weight: 620
-  - parent: Bookmarks
-    name: Youtube
-    url: bookmarks_youtube
-    weight: 630
-  - parent: Bookmarks
-    name: Blog
-    url: bookmarks_blog
-    weight: 640
