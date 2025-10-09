@@ -47,12 +47,12 @@ main:
     url: travel_jejudo
     weight: 510
   - parent: 여행
-    name: 후쿠오카
-    url: travel_fukuoka
+    name: 하노이
+    url: travel_hanoi
     weight: 520
   - parent: 여행
-    name: 다낭
-    url: travel_danang
+    name: 필리핀
+    url: travel_philippines
     weight: 530
 
   # 즐겨찾기
