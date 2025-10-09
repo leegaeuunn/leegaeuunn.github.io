@@ -55,24 +55,16 @@ main:
     url: travel_philippines
     weight: 530
 
-  # 즐겨찾기
-  - name: 즐겨찾기
-    url: post 
+  # 기술 스택
+  - name: 기술
+    url: skill
     weight: 600
 
-  - parent: 즐겨찾기
-    name: 전북대학교
-    url: bookmarks_jbnu
+  - parent: 기술
+    name: 기술 스택
+    url: skill
     weight: 610
-  - parent: 즐겨찾기
-    name: 코딩
-    url: bookmarks_coding
+  - parent: 기술
+    name: 언어
+    url: skill_language
     weight: 620
-  - parent: 즐겨찾기
-    name: 유튜브
-    url: bookmarks_youtube
-    weight: 630
-  - parent: 즐겨찾기
-    name: 블로그
-    url: bookmarks_blog
-    weight: 640
