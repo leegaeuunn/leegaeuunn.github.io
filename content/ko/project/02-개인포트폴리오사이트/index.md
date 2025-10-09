@@ -24,7 +24,7 @@ publication_types: ['paper-conference']
 publication: 웹서비스설계   
 publication_short: 웹서비스 설계
 
-abstract: 깃허브와 휴고 템플릿을 이용해 개인 포트폴리오 사이트를 만들고 있습니다.
+abstract: 깃허브와 휴고 템플릿을 이용해 개인 포트폴리오 사이트를 만들었습니다.
 
 # Summary. An optional shortened abstract.
 summary: ''

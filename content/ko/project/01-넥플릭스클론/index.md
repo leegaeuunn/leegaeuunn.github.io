@@ -1,5 +1,5 @@
 ---
-title: 'Portfolio Website'
+title: '넥플릭스 클론'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
@@ -13,7 +13,7 @@ author_notes:
 # {{equal}}
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2024-06-21'
+publishDate: '2024-11-01'
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -21,21 +21,19 @@ publishDate: '2024-06-21'
 publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
-publication: Object-Oriented Programming (Java)
-publication_short: Object-Oriented Programming (Java)
+publication: 웹서비스설계   
+publication_short: 웹서비스 설계
 
-abstract: I am creating a personal portfolio site using GitHub and Hugo templates.
+abstract: ChatGPT와 협업하여 넷플릭스 클론 웹사이트를 개발했습니다. ChatGPT는 프론트엔드를, 저는 백엔드를 구현하였으며 GitHub Pages를 통해 배포하였습니다.
 
 # Summary. An optional shortened abstract.
 summary: ''
 
-tags: ['GitHub', 'Hugo Template', 'Personal Project']
+tags: ['넥플릭스 클론', 'ChatGPT', '프론트엔드', '백엔드', 'GitHub Pages', '로그인', '즐겨찾기', '개인 프로젝트']
 
 # Display this page in the Featured widget?
 featured: true
 
 ---
 
-
-
-I am creating a personal portfolio site using GitHub and Hugo templates.
+ChatGPT와 협업하여 넷플릭스 클론 웹사이트를 개발했습니다. ChatGPT는 프론트엔드를, 저는 백엔드를 구현하였으며 GitHub Pages를 통해 배포하였습니다.

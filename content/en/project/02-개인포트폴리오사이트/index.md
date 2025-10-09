@@ -24,7 +24,7 @@ publication_types: ['paper-conference']
 publication: Object-Oriented Programming (Java)
 publication_short: Object-Oriented Programming (Java)
 
-abstract: I am creating a personal portfolio site using GitHub and Hugo templates.
+abstract: I created a personal portfolio site using GitHub and Hugo templates.
 
 # Summary. An optional shortened abstract.
 summary: ''
@@ -38,4 +38,4 @@ featured: true
 
 
 
-I am creating a personal portfolio site using GitHub and Hugo templates.
+I created a personal portfolio site using GitHub and Hugo templates.
