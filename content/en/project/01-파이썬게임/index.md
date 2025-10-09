@@ -37,6 +37,7 @@ tags: ['Python', 'Game', 'Capital Quiz', 'Team Project']
 featured: true
 
 ---
-{{< icon name="download" pack="fas" >}} {{< staticref "uploads/q1.pdf" >}}Download{{< /staticref >}} This is the certificate file.
+
+{{< icon name="download" pack="fas" >}} [Download Certificate PDF](수도_퀴즈_레포트.pdf)
 
 I created a capital quiz game using Python.
