@@ -1,5 +1,5 @@
 ---
-title: 'Portfolio Website'
+title: '포트폴리오 웹사이트'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
@@ -13,7 +13,7 @@ author_notes:
 # {{equal}}
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2024-06-21'
+publishDate: '2024-10-06'
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -21,21 +21,18 @@ publishDate: '2024-06-21'
 publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
-publication: Object-Oriented Programming (Java)
-publication_short: Object-Oriented Programming (Java)
+publication: 웹서비스설계   
+publication_short: 웹서비스 설계
 
-abstract: I created a personal portfolio site using GitHub and Hugo templates.
+abstract: 깃허브와 휴고 템플릿을 이용해 개인 포트폴리오 사이트를 만들었습니다.
 
 # Summary. An optional shortened abstract.
 summary: ''
 
-tags: ['GitHub', 'Hugo Template', 'Personal Project']
+tags: ['깃허브', '휴고 템플릿', '개인 프로젝트']
 
 # Display this page in the Featured widget?
 featured: true
-
+#url_pdf: 'C:\Users\USER\igaeun8.github.io\igaeun8.github.io\content\ko\publication\0008-Self-mutating Network For Domain Adaptive Segmentation In Aerial Images copy\0008-Self-Mutating Network for Domain Adaptive Segmentation in Aerial Images.pdf'
 ---
-
-
-
-I created a personal portfolio site using GitHub and Hugo templates.
+깃허브와 휴고 템플릿을 이용해 개인 포트폴리오 사이트를 만들었습니다.

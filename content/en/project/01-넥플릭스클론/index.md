@@ -1,5 +1,5 @@
 ---
-title: 'Portfolio Website'
+title: 'Netflix Clone'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
@@ -13,7 +13,7 @@ author_notes:
 # {{equal}}
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2024-06-21'
+publishDate: '2024-11-01'
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -21,21 +21,19 @@ publishDate: '2024-06-21'
 publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
-publication: Object-Oriented Programming (Java)
-publication_short: Object-Oriented Programming (Java)
+publication: Web Service Design
+publication_short: Web Service Design
 
-abstract: I am creating a personal portfolio site using GitHub and Hugo templates.
+abstract: I developed a Netflix clone website in collaboration with ChatGPT. ChatGPT implemented the frontend, and I implemented the backend, then deployed it via GitHub Pages.
 
 # Summary. An optional shortened abstract.
 summary: ''
 
-tags: ['GitHub', 'Hugo Template', 'Personal Project']
+tags: ['Netflix Clone', 'ChatGPT', 'Frontend', 'Backend', 'GitHub Pages', 'Login', 'Favorites', 'Personal Project']
 
 # Display this page in the Featured widget?
 featured: true
 
 ---
 
-
-
-I am creating a personal portfolio site using GitHub and Hugo templates.
+I developed a Netflix clone website in collaboration with ChatGPT. ChatGPT implemented the frontend, and I implemented the backend, then deployed it via GitHub Pages.
