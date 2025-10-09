@@ -36,7 +36,7 @@ tags: ['자바', '쿠키런', '채팅방', '소켓 통신', '팀프로젝트']
 
 # Display this page in the Featured widget?
 featured: true
-url_pdf: '202312746_이가은_최종_보고서.pdf'
+# url_pdf: '202312746_이가은_최종_보고서.pdf'
 ---
 
 {{< icon name="download" pack="fas" >}} [최종 보고서 PDF 다운로드](202312746_이가은_최종_보고서.pdf)

@@ -35,7 +35,7 @@ tags: ['파이썬', '게임', '수도퀴즈', '팀프로젝트']
 
 # Display this page in the Featured widget?
 featured: true
-url_pdf: '수도_퀴즈_레포트.pdf'
+# url_pdf: '수도_퀴즈_레포트.pdf'
 ---
 
 {{< icon name="download" pack="fas" >}} [레포트 PDF 다운로드](수도_퀴즈_레포트.pdf)
