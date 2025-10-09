@@ -19,6 +19,11 @@ superuser: true
 # Role/position
 role: Student
 
+# Status emoji
+status:
+  icon: 👩🏻‍💻
+
+
 # Organizations/Affiliations
 organizations:
   - name: Jeonbuk National University

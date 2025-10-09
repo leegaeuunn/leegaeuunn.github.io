@@ -20,6 +20,10 @@ superuser: true
 # Role/position
 role: 학생
 
+# Status emoji
+status:
+  icon: 👩🏻‍💻
+
 # Organizations/Affiliations
 organizations:
   - name: 전북대학교
@@ -87,4 +91,4 @@ email: 'igaeun8@gmail.com'
 개인 사정으로 입시 미술을 그만두게 되었지만 비슷한 매력을 가진 코딩에 흥미가 생겼고, 
 디자인 요소를 사용할 수 있는 프론트엔드에 관심을 가지게 되었습니다.
 여러 경험을 통해 다양한 기술과 능력을 향상시켜 편리한 UX를 제공할 수 있는 프론트엔드 개발자가 되고 싶습니다. 
- 벌써 3학년 학부생이지만 훌륭한 개발자가 되기 위해 지속적으로 노력하겠습니다.  
+
