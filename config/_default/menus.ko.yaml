@@ -74,11 +74,11 @@ main:
 
   - parent: 기술
     name: 기술 스택
-    url: skill
+    url: skill/00-langauge
     weight: 500
   - parent: 기술
     name: 언어
-    url: skill_language
+    url: skill/01-boj
     weight: 500
 
   # 연락처

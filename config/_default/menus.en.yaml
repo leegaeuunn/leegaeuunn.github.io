@@ -73,11 +73,11 @@ main:
 
   - parent: Skill
     name: Tech Stack
-    url: skill
+    url: skill/00-langauge
     weight: 500
   - parent: Skill
     name: Language
-    url: skill_language
+    url: skill/01-boj
     weight: 500
 
   # Contact
