@@ -1,6 +1,5 @@
 ---
-#로고를 누르면 나타나는 메인 페이지
-# Leave the homepage title empty to use the site title
+# 메인 페이지 - Modern Minimalism Design
 title:
 date: 2024-10-05
 type: landing
@@ -9,129 +8,164 @@ sections:
 
   - block: features
     content:
-      title: <br><span style="font-size:125%">안녕하세요.웹 개발자가 되고 싶은 이가은입니다.</span>
-      text: <br><span style="font-size:100%">프론트에서 시작해 풀스택까지의 여정을 지켜봐주세요.</span>
+      title: |
+        <div style="font-size: 2.5rem; font-weight: 700; line-height: 1.3; margin-bottom: 1.5rem;">
+          안녕하세요 👋<br>
+          웹 개발자가 되고 싶은<br>
+          <span style="color: #3b82f6;">이가은</span>입니다
+        </div>
+      text: |
+        <div style="font-size: 1.25rem; color: #64748b; line-height: 1.8; margin-bottom: 2rem;">
+          프론트엔드에서 시작해 풀스택까지의 여정을 함께해주세요
+        </div>
+        <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 2rem;">
+          <a href="contact" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 12px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; box-shadow: 0 4px 6px rgba(102, 126, 234, 0.3); transition: all 0.3s;">
+            연락하기
+          </a>
+          <a href="#section-1" style="background: white; color: #667eea; padding: 12px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; border: 2px solid #667eea; transition: all 0.3s;">
+            프로젝트 보기
+          </a>
+        </div>
 
   - block: slider
     content:
       slides:
-      - title: <span style="font-size:70%">Information</span>
-        content: <span style="font-size:70%">이가은에 대해 더 자세히 알고싶다면?</span>
-        align: center
-        background:
-          image:
-            filename: web_develop.jpg
-            filters:
-              brightness: 0.4
-          position: center
-          color: '#000'
-        link:
-          icon: face-smile
-          icon_pack: far
-          text: <span style="font-size:60%">Click Me</span>
-          text-color: '#000'
-          url: contact
-      - title: <span style="font-size:90%">About Me</span>
-        content: <span style="font-size:90%">컴퓨터와 더 친해지고 싶은<span style="font-size:90%">
+      - title: About Me
+        content: 컴퓨터와 더 친해지고 싶은
         align: center
         background:
           image:
             filename: human_computer_interaction.jpg
             filters:
-              brightness: 0.4
+              brightness: 0.35
           position: center
           color: '#000'
-          opacity: 0.6  # Apply transparency here
-          css_class: "image-overlay"  # Add the CSS class for text overlay
 
-      - title: <span style="font-size:90%">Interests</span>
-        content: <span style="font-size:90%">관심 분야가 많은 </span>
+      - title: Interests
+        content: 다양한 분야에 관심이 많은
         align: center
         background:
           image:
             filename: data_science.jpg
             filters:
-              brightness: 0.4
+              brightness: 0.35
           position: center
           color: '#000'
-          opacity: 0.6  # Apply transparency here
-          css_class: "image-overlay"  # Add the CSS class for text overlay
 
-
-      - title: <span style="font-size:90%">Travel</span>
-        content: <span style="font-size:90%">여행을 좋아하는</span>
+      - title: Travel
+        content: 여행을 사랑하는
         align: center
         background:
           image:
             filename: fukuoka.jpg
             filters:
-              brightness: 0.4
+              brightness: 0.35
           position: center
           color: '#000'
-      - title: <span style="font-size:90%">Front-end</span>
-        content: <span style="font-size:90%">프론트 엔드 개발 지망 학부생</span>
+
+      - title: Developer
+        content: 끊임없이 성장하는 개발자
         align: center
         background:
           image:
             filename: coding.jpg
             filters:
-              brightness: 0.4
+              brightness: 0.35
           position: center
           color: '#000'
-          opacity: 0.6  # Apply transparency here
-          css_class: "image-overlay"  # Add the CSS class for text overlay
 
- 
-
+      - title: Contact
+        content: 저에 대해 더 알고 싶으신가요?
+        align: center
+        background:
+          image:
+            filename: web_develop.jpg
+            filters:
+              brightness: 0.35
+          position: center
+          color: '#000'
+        link:
+          icon: arrow-right
+          icon_pack: fas
+          text: 자세히 보기
+          url: contact
 
     design:
-      # Slide height is automatic unless you force a specific height (e.g. '400px')
-      slide_height: '350px'
-      slide_width: '100px'
+      slide_height: '550px'
       is_fullscreen: false
-      # Automatically transition through slides?
       loop: true
-      # Duration of transition between slides (in ms)
-      interval: 3000
+      interval: 4000
 
 
   - block: features
     id: features
     content:
-      title: <span style="font-size:75%">Informaion</span>
-      text: 이가은의 기본 정보<br><br><br><br>
+      title: |
+        <div style="font-size: 2rem; font-weight: 700; text-align: center; margin-bottom: 1rem;">
+          Information
+        </div>
+      text: |
+        <div style="font-size: 1.1rem; color: #64748b; text-align: center; margin-bottom: 3rem;">
+          이가은의 기본 정보
+        </div>
       items:
         - name: 이름
           icon: user
           icon_pack: fas
-          description: <span style="font-size:90%">이가은</span><br><br>
+          description: |
+            <div style="font-size: 1.1rem; font-weight: 500; color: #1e293b;">
+              이가은
+            </div>
         - name: 생년월일
           icon: calendar-days
           icon_pack: fas
-          description:  <span style="font-size:90%">2003.01.23</span><br><br>
+          description: |
+            <div style="font-size: 1.1rem; font-weight: 500; color: #1e293b;">
+              2003.01.23
+            </div>
         - name: 위치
           icon: location-dot
           icon_pack: fas
-          description:  <span style="font-size:90%">전북대학교 공과대학 7호관</span><br><br>
+          description: |
+            <div style="font-size: 1.1rem; font-weight: 500; color: #1e293b;">
+              전북대학교 공과대학 7호관
+            </div>
         - name: 연락처
           icon: phone
           icon_pack: fas
-          description:  <span style="font-size:90%">+82-5906-5988</span><br><br>
+          description: |
+            <div style="font-size: 1.1rem; font-weight: 500; color: #1e293b;">
+              010-5906-5988
+            </div>
         - name: 이메일
           icon: envelope
           icon_pack: fas
-          description:  <span style="font-size:90%">igaeun8@gmail.com</span><br><br>
+          description: |
+            <div style="font-size: 1.1rem; font-weight: 500; color: #1e293b;">
+              igaeun8@gmail.com
+            </div>
         - name: 학력
-          icon: pen
+          icon: graduation-cap
           icon_pack: fas
-          description:  <span style="font-size:90%">전북대학교 컴퓨터 인공지능 학부</span><br><br>
+          description: |
+            <div style="font-size: 1.1rem; font-weight: 500; color: #1e293b;">
+              전북대학교 컴퓨터인공지능학부
+            </div>
+    design:
+      columns: '3'
 
 
   - block: collection
     content:
       id: section-1
-      title: Project
-      subtitle:
+      title: |
+        <div style="font-size: 2rem; font-weight: 700; text-align: center; margin-bottom: 1rem;">
+          Projects
+        </div>
+      subtitle: |
+        <div style="font-size: 1.1rem; color: #64748b; text-align: center; margin-bottom: 2rem;">
+          진행했던 프로젝트들을 확인해보세요
+        </div>
       text:
       count: 3
       offset: 0
@@ -145,8 +179,14 @@ sections:
 
   - block: collection
     content:
-      title: Interests
-      subtitle:
+      title: |
+        <div style="font-size: 2rem; font-weight: 700; text-align: center; margin-bottom: 1rem;">
+          Interests
+        </div>
+      subtitle: |
+        <div style="font-size: 1.1rem; color: #64748b; text-align: center; margin-bottom: 2rem;">
+          관심있는 분야들을 소개합니다
+        </div>
       text:
       count: 3
       filters:
@@ -166,8 +206,14 @@ sections:
 
   - block: collection
     content:
-      title: Travel
-      subtitle:
+      title: |
+        <div style="font-size: 2rem; font-weight: 700; text-align: center; margin-bottom: 1rem;">
+          Travel
+        </div>
+      subtitle: |
+        <div style="font-size: 1.1rem; color: #64748b; text-align: center; margin-bottom: 2rem;">
+          여행 기록을 함께 나눠요
+        </div>
       text:
       count: 3
       filters:
