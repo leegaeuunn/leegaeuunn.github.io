@@ -11,12 +11,6 @@ sections:
       title: 안녕하세요 👋 웹 개발자가 되고 싶은 이가은입니다
       text: 프론트엔드에서 시작해 풀스택까지의 여정을 함께해주세요
 
-  - block: about.biography
-    id: about
-    content:
-      title: About Me
-      username: 이가은
-
   - block: slider
     content:
       slides:
@@ -124,8 +118,14 @@ sections:
   - block: collection
     content:
       id: section-1
-      title: Projects
-      subtitle: 진행했던 프로젝트들을 확인해보세요
+      title: |
+        <div style="font-size: 2rem; font-weight: 700; text-align: center; margin-bottom: 1rem;">
+          Projects
+        </div>
+      subtitle: |
+        <div style="font-size: 1.1rem; color: #64748b; text-align: center; margin-bottom: 2rem;">
+          진행했던 프로젝트들을 확인해보세요
+        </div>
       text:
       count: 3
       offset: 0
@@ -139,8 +139,14 @@ sections:
 
   - block: collection
     content:
-      title: Interests
-      subtitle: 관심있는 분야들을 소개합니다
+      title: |
+        <div style="font-size: 2rem; font-weight: 700; text-align: center; margin-bottom: 1rem;">
+          Interests
+        </div>
+      subtitle: |
+        <div style="font-size: 1.1rem; color: #64748b; text-align: center; margin-bottom: 2rem;">
+          관심있는 분야들을 소개합니다
+        </div>
       text:
       count: 3
       filters:
@@ -155,11 +161,19 @@ sections:
     design:
       view: community/custom_card
       columns: '2'
+    advanced:
+      css_style: "text-align: center;"
 
   - block: collection
     content:
-      title: Travel
-      subtitle: 여행 기록을 함께 나눠요
+      title: |
+        <div style="font-size: 2rem; font-weight: 700; text-align: center; margin-bottom: 1rem;">
+          Travel
+        </div>
+      subtitle: |
+        <div style="font-size: 1.1rem; color: #64748b; text-align: center; margin-bottom: 2rem;">
+          여행 기록을 함께 나눠요
+        </div>
       text:
       count: 3
       filters:
