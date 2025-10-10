@@ -11,6 +11,12 @@ sections:
       title: 안녕하세요 👋 웹 개발자가 되고 싶은 이가은입니다
       text: 프론트엔드에서 시작해 풀스택까지의 여정을 함께해주세요
 
+  - block: markdown
+    content:
+      title: ""
+      text: |
+        {{< photo_gallery >}}
+
   - block: slider
     content:
       slides:
@@ -144,6 +150,12 @@ sections:
     design:
       view: community/custom_card
       columns: '2'
+
+  - block: markdown
+    content:
+      title: ""
+      text: |
+        {{ partial "photo_collage.html" . }}
 
 
  
