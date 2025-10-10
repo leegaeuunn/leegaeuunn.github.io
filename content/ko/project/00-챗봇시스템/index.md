@@ -33,7 +33,7 @@ tags: ['깃허브', '휴고 템플릿', '개인 프로젝트']
 
 # Display this page in the Featured widget?
 featured: true
-url_pdf: 'AI 챗봇 시스템 중간 발표 최종.pdf'
+# url_pdf: 'AI 챗봇 시스템 중간 발표 최종.pdf'
 
 ---
 
