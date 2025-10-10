@@ -11,6 +11,12 @@ sections:
       title: 안녕하세요 👋 웹 개발자가 되고 싶은 이가은입니다
       text: 프론트엔드에서 시작해 풀스택까지의 여정을 함께해주세요
 
+  - block: about.biography
+    id: about
+    content:
+      title: About Me
+      username: 이가은
+
   - block: slider
     content:
       slides:
