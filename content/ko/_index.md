@@ -118,14 +118,8 @@ sections:
   - block: collection
     content:
       id: section-1
-      title: |
-        <div style="font-size: 2rem; font-weight: 700; text-align: center; margin-bottom: 1rem;">
-          Projects
-        </div>
-      subtitle: |
-        <div style="font-size: 1.1rem; color: #64748b; text-align: center; margin-bottom: 2rem;">
-          진행했던 프로젝트들을 확인해보세요
-        </div>
+      title: Projects
+      subtitle: 진행했던 프로젝트들을 확인해보세요
       text:
       count: 3
       offset: 0
@@ -139,14 +133,8 @@ sections:
 
   - block: collection
     content:
-      title: |
-        <div style="font-size: 2rem; font-weight: 700; text-align: center; margin-bottom: 1rem;">
-          Interests
-        </div>
-      subtitle: |
-        <div style="font-size: 1.1rem; color: #64748b; text-align: center; margin-bottom: 2rem;">
-          관심있는 분야들을 소개합니다
-        </div>
+      title: Interests
+      subtitle: 관심있는 분야들을 소개합니다
       text:
       count: 3
       filters:
@@ -161,19 +149,11 @@ sections:
     design:
       view: community/custom_card
       columns: '2'
-    advanced:
-      css_style: "text-align: center;"
 
   - block: collection
     content:
-      title: |
-        <div style="font-size: 2rem; font-weight: 700; text-align: center; margin-bottom: 1rem;">
-          Travel
-        </div>
-      subtitle: |
-        <div style="font-size: 1.1rem; color: #64748b; text-align: center; margin-bottom: 2rem;">
-          여행 기록을 함께 나눠요
-        </div>
+      title: Travel
+      subtitle: 여행 기록을 함께 나눠요
       text:
       count: 3
       filters:
