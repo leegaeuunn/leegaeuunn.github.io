@@ -6,6 +6,12 @@ type: landing
 
 sections:
 
+  - block: markdown
+    content:
+      title: ""
+      text: |
+        {{< photo_collage >}}
+  
   - block: features
     content:
       title: 안녕하세요 👋 웹 개발자가 되고 싶은 이가은입니다
@@ -170,6 +176,12 @@ sections:
     design:
       view: community/custom_card
       columns: '2'
+
+  - block: markdown
+    content:
+      title: ""
+      text: |
+        {{< photo_mosaic >}}
 
 
  

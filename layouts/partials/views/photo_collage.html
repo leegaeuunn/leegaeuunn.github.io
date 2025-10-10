@@ -1,0 +1,70 @@
+{{/* Photo Collage Custom View - Modern Magazine Style */}}
+<div class="photo-collage-container">
+  <div class="collage-header">
+    <h2 class="collage-title">My Story</h2>
+    <p class="collage-subtitle">일상 속에서 발견하는 순간들</p>
+  </div>
+  
+  <div class="photo-grid">
+    <!-- Main Photo - Large -->
+    <div class="photo-item large" style="background-image: url('{{ .Site.BaseURL }}assets/media/avatar.jpg');">
+      <div class="photo-overlay">
+        <div class="photo-text">개발자로서의 여정</div>
+      </div>
+    </div>
+    
+    <!-- Medium Photos -->
+    <div class="photo-item medium" style="background-image: url('{{ .Site.BaseURL }}assets/media/web_develop.jpg');">
+      <div class="photo-overlay">
+        <div class="photo-text">웹 개발</div>
+      </div>
+    </div>
+    
+    <div class="photo-item medium" style="background-image: url('{{ .Site.BaseURL }}assets/media/coding.jpg');">
+      <div class="photo-overlay">
+        <div class="photo-text">코딩</div>
+      </div>
+    </div>
+    
+    <!-- Small Photos -->
+    <div class="photo-item small" style="background-image: url('{{ .Site.BaseURL }}assets/media/data_science.jpg');">
+      <div class="photo-overlay">
+        <div class="photo-text">AI</div>
+      </div>
+    </div>
+    
+    <div class="photo-item small" style="background-image: url('{{ .Site.BaseURL }}assets/media/human_computer_interaction.jpg');">
+      <div class="photo-overlay">
+        <div class="photo-text">HCI</div>
+      </div>
+    </div>
+    
+    <!-- Wide Photo -->
+    <div class="photo-item wide" style="background-image: url('{{ .Site.BaseURL }}assets/media/fukuoka.jpg');">
+      <div class="photo-overlay">
+        <div class="photo-text">여행의 즐거움</div>
+      </div>
+    </div>
+    
+    <!-- Quote Box -->
+    <div class="quote-box">
+      <div class="quote-content">
+        <p class="quote-text">"프론트에서 시작해<br>풀스택까지의 여정을<br>함께해주세요"</p>
+        <div class="quote-author">- 이가은</div>
+      </div>
+    </div>
+    
+    <!-- Small Square Photos -->
+    <div class="photo-item square" style="background-image: url('{{ .Site.BaseURL }}assets/media/database.jpg');">
+      <div class="photo-overlay">
+        <div class="photo-text">DB</div>
+      </div>
+    </div>
+    
+    <div class="photo-item square" style="background-image: url('{{ .Site.BaseURL }}assets/media/iot.jpg');">
+      <div class="photo-overlay">
+        <div class="photo-text">IoT</div>
+      </div>
+    </div>
+  </div>
+</div>

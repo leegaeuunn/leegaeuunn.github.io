@@ -1,0 +1,333 @@
+/* Photo Collage & Mosaic Styles - Magazine Layout */
+
+/* Photo Collage Container */
+.photo-collage-container {
+  padding: 2rem 0;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.collage-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.collage-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+.collage-subtitle {
+  font-size: 1.2rem;
+  color: #64748b;
+  font-style: italic;
+}
+
+/* Photo Grid Layout */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(8, 80px);
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Photo Item Base Styles */
+.photo-item {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.photo-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Photo Overlay */
+.photo-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  padding: 1rem;
+  color: white;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.photo-item:hover .photo-overlay {
+  transform: translateY(0);
+}
+
+.photo-text {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* Photo Sizes */
+.photo-item.large {
+  grid-column: span 6;
+  grid-row: span 4;
+}
+
+.photo-item.medium {
+  grid-column: span 3;
+  grid-row: span 3;
+}
+
+.photo-item.small {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.photo-item.wide {
+  grid-column: span 4;
+  grid-row: span 2;
+}
+
+.photo-item.square {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+/* Quote Box */
+.quote-box {
+  grid-column: span 4;
+  grid-row: span 3;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.quote-content {
+  max-width: 100%;
+}
+
+.quote-text {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.quote-author {
+  font-size: 1rem;
+  opacity: 0.9;
+  font-style: italic;
+}
+
+/* Photo Mosaic Styles */
+.photo-mosaic-container {
+  padding: 2rem 0;
+  background: #fafafa;
+}
+
+.mosaic-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(6, 100px);
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.mosaic-item {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mosaic-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.mosaic-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  padding: 1rem;
+  color: white;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.mosaic-item:hover .mosaic-overlay {
+  transform: translateY(0);
+}
+
+.mosaic-overlay h3,
+.mosaic-overlay h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.mosaic-overlay p {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.mosaic-overlay span {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* Mosaic Item Sizes */
+.mosaic-item.large-portrait {
+  grid-column: span 4;
+  grid-row: span 3;
+}
+
+.mosaic-item.medium-square {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+.mosaic-item.medium-portrait {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+.mosaic-item.small-square {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.mosaic-item.small-wide {
+  grid-column: span 4;
+  grid-row: span 1;
+}
+
+.mosaic-item.wide {
+  grid-column: span 6;
+  grid-row: span 2;
+}
+
+/* Text Block */
+.text-block {
+  grid-column: span 3;
+  grid-row: span 2;
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.text-content {
+  text-align: center;
+}
+
+.text-content h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.text-content p {
+  font-size: 1rem;
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.text-highlight {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .photo-grid,
+  .mosaic-grid {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(12, 60px);
+  }
+  
+  .photo-item.large,
+  .mosaic-item.large-portrait {
+    grid-column: span 6;
+    grid-row: span 4;
+  }
+  
+  .photo-item.medium,
+  .mosaic-item.medium-square,
+  .mosaic-item.medium-portrait {
+    grid-column: span 3;
+    grid-row: span 3;
+  }
+  
+  .photo-item.small,
+  .photo-item.square,
+  .mosaic-item.small-square {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  
+  .quote-box,
+  .text-block {
+    grid-column: span 6;
+    grid-row: span 3;
+  }
+  
+  .collage-title {
+    font-size: 2rem;
+  }
+  
+  .quote-text {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .photo-grid,
+  .mosaic-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(16, 50px);
+    gap: 0.5rem;
+  }
+  
+  .photo-item,
+  .mosaic-item {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  
+  .quote-box,
+  .text-block {
+    grid-column: span 4;
+    grid-row: span 4;
+  }
+}
