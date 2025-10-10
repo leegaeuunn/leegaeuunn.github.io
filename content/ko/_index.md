@@ -74,11 +74,11 @@ sections:
           text: 자세히 보기
           url: contact
 
-        design:
-          slide_height: '550px'
-          is_fullscreen: false
-          loop: true
-          interval: 4000
+    design:
+      slide_height: '550px'
+      is_fullscreen: false
+      loop: true
+      interval: 4000
 
   - block: features
     id: features
