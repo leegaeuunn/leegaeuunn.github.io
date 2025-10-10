@@ -33,7 +33,7 @@ tags: ['GitHub', 'Hugo Template', 'Personal Project']
 
 # Display this page in the Featured widget?
 featured: true
-url_pdf: 'AI 챗봇 시스템 중간 발표 최종.pdf'
+# url_pdf: 'AI 챗봇 시스템 중간 발표 최종.pdf'
 
 ---
 
