@@ -10,14 +10,14 @@ sections:
   - block: features
     content:
       title: 
-      text: <br><span style="font-size:125%">안녕하세요. 웹 개발자가 되고 싶은 이가은 입니다. 프론트에서 시작해 풀스택까지의 여정을 지켜봐주세요.</span></br>
+      text: 안녕하세요. 웹 개발자가 되고 싶은 이가은 입니다. 프론트에서 시작해 풀스택까지의 여정을 지켜봐주세요.
 
 
   - block: slider
     content:
       slides:
-      - title: <span style="font-size:90%">About Me</span>
-        content: <span style="font-size:90%">컴퓨터와 더 친해지고 싶은<span style="font-size:90%">
+      - title: About Me
+        content: 컴퓨터와 더 친해지고 싶은
         align: center
         background:
           image:
@@ -27,8 +27,8 @@ sections:
           position: center
           color: '#000'
 
-      - title: <span style="font-size:90%">Interests</span>
-        content: <span style="font-size:90%">관심 분야가 많은 </span>
+      - title: Interests
+        content: 관심 분야가 많은
         align: center
         background:
           image:
@@ -38,8 +38,8 @@ sections:
           position: center
           color: '#000'
 
-      - title: <span style="font-size:90%">Travel</span>
-        content: <span style="font-size:90%">여행을 좋아하는</span>
+      - title: Travel
+        content: 여행을 좋아하는
         align: center
         background:
           image:
@@ -49,8 +49,8 @@ sections:
           position: center
           color: '#000'
 
-      - title: <span style="font-size:90%">Front-end</span>
-        content: <span style="font-size:90%">프론트 엔드 개발 지망 학부생</span>
+      - title: Front-end
+        content: 프론트 엔드 개발 지망 학부생
         align: center
         background:
           image:
@@ -61,8 +61,8 @@ sections:
           color: '#000'
 
 
-      - title: <span style="font-size:90%">이가은</span>
-        content: <span style="font-size:90%">이가은에 대해 더 알아보기</span>
+      - title: 이가은
+        content: 이가은에 대해 더 알아보기
         align: center
         background:
           image:
@@ -74,7 +74,7 @@ sections:
         link:
           icon: user
           icon_pack: fas
-          text: <span style="font-size:60%">Click me</span>
+          text: Click me
           text-color: '#000'
           url: contact
 

@@ -1,0 +1,93 @@
+{{/* partials/photo-cards.html */}}
+<div
+  style="
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(180px,1fr));
+    gap:12px;
+    align-items:stretch;
+    margin:0 auto;
+    max-width:1200px;
+  "
+>
+  {{/* 1) front matter에 배열로 사진을 넣은 경우
+        params 예시:
+        photos = [
+          { src="/images/p1.jpg", alt="봄", caption="Spring 01" },
+          { src="/images/p2.jpg", caption="Forest" },
+          "/images/p3.jpg"
+        ]
+  */}}
+  {{ if isset .Params "photos" }}
+    {{ range first 20 .Params.photos }}
+      {{ $src := (cond (isMap .) (index . "src") .) }}
+      {{ $alt := (cond (isMap .) (default "" (index . "alt")) "") }}
+      {{ $cap := (cond (isMap .) (default "" (index . "caption")) "") }}
+
+      <figure
+        style="
+          margin:0;
+          position:relative;
+          overflow:hidden;
+          border-radius:12px;
+          aspect-ratio:1/1;
+          background:#f3f3f3;
+        "
+      >
+        <a href="{{ $src }}" style="display:block;width:100%;height:100%;">
+          <img
+            src="{{ $src }}"
+            alt="{{ $alt }}"
+            loading="lazy"
+            style="width:100%;height:100%;object-fit:cover;display:block;"
+          />
+        </a>
+        {{ if $cap }}
+          <figcaption
+            style="
+              position:absolute;left:0;right:0;bottom:0;
+              background:rgba(0,0,0,.45);
+              color:#fff;
+              padding:6px 8px;
+              font-size:12px;line-height:1.2;
+            "
+          >{{ $cap }}</figcaption>
+        {{ end }}
+      </figure>
+    {{ end }}
+
+  {{/* 2) 페이지 번들 내부의 이미지 리소스를 자동으로 가져오는 경우 */}}
+  {{ else }}
+    {{ range first 20 (.Resources.ByType "image") }}
+      <figure
+        style="
+          margin:0;
+          position:relative;
+          overflow:hidden;
+          border-radius:12px;
+          aspect-ratio:1/1;
+          background:#f3f3f3;
+        "
+      >
+        <a href="{{ .RelPermalink }}" style="display:block;width:100%;height:100%;">
+          <img
+            src="{{ .RelPermalink }}"
+            alt="{{ with .Title }}{{ . }}{{ else }}photo{{ end }}"
+            loading="lazy"
+            style="width:100%;height:100%;object-fit:cover;display:block;"
+          />
+        </a>
+        {{ with .Title }}
+          <figcaption
+            style="
+              position:absolute;left:0;right:0;bottom:0;
+              background:rgba(0,0,0,.45);
+              color:#fff;
+              padding:6px 8px;
+              font-size:12px;line-height:1.2;
+            "
+          >{{ . }}</figcaption>
+        {{ end }}
+      </figure>
+    {{ end }}
+  {{ end }}
+</div>
