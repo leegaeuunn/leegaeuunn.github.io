@@ -133,25 +133,6 @@ sections:
 
   - block: collection
     content:
-      title: Interests
-      subtitle: 관심있는 분야들을 소개합니다
-      text:
-      count: 3
-      filters:
-        author: ''
-        category: ''
-        exclude_featured: false
-        publication_type: ''
-        tag: ''
-      offset: 0
-      order: desc
-      page_type: field
-    design:
-      view: community/custom_card
-      columns: '2'
-
-  - block: collection
-    content:
       title: Travel
       subtitle: 여행 기록을 함께 나눠요
       text:
