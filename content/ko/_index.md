@@ -8,24 +8,8 @@ sections:
 
   - block: features
     content:
-      title: |
-        <div style="font-size: 2.5rem; font-weight: 700; line-height: 1.3; margin-bottom: 1.5rem;">
-          안녕하세요 👋<br>
-          웹 개발자가 되고 싶은<br>
-          <span style="color: #3b82f6;">이가은</span>입니다
-        </div>
-      text: |
-        <div style="font-size: 1.25rem; color: #64748b; line-height: 1.8; margin-bottom: 2rem;">
-          프론트엔드에서 시작해 풀스택까지의 여정을 함께해주세요
-        </div>
-        <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 2rem;">
-          <a href="contact" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 12px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; box-shadow: 0 4px 6px rgba(102, 126, 234, 0.3); transition: all 0.3s;">
-            연락하기
-          </a>
-          <a href="#section-1" style="background: white; color: #667eea; padding: 12px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; border: 2px solid #667eea; transition: all 0.3s;">
-            프로젝트 보기
-          </a>
-        </div>
+      title: 안녕하세요 👋 웹 개발자가 되고 싶은 이가은입니다
+      text: 프론트엔드에서 시작해 풀스택까지의 여정을 함께해주세요
 
   - block: slider
     content:
@@ -100,57 +84,33 @@ sections:
   - block: features
     id: features
     content:
-      title: |
-        <div style="font-size: 2rem; font-weight: 700; text-align: center; margin-bottom: 1rem;">
-          Information
-        </div>
-      text: |
-        <div style="font-size: 1.1rem; color: #64748b; text-align: center; margin-bottom: 3rem;">
-          이가은의 기본 정보
-        </div>
+      title: Information
+      text: 이가은의 기본 정보
       items:
         - name: 이름
           icon: user
           icon_pack: fas
-          description: |
-            <div style="font-size: 1.1rem; font-weight: 500; color: #1e293b;">
-              이가은
-            </div>
+          description: 이가은
         - name: 생년월일
           icon: calendar-days
           icon_pack: fas
-          description: |
-            <div style="font-size: 1.1rem; font-weight: 500; color: #1e293b;">
-              2003.01.23
-            </div>
+          description: 2003.01.23
         - name: 위치
           icon: location-dot
           icon_pack: fas
-          description: |
-            <div style="font-size: 1.1rem; font-weight: 500; color: #1e293b;">
-              전북대학교 공과대학 7호관
-            </div>
+          description: 전북대학교 공과대학 7호관
         - name: 연락처
           icon: phone
           icon_pack: fas
-          description: |
-            <div style="font-size: 1.1rem; font-weight: 500; color: #1e293b;">
-              010-5906-5988
-            </div>
+          description: 010-5906-5988
         - name: 이메일
           icon: envelope
           icon_pack: fas
-          description: |
-            <div style="font-size: 1.1rem; font-weight: 500; color: #1e293b;">
-              igaeun8@gmail.com
-            </div>
+          description: igaeun8@gmail.com
         - name: 학력
           icon: graduation-cap
           icon_pack: fas
-          description: |
-            <div style="font-size: 1.1rem; font-weight: 500; color: #1e293b;">
-              전북대학교 컴퓨터인공지능학부
-            </div>
+          description: 전북대학교 컴퓨터인공지능학부
     design:
       columns: '3'
 
@@ -158,14 +118,8 @@ sections:
   - block: collection
     content:
       id: section-1
-      title: |
-        <div style="font-size: 2rem; font-weight: 700; text-align: center; margin-bottom: 1rem;">
-          Projects
-        </div>
-      subtitle: |
-        <div style="font-size: 1.1rem; color: #64748b; text-align: center; margin-bottom: 2rem;">
-          진행했던 프로젝트들을 확인해보세요
-        </div>
+      title: Projects
+      subtitle: 진행했던 프로젝트들을 확인해보세요
       text:
       count: 3
       offset: 0
@@ -179,14 +133,8 @@ sections:
 
   - block: collection
     content:
-      title: |
-        <div style="font-size: 2rem; font-weight: 700; text-align: center; margin-bottom: 1rem;">
-          Interests
-        </div>
-      subtitle: |
-        <div style="font-size: 1.1rem; color: #64748b; text-align: center; margin-bottom: 2rem;">
-          관심있는 분야들을 소개합니다
-        </div>
+      title: Interests
+      subtitle: 관심있는 분야들을 소개합니다
       text:
       count: 3
       filters:
@@ -201,19 +149,11 @@ sections:
     design:
       view: community/custom_card
       columns: '2'
-    advanced:
-      css_style: "text-align: center;"
 
   - block: collection
     content:
-      title: |
-        <div style="font-size: 2rem; font-weight: 700; text-align: center; margin-bottom: 1rem;">
-          Travel
-        </div>
-      subtitle: |
-        <div style="font-size: 1.1rem; color: #64748b; text-align: center; margin-bottom: 2rem;">
-          여행 기록을 함께 나눠요
-        </div>
+      title: Travel
+      subtitle: 여행 기록을 함께 나눠요
       text:
       count: 3
       filters:
