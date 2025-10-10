@@ -19,9 +19,16 @@
   */}}
   {{ if isset .Params "photos" }}
     {{ range first 20 .Params.photos }}
-      {{ $src := (cond (isMap .) (index . "src") .) }}
-      {{ $alt := (cond (isMap .) (default "" (index . "alt")) "") }}
-      {{ $cap := (cond (isMap .) (default "" (index . "caption")) "") }}
+      {{ $src := "" }}
+      {{ $alt := "" }}
+      {{ $cap := "" }}
+      {{ if reflect.IsMap . }}
+        {{ $src = .src }}
+        {{ $alt = .alt | default "" }}
+        {{ $cap = .caption | default "" }}
+      {{ else }}
+        {{ $src = . }}
+      {{ end }}
 
       <figure
         style="
