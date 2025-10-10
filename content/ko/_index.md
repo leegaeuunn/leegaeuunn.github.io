@@ -1,7 +1,7 @@
 ---
 # 메인 페이지 - Modern Minimalism Design
 title:
-date: 2024-10-05
+date: 2025-10-05
 type: landing
 
 sections:
@@ -79,7 +79,6 @@ sections:
       is_fullscreen: false
       loop: true
       interval: 4000
-
 
   - block: features
     id: features
