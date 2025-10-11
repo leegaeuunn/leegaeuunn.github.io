@@ -10,13 +10,13 @@ sections:
   - block: features
     content:
       title: 
-      text: <br><span style="font-size:125%">Hello, I'm Gaeun Lee, aspiring to become a web developer. Watch my journey from frontend to full stack.</span></br>
+      text: Hello, I'm Gaeun Lee, aspiring to become a web developer. Watch my journey from frontend to full stack.
 
   - block: slider
     content:
       slides:
-      - title: <span style="font-size:90%">About Me</span>
-        content: <span style="font-size:90%">I want to get closer to computers<span style="font-size:90%">
+      - title: About Me
+        content: I want to get closer to computers
         align: center
         background:
           image:
@@ -26,8 +26,8 @@ sections:
           position: center
           color: '#000'
 
-      - title: <span style="font-size:90%">Interests</span>
-        content: <span style="font-size:90%">I have many areas of interest </span>
+      - title: Interests
+        content: I have many areas of interest
         align: center
         background:
           image:
@@ -37,8 +37,8 @@ sections:
           position: center
           color: '#000'
 
-      - title: <span style="font-size:90%">Travel</span>
-        content: <span style="font-size:90%">I love traveling</span>
+      - title: Travel
+        content: I love traveling
         align: center
         background:
           image:
@@ -48,8 +48,8 @@ sections:
           position: center
           color: '#000'
 
-      - title: <span style="font-size:90%">Front-end</span>
-        content: <span style="font-size:90%">Aspiring undergraduate front-end developer</span>
+      - title: Front-end
+        content: Aspiring undergraduate front-end developer
         align: center
         background:
           image:
@@ -59,8 +59,8 @@ sections:
           position: center
           color: '#000'
 
-      - title: <span style="font-size:90%">Gaeun Lee</span>
-        content: <span style="font-size:90%">Learn more about Gaeun Lee</span>
+      - title: Gaeun Lee
+        content: Learn more about Gaeun Lee
         align: center
         background:
           image:
