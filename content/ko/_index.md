@@ -5,9 +5,9 @@ date: 2025-10-05
 type: landing
 
 sections:
-  - block: custom
+  - block: markdown
     content:
-      title: ""
+      title: "스크롤 애니메이션 데모"
       text: |
         <style>
         :root {
