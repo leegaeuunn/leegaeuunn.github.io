@@ -10,6 +10,23 @@ sections:
       title: 안녕하세요. 이가은 입니다. 
       text: 프론트에서 시작해 풀스택까지의 여정을 지켜봐주세요.
 
+  - block: markdown
+    content:
+      title: 
+      text: |
+        <link rel="stylesheet" href="/projects/scroll-animation-demo/style.css" />
+        
+        <section class="scene" id="scene1">
+          <div class="stage">
+            <div class="plate-wrap">
+              <img class="plate" src="/projects/scroll-animation-demo/images/plate-arm.png" alt="접시와 팔">
+            </div>
+            <img class="person" src="/projects/scroll-animation-demo/images/person.png" alt="사람">
+          </div>
+        </section>
+        
+        <script src="/projects/scroll-animation-demo/script.js"></script>
+
   - block: slider
     content:
       slides:
