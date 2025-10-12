@@ -5,6 +5,10 @@ date: 2025-10-05
 type: landing
 
 sections:
+  - block: features
+    content:
+      title: 
+      text: 안녕하세요. 웹 개발자가 되고 싶은 이가은 입니다. 프론트에서 시작해 풀스택까지의 여정을 지켜봐주세요.
 
 # # 미니멀 메인 페이지 
 #   - block: hero
