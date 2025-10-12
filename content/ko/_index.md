@@ -5,16 +5,157 @@ date: 2025-10-05
 type: landing
 
 sections:
-  - block: features
+  - block: custom
     content:
-      title: 안녕하세요. 이가은 입니다. 
-      text: 프론트에서 시작해 풀스택까지의 여정을 지켜봐주세요.
-      items:
-        - name: "스크롤 애니메이션 데모"
-          description: "스크롤에 따른 인터랙티브 애니메이션 효과"
-          icon: magic
-          icon_pack: fas
-          url: "/projects/scroll-animation-demo/"
+      title: ""
+      text: |
+        <style>
+        :root {
+          --prog: 0;
+          --p: 0;   /* 사람 등장 */
+          --q: 0;   /* 접시/팔 퇴장 */
+        }
+        
+        .scroll-demo-section {
+          margin: 0;
+          background: #fff;
+          color: #111;
+          font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+          min-height: 100vh;
+        }
+        
+        /* === 장면 1: 스크롤 고정 시퀀스 === */
+        .scene {
+          height: 220vh;
+          position: relative;
+        }
+        
+        .stage {
+          position: sticky;
+          top: 0;
+          height: 100vh;
+          overflow: hidden;
+          display: grid;
+          place-items: center;
+          background: #fff;
+        }
+        
+        /* 접시+팔 */
+        .plate-wrap {
+          position: absolute;
+          inset: 0;
+          display: grid;
+          place-items: center;
+          pointer-events: none;
+          transform: none;
+          opacity: 1;
+        }
+        
+        .plate {
+          max-width: min(60vw, 600px);
+          width: 50vw;
+          height: auto;
+          user-select: none;
+        }
+        
+        /* 사람: 아래에서 위로 떠오르며 나타남 */
+        .person {
+          position: absolute;
+          left: 55%;
+          bottom: 30vh;
+          transform: translate(-50%, calc(120px * (1 - var(--p))));
+          opacity: var(--p);
+          width: min(20vw, 200px);
+          will-change: transform, opacity;
+          filter: drop-shadow(0 12px 24px rgba(0,0,0,.15));
+          transition: opacity .1s linear;
+        }
+        
+        /* 다음 섹션 */
+        .next {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #f7f7f9;
+          min-height: 100vh;
+        }
+        
+        .next h2 {
+          font-weight: 700;
+          letter-spacing: .2px;
+          margin: 0;
+        }
+        </style>
+        
+        <div class="scroll-demo-section">
+          <!-- 장면 1 -->
+          <section class="scene" id="scene1">
+            <div class="stage">
+              <div class="plate-wrap">
+                <!-- 접시+팔 이미지 -->
+                <img class="plate" src="/projects/scroll-animation-demo/images/plate-arm.png" alt="접시와 팔">
+              </div>
+              
+              <!-- 아래에서 떠오를 사람 -->
+              <img class="person" src="/projects/scroll-animation-demo/images/person.png" alt="사람">
+            </div>
+          </section>
+          
+          <!-- 다음 페이지 섹션 -->
+          <section class="next">
+            <h2>스크롤 애니메이션 데모 완료!</h2>
+          </section>
+        </div>
+        
+        <script>
+        /*
+          스크롤 진행도 계산:
+          - prog: 장면 전체 진행도 0~1
+          - p   : 사람 등장 (0.0~0.65 구간을 0~1로 매핑)
+          - q   : 접시/팔 퇴장 (0.65~1.0 구간을 0~1로 매핑)
+        */
+        (function(){
+            const scene = document.getElementById('scene1');
+            const root  = document.documentElement;
+          
+            const clamp01 = v => Math.max(0, Math.min(1, v));
+            let ticking = false;
+          
+            function update(){
+              ticking = false;
+          
+              const rect  = scene.getBoundingClientRect();
+              const vh    = window.innerHeight || 1;
+              const start = window.scrollY + rect.top;
+              const end   = start + rect.height - vh;
+              const denom = Math.max(1, end - start);
+              const prog  = clamp01((window.scrollY - start) / denom);
+          
+              // 컷 분할 포인트
+              const split = 0.7;
+              const personStop = 0.4;  // 사람이 멈추는 지점 (0.4 = 40%)
+          
+              // 사람은 0~personStop 구간에서만 움직임
+              const p = clamp01(prog / personStop);
+              const q = clamp01((prog - split) / (1 - split));
+          
+              root.style.setProperty('--prog', prog.toFixed(4));
+              root.style.setProperty('--p', p.toFixed(4));
+              root.style.setProperty('--q', q.toFixed(4));
+            }
+          
+            function onScroll(){
+              if(!ticking){
+                requestAnimationFrame(update);
+                ticking = true;
+              }
+            }
+          
+            window.addEventListener('scroll', onScroll, {passive:true});
+            window.addEventListener('resize', onScroll);
+            update(); // 초기 렌더
+          })();
+        </script>
 
 # # 미니멀 메인 페이지 
 #   - block: hero
