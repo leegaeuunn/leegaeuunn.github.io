@@ -6,34 +6,34 @@ type: landing
 
 sections:
 
-# 미니멀 메인 페이지 
-  - block: hero
-    content:
-      title: 이가은
-      subtitle: "웹 개발자 지망생"
-      text: "Visionary Creator 🟪 | Linux Devotee 🐧 | Eternal Explorer 🚀 | Embracing Open Horizons ⭐"
-      image:
-        filename: avatar.jpg
-        alt: 이가은 프로필 사진
-      cta:
-        label: 연락하기
-        url: contact
-        classes: btn-primary
-      cta_alt:
-        label: 프로젝트 보기
-        url: project
-    design:
-      background:
-        gradient_end: '#ffffff'
-        gradient_start: '#ffffff'
-        text_color_light: false
-      spacing:
-        padding: ["100px", "0", "100px", "0"]
-      columns: '1'
-      image_position: top
-      image_anchor: center
-      text_position: center
-      align: center
+# # 미니멀 메인 페이지 
+#   - block: hero
+#     content:
+#       title: 이가은
+#       subtitle: "웹 개발자 지망생"
+#       text: "Visionary Creator 🟪 | Linux Devotee 🐧 | Eternal Explorer 🚀 | Embracing Open Horizons ⭐"
+#       image:
+#         filename: avatar.jpg
+#         alt: 이가은 프로필 사진
+#       cta:
+#         label: 연락하기
+#         url: contact
+#         classes: btn-primary
+#       cta_alt:
+#         label: 프로젝트 보기
+#         url: project
+#     design:
+#       background:
+#         gradient_end: '#ffffff'
+#         gradient_start: '#ffffff'
+#         text_color_light: false
+#       spacing:
+#         padding: ["100px", "0", "100px", "0"]
+#       columns: '1'
+#       image_position: top
+#       image_anchor: center
+#       text_position: center
+#       align: center
 
   - block: slider
     content:
