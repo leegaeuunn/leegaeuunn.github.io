@@ -9,6 +9,12 @@ sections:
     content:
       title: 안녕하세요. 이가은 입니다. 
       text: 프론트에서 시작해 풀스택까지의 여정을 지켜봐주세요.
+      items:
+        - name: "스크롤 애니메이션 데모"
+          description: "스크롤에 따른 인터랙티브 애니메이션 효과"
+          icon: magic
+          icon_pack: fas
+          url: "/projects/scroll-animation-demo/"
 
 # # 미니멀 메인 페이지 
 #   - block: hero
