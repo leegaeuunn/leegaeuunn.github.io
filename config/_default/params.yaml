@@ -135,3 +135,19 @@ publications:
 
 ogImage: "assets/media/logo.png"  # Ensure the image exists at this path
 
+# 미니멀 디자인 메인 페이지
+# Social links
+social:
+  - icon: github
+    icon_pack: fab
+    name: GitHub
+    url: https://github.com/igaeun8
+  - icon: linkedin
+    icon_pack: fab
+    name: LinkedIn
+    url: https://linkedin.com/in/igaeun8
+  - icon: envelope
+    icon_pack: fas
+    name: Email
+    url: mailto:igaeun8@gmail.com
+

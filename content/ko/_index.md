@@ -6,10 +6,30 @@ type: landing
 
 sections:
 
-  - block: features
+# 미니멀 메인 페이지 
+  - block: hero
     content:
-      title: 안녕하세요 👋 웹 개발자가 되고 싶은 이가은입니다
-      text: 프론트엔드에서 시작해 풀스택까지의 여정을 함께해주세요
+      title: 이가은
+      subtitle: "웹 개발자 지망생"
+      text: "Visionary Creator 🟪 | Linux Devotee 🐧 | Eternal Explorer 🚀 | Embracing Open Horizons ⭐"
+      image:
+        filename: avatar.jpg
+        alt: 이가은 프로필 사진
+      cta:
+        label: 연락하기
+        url: contact
+        classes: btn-primary
+      cta_alt:
+        label: 프로젝트 보기
+        url: project
+    design:
+      background:
+        gradient_end: '#ffffff'
+        gradient_start: '#ffffff'
+        text_color_light: false
+      spacing:
+        padding: ["100px", "0", "100px", "0"]
+      css_class: hero-minimal
 
   - block: slider
     content:
