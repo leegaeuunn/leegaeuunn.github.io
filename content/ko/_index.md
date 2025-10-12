@@ -7,7 +7,7 @@ type: landing
 sections:
   - block: markdown
     content:
-      title: "스크롤 애니메이션 데모"
+      title: 
       text: |
         <style>
         :root {
