@@ -4,9 +4,72 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Scroll Rise + Hand/Plate Exit</title>
+  <style>
+    :root{
+      /* JS가 업데이트하는 진행도 변수 (0~1) */
+      --prog: 0;
+      --p: 0;   /* 사람 등장 */
+      --q: 0;   /* 접시/팔 퇴장 */
+    }
 
-  <!-- 외부 CSS 연결 -->
-  <link rel="stylesheet" href="style.css" />
+    html,body{margin:0; background:#fff; color:#111; font-family:system-ui, -apple-system, Segoe UI, Roboto, sans-serif;}
+    section{min-height:100vh;}
+
+    /* === 장면 1: 스크롤 고정 시퀀스 === */
+    .scene{
+      /* 스크롤 구간 길이: 필요시 220→300vh로 늘리면 더 길어짐 */
+      height: 220vh;
+      position: relative;
+    }
+
+    .stage{
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow: hidden;      /* 프레임 밖은 가림 */
+      display: grid;
+      place-items: center;
+      background: #fff;
+    }
+
+    /* 접시+팔 (배경역할 레이어) */
+    .plate-wrap{
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      pointer-events: none;
+      /* q가 0→1로 증가할수록 아래로 이동하며 페이드아웃 */
+      transform: translateY(calc(180px * var(--q)));
+      opacity: calc(1 - var(--q));
+      transition: opacity .1s linear; /* 미세 스무딩 */
+    }
+    .plate{
+      max-width: min(90vw, 900px);
+      width: 80vw;
+      height: auto;
+      user-select: none;
+    }
+
+    /* 사람: 아래에서 위로 떠오르며 나타남 */
+    .person{
+      position: absolute;
+      left: 50%;
+      bottom: clamp(18vh, 24vh, 28vh);        /* 접시 가장자리 위치에 맞춰 조절 */
+      transform: translate(-50%, calc(160px * (1 - var(--p))));
+      opacity: var(--p);
+      width: min(40vw, 420px);
+      will-change: transform, opacity;
+      filter: drop-shadow(0 12px 24px rgba(0,0,0,.15));
+    }
+
+    /* 다음 섹션 */
+    .next{
+      display:flex; align-items:center; justify-content:center;
+      background:#f7f7f9;
+    }
+    .next h2{font-weight:700; letter-spacing:.2px; margin:0;}
+  </style>
 </head>
 <body>
 
@@ -15,11 +78,11 @@
     <div class="stage">
       <div class="plate-wrap">
         <!-- 접시+팔 이미지 -->
-        <img class="plate" src="images/plate-arm.png" alt="접시와 팔">
+        <img class="plate" src="images/plate-arm.jpg" alt="접시와 팔">
       </div>
 
-      <!-- 아래에서 떠오를 사람 -->
-      <img class="person" src="images/person.png" alt="사람">
+      <!-- 아래에서 떠오를 사람 (배경 투명 PNG 권장) -->
+      <img class="person" src="images/person.jpg" alt="사람">
     </div>
   </section>
 
@@ -28,7 +91,53 @@
     <h2>다음 페이지 컨텐츠</h2>
   </section>
 
-  <!-- 외부 JS 연결 -->
-  <script src="script.js"></script>
+  <script>
+    /*
+      스크롤 진행도 계산:
+      - prog: 장면 전체 진행도 0~1
+      - p   : 사람 등장 (0.0~0.65 구간을 0~1로 매핑)
+      - q   : 접시/팔 퇴장 (0.65~1.0 구간을 0~1로 매핑)
+    */
+    (function(){
+      const scene = document.getElementById('scene1');
+      const root  = document.documentElement;
+
+      const clamp01 = v => Math.max(0, Math.min(1, v));
+      let ticking = false;
+
+      function update(){
+        ticking = false;
+
+        const rect  = scene.getBoundingClientRect();
+        const vh    = window.innerHeight || 1;
+        const start = window.scrollY + rect.top;           // 문서 기준 시작
+        const end   = start + rect.height - vh;            // sticky 끝 지점
+        const denom = Math.max(1, end - start);
+        const prog  = clamp01((window.scrollY - start) / denom);
+
+        // 컷 분할 포인트 (필요 시 0.65 → 0.7 등으로 조정)
+        const split = 0.65;
+
+        const p = clamp01(prog / split);                   // 0~split
+        const q = clamp01((prog - split) / (1 - split));   // split~1
+
+        root.style.setProperty('--prog', prog.toFixed(4));
+        root.style.setProperty('--p', p.toFixed(4));
+        root.style.setProperty('--q', q.toFixed(4));
+      }
+
+      function onScroll(){
+        if(!ticking){
+          requestAnimationFrame(update);
+          ticking = true;
+        }
+      }
+
+      window.addEventListener('scroll', onScroll, {passive:true});
+      window.addEventListener('resize', onScroll);
+      update(); // 초기 렌더
+    })();
+  </script>
+
 </body>
 </html>
