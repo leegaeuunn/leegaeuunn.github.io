@@ -52,7 +52,7 @@
   /* 사람: 아래에서 위로 떠오르며 나타남 */
   .person {
     position: absolute;
-    left: 55%;
+    left: 58%;
     bottom: 30vh;
     transform: translate(-50%, calc(120px * (1 - var(--p))));
     opacity: var(--p);
