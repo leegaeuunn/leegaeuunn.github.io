@@ -91,8 +91,8 @@ sections:
           url: contact
 
     design:
-      slide_height: '550px'
-      is_fullscreen: false
+      slide_height: '100vh'
+      is_fullscreen: true
       loop: true
       interval: 4000
 
