@@ -8,8 +8,8 @@ type: landing
 sections:
   - block: features
     content:
-      title: 안녕하세요. 웹 개발자가 되고 싶은 이가은 입니다. 프론트에서 시작해 풀스택까지의 여정을 지켜봐주세요.
-      text: 안녕하세요. 웹 개발자가 되고 싶은 이가은 입니다. 프론트에서 시작해 풀스택까지의 여정을 지켜봐주세요.
+      title: 안녕하세요. 이가은 입니다. 
+      text: 프론트에서 시작해 풀스택까지의 여정을 지켜봐주세요.
 
 
   - block: slider
