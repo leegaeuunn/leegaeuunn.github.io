@@ -29,7 +29,11 @@ sections:
         text_color_light: false
       spacing:
         padding: ["100px", "0", "100px", "0"]
-      css_class: hero-minimal
+      columns: '1'
+      image_position: top
+      image_anchor: center
+      text_position: center
+      align: center
 
   - block: slider
     content:
