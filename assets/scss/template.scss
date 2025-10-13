@@ -1,3 +1,10 @@
+// 테마 기본 색상 커스터마이즈
+:root {
+  --primary: #ff63d3 !important;           // 메인 색상 (핑크)
+  --link: #ff63d3 !important;              // 링크 색상
+  --link-hover: #ff4dc4 !important;        // 링크 호버 색상
+}
+
 // Make page header alignment consistent with widget page header alignment
 .universal-wrapper h1 {
   text-align: center;
@@ -39,4 +46,27 @@
   text-align: center;
 }
 
+/* 링크 색상 변경 */
+a {
+  color: #ff63d3 !important;
+}
+
+a:hover {
+  color: #ff4dc4 !important;
+}
+
+/* 스크롤바 색상 변경 */
+::-webkit-scrollbar-thumb {
+  background-color: #ff63d3 !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ff4dc4 !important;
+}
+
+/* 선택 영역 색상 */
+::selection {
+  background-color: #ff63d3;
+  color: white;
+}
 
