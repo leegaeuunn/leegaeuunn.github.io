@@ -1,3 +1,10 @@
+// 테마 기본 색상 강제 오버라이드
+:root {
+  --primary: #ff63d3 !important;
+  --link: #ff63d3 !important;
+  --link-hover: #ff4dc4 !important;
+}
+
 // Make page header alignment consistent with widget page header alignment
 .universal-wrapper h1 {
   text-align: center;
