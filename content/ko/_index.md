@@ -155,8 +155,8 @@ sections:
       filters:
         folders:
           - travel_jejudo
-          - travel_fukuoka
-          - travel_danang
+          - travel_hanoi
+          - travel_philippines
     design:
       view: community/custom_card
       columns: '2'
