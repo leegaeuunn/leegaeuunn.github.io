@@ -6,11 +6,11 @@
 # Appearance
 
 appearance:
-  theme_day: mode
-  theme_night: mode
+  theme_day: pink
+  theme_night: dark
   font: native
   font_size: L
-  color: pink
+
 
 # appearance:
 #   theme_day: forest
