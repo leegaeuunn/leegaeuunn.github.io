@@ -5,18 +5,18 @@
 
 # Appearance
 
-appearance:
-  theme_day: mode
-  theme_night: mode
-  font: native
-  font_size: L
-  color: pink
-
 # appearance:
-#   theme_day: forest
-#   theme_night: dark
-#   font: custom
+#   theme_day: mode
+#   theme_night: mode
+#   font: native
 #   font_size: L
+#   color: pink
+
+appearance:
+  theme_day: forest
+  theme_night: dark
+  font: custom
+  font_size: L
 
 
 # SEO
