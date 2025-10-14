@@ -47,12 +47,12 @@ header:
   navbar:
     enable: true
     align: c
-    fixed_to_top: true
+    fixed_to_top: false
     show_logo: true
     show_language: true
     show_day_night: true
     show_search: true
-    highlight_active_link: false
+    highlight_active_link: true
     logo:
       text: ""  # Text for logo (if any)
       filename: "assets/media/logo.png"  # Ensure the file exists in `assets/media/`

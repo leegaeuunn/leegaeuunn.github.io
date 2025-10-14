@@ -3,8 +3,7 @@
 title:
 date: 2025-10-07
 type: landing
-cascade:
-  headroom: true
+
 
 sections:
   - block: features
