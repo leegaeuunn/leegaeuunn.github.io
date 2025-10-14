@@ -35,7 +35,7 @@ sections:
         align: center
         background:
           image:
-            filename: human_computer_interaction.jpg
+            filename: desk.png
             filters:
               brightness: 0.35
           position: center
