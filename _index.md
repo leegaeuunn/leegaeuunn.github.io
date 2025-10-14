@@ -5,12 +5,12 @@ date: 2025-10-07
 type: landing
 cascade:
   headroom: true
-  
+
 sections:
   - block: features
     content:
-      title: <br><span style="font-size:125%">안녕하세요.웹 개발자가 되고 싶은 이가은입니다.</span>
-      text: <br><span style="font-size:100%">프론트에서 시작해 풀스택까지의 여정을 지켜봐주세요.</span>
+      title: 안녕하세요.웹 개발자가 되고 싶은 이가은입니다.
+      text: 프론트에서 시작해 풀스택까지의 여정을 지켜봐주세요.
 
   - block: slider
     content:
