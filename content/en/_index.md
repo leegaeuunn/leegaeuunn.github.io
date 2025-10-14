@@ -1,5 +1,5 @@
 ---
-# 메인 페이지 - Modern Minimalism Design
+# Main Page - Modern Minimalism Design
 title:
 date: 2025-10-05
 type: landing
@@ -31,7 +31,7 @@ sections:
     content:
       slides:
       - title: About Me
-        content: 컴퓨터와 더 친해지고 싶은
+        content: Wanting to be closer to computers
         align: center
         background:
           image:
@@ -42,7 +42,7 @@ sections:
           color: '#000'
 
       - title: Interests
-        content: 다양한 분야에 관심이 많은
+        content: Interested in various fields
         align: center
         background:
           image:
@@ -53,7 +53,7 @@ sections:
           color: '#000'
 
       - title: Travel
-        content: 여행을 사랑하는
+        content: Loving to travel
         align: center
         background:
           image:
@@ -64,7 +64,7 @@ sections:
           color: '#000'
 
       - title: Developer
-        content: 끊임없이 성장하는 개발자
+        content: Continuously growing developer
         align: center
         background:
           image:
@@ -75,7 +75,7 @@ sections:
           color: '#000'
 
       - title: Contact
-        content: 저에 대해 더 알고 싶으신가요?
+        content: Want to know more about me?
         align: center
         background:
           image:
@@ -87,7 +87,7 @@ sections:
         link:
           icon: arrow-right
           icon_pack: fas
-          text: 자세히 보기
+          text: Learn More
           url: contact
 
     design:
@@ -100,32 +100,32 @@ sections:
     id: features
     content:
       title: Information
-      text: 이가은의 기본 정보
+      text: Basic Information of Gaeun Lee
       items:
-        - name: 이름
+        - name: Name
           icon: user
           icon_pack: fas
-          description: 이가은
-        - name: 생년월일
+          description: Gaeun Lee
+        - name: Date of Birth
           icon: calendar-days
           icon_pack: fas
           description: 2003.01.23
-        - name: 위치
+        - name: Location
           icon: location-dot
           icon_pack: fas
-          description: 전북대학교 공과대학 7호관
-        - name: 연락처
+          description: Jeonbuk National University, College of Engineering, Building 7
+        - name: Contact
           icon: phone
           icon_pack: fas
           description: 010-5906-5988
-        - name: 이메일
+        - name: Email
           icon: envelope
           icon_pack: fas
           description: igaeun8@gmail.com
-        - name: 학력
+        - name: Education
           icon: graduation-cap
           icon_pack: fas
-          description: 전북대학교 컴퓨터인공지능학부
+          description: Department of Computer Science and Artificial Intelligence, Jeonbuk National University
     design:
       columns: '3'
 
@@ -134,7 +134,7 @@ sections:
     content:
       id: section-1
       title: Projects
-      subtitle: 진행했던 프로젝트들을 확인해보세요
+      subtitle: Check out my previous projects
       text:
       count: 3
       offset: 0
@@ -149,7 +149,7 @@ sections:
   - block: collection
     content:
       title: Travel
-      subtitle: 여행 기록을 함께 나눠요
+      subtitle: Let's share travel memories together
       text:
       count: 3
       filters:
