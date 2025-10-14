@@ -3,10 +3,10 @@
 #     desired widget in your `content/home/` folder.
 #   The weight parameter defines the order that the links will appear in.
 
-main:
-  # - name: Home
-  #   url: /
-  #   weight: 1
+ main:
+#   - name: 홈
+#      url: /
+#      weight: 1
 
   # 자기소개
   - name: 소개
