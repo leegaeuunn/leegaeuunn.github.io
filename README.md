@@ -1,6 +1,8 @@
 # 이가은 포트폴리오 웹사이트
 
 전북대학교 컴퓨터인공지능학부 이가은의 개인 포트폴리오 웹사이트입니다.
+<img width="1440" height="900" alt="image" src="https://github.com/user-attachments/assets/e16e003a-57bf-47c4-ab3b-21199dd87819" />
+
 
 ## 🌟 소개
 
