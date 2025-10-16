@@ -19,7 +19,7 @@ sections:
         align: center
         background:
           image:
-            filename: web_develop.jpg
+            filename: desk.jpg
             filters:
               brightness: 0.4
           position: center
