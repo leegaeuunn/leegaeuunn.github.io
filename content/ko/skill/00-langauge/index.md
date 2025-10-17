@@ -15,6 +15,7 @@ type: page
 - CSS3
 - React
 - Next.js
+- FastAPI
 
 **스타일링**
 - Styled-components
@@ -29,13 +30,15 @@ type: page
 
 **데이터베이스**
 - MongoDB
-- PostgreSQL
+- NoSQL
 
 **도구**
 - Git
 - Docker
-- Webpack
+- Langchain
+- Packman
 - Figma
+- Streamlit
 
 **협업**
 - Slack
@@ -43,4 +46,3 @@ type: page
 
 **버전관리**
 - GitHub
-- GitLab
