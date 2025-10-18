@@ -137,7 +137,7 @@ sections:
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title mb-2">제주도</h5>
                 <p class="card-text text-muted mb-3 flex-grow-1">한국의 아름다운 섬, 제주도의 자연과 문화를 만나보세요.</p>
-                <a href="/travel_jejudo" class="btn btn-primary mt-auto" style="background-color: #e91e63; border: none; border-radius: 25px; padding: 8px 20px;">자세히 보기</a>
+                <a href="/travel_jejudo" class="btn btn-primary mt-auto" style="background-color: #ffc0cb; border: none; border-radius: 25px; padding: 8px 20px; color: #000;">자세히 보기</a>
               </div>
             </div>
           </div>
@@ -147,7 +147,7 @@ sections:
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title mb-2">하노이</h5>
                 <p class="card-text text-muted mb-3 flex-grow-1">베트남의 수도, 하노이의 역사와 현대가 공존하는 도시를 탐험해보세요.</p>
-                <a href="/travel_hanoi" class="btn btn-primary mt-auto" style="background-color: #e91e63; border: none; border-radius: 25px; padding: 8px 20px;">자세히 보기</a>
+                <a href="/travel_hanoi" class="btn btn-primary mt-auto" style="background-color: #ffc0cb; border: none; border-radius: 25px; padding: 8px 20px; color: #000;">자세히 보기</a>
               </div>
             </div>
           </div>
@@ -157,7 +157,7 @@ sections:
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title mb-2">필리핀</h5>
                 <p class="card-text text-muted mb-3 flex-grow-1">열대의 천국, 필리핀의 아름다운 해변과 문화를 경험해보세요.</p>
-                <a href="/travel_philippines" class="btn btn-primary mt-auto" style="background-color: #e91e63; border: none; border-radius: 25px; padding: 8px 20px;">자세히 보기</a>
+                <a href="/travel_philippines" class="btn btn-primary mt-auto" style="background-color: #ffc0cb; border: none; border-radius: 25px; padding: 8px 20px; color: #000;">자세히 보기</a>
               </div>
             </div>
           </div>
@@ -168,7 +168,8 @@ sections:
           transform: translateY(-5px);
         }
         .btn-primary:hover {
-          background-color: #c2185b !important;
+          background-color: #ffb3c6 !important;
+          color: #000 !important;
           transform: translateY(-1px);
         }
         </style>
