@@ -50,7 +50,7 @@ main:
 
   # Travel
   - name: Travel
-    url: travel_jejudo
+    url: travel
     weight: 400
 
   - parent: Travel
