@@ -20,58 +20,39 @@
 
 {{ $thumbnail := partial "blox-core/functions/get_featured_image.html" $entry }}
 
-{{/* 날짜 포맷팅 */}}
-{{ $date := $entry.Date.Format "1월 2, 2006" }}
-{{ if eq (site.LanguageCode) "en" }}
-  {{ $date = $entry.Date.Format "Jan 2, 2006" }}
-{{ end }}
-
-{{/* 읽는 시간 계산 (대략 200자당 1분) */}}
-{{ $wordCount := len (split $entry.Content " ") }}
-{{ $readingTime := div $wordCount 200 }}
-{{ if lt $readingTime 1 }}
-  {{ $readingTime = 1 }}
-{{ end }}
-
-<div class="card h-100" style="border: none; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-radius: 12px; overflow: hidden;">
+<div class="card-container">
   {{ with $thumbnail }}
-  {{ $image_resized := .Resize "400x300" }}
+  {{ $image_resized := .Resize "550x" }}
   {{ if ne $image_resized.MediaType.SubType "gif" }}{{ $image_resized = $image_resized.Process "webp" }}{{ end }}
-  <a href="{{ $url }}" {{ $open_in_new_tab | safeHTMLAttr }} class="text-decoration-none">
-    <img src="{{ $image_resized.RelPermalink }}" 
-         alt="{{ $entry.Title }}" 
-         class="card-img-top" 
-         style="height: 200px; object-fit: cover; width: 100%;" 
-         loading="lazy">
+  <a href="{{ $url }}" {{ $open_in_new_tab | safeHTMLAttr }} class="image-link overlay-hover">
+    <img src="{{ $image_resized.RelPermalink }}" height="{{ $image_resized.Height }}" width="{{ $image_resized.Width }}"
+         alt="{{ $entry.Title }}" class="img-responsive" loading="lazy" style="margin-top: 15px;">
   </a>
   {{ end }}
-  
-  <div class="card-body d-flex flex-column">
-    <h5 class="card-title mb-2">
-      <a href="{{ $url }}" {{ $open_in_new_tab | safeHTMLAttr }} class="text-decoration-none text-dark">
-        {{ $entry.Title | markdownify | emojify }}
-      </a>
-    </h5>
-    
-    {{ with $excerpt }}
-    <p class="card-text text-muted mb-3 flex-grow-1">{{ . }}</p>
-    {{ end }}
-    
-    <div class="d-flex justify-content-between align-items-center mt-auto">
-      <small class="text-muted">
-        <span>{{ $date }}</span>
-        <span class="mx-1">•</span>
-        <span>
-          {{ if eq (site.LanguageCode) "en" }}
-            {{ $readingTime }} min read
-          {{ else }}
-            {{ $readingTime }}분 읽기
-          {{ end }}
-        </span>
-      </small>
-      <a href="{{ $url }}" {{ $open_in_new_tab | safeHTMLAttr }} class="text-decoration-none">
-        <i class="fas fa-arrow-right text-primary"></i>
-      </a>
+  <div class="content-container">
+    <div class="heading subheading article-title mb-1 mt-3">
+        <h4><a href="{{ $url }}" {{ $open_in_new_tab | safeHTMLAttr }}>{{ $entry.Title | markdownify | emojify }}</a></h4>
     </div>
+    
+
+    {{ if $entry.Params.authors }}
+    <div class="metadata">
+        <div>
+            {{ partial "page_metadata_authors" $entry }}
+        </div>
+    </div>
+    {{ end }}
+
+    {{ with $excerpt }}
+    <div class="summary-container">
+      <p>{{ . }}</p>
+    </div>
+    {{ end }}
+
+    {{ if $attachments_exist }}
+    <div class="links-container">
+      {{ partial "page_links" (dict "page" $entry "is_list" 1) }}
+    </div>
+    {{ end }}
   </div>
 </div>
