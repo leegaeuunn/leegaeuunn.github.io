@@ -26,8 +26,8 @@ appearance:
     site_type: Person
     #site_type: Organization
     local_business_type: ''
-    org_name: '이가은'
-    description: '전북대학교 컴퓨터인공지능학부 이가은'
+    org_name: '전북대학교 컴퓨터인공지능학부'
+    description: '전북대학교 컴퓨터인공지능학부 이가은의 포트폴리오 입니다.'
     twitter: ''
     open_graph:
       title: '전북대 이가은'
