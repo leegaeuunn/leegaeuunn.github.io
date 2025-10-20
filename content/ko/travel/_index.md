@@ -1,6 +1,6 @@
 ---
-title: Travel
-subtitle: 여행 기록을 함께 나눠요
+title: 여행
+subtitle: 저의 여행 기록들을 소개합니다! 
 view: 1
 
 # Optional header image (relative to `assets/media/` folder).
@@ -9,10 +9,5 @@ banner:
   image: 'fukuoka.jpg'
 ---
 
-# 여행
-
-세계 곳곳을 여행하며 만난 아름다운 순간들을 기록합니다.
-
-## 여행지
 
 {{< list_children >}}
