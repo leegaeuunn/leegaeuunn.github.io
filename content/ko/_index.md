@@ -135,7 +135,9 @@ sections:
       order: desc
       filters:
         folders:
-          - travel
+          - travel_hanoi
+          - travel_jejudo
+          - travel_philippines
     design:
       view: community/travel_card
       columns: '3'

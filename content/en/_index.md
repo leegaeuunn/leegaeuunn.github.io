@@ -150,15 +150,19 @@ sections:
   - block: collection
     content:
       title: Travel
-      subtitle: Let's share travel memories together 
+      subtitle: Let's share travel memories together
       text:
-      count: 3
+      count: 0
+      offset: 0
+      order: desc
       filters:
         folders:
-          - travel
+          - travel_hanoi
+          - travel_jejudo
+          - travel_philippines
     design:
-      view: community/custom_card
-      columns: '2'
+      view: community/travel_card
+      columns: '3'
 
 
  
