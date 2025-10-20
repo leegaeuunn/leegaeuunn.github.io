@@ -4,7 +4,7 @@
 {{ $css := resources.Get "css/travel-card.css" }}
 {{ if $css }}
   {{ $css = $css | minify | fingerprint }}
-  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 {{ end }}
 
 {{ $url := $entry.RelPermalink }}
