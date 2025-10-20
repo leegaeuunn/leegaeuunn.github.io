@@ -1,5 +1,12 @@
 {{ $entry := .item }}
 
+{{/* CSS 파일 로드 */}}
+{{ $css := resources.Get "css/travel-card.css" }}
+{{ if $css }}
+  {{ $css = $css | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+{{ end }}
+
 {{ $url := $entry.RelPermalink }}
 {{ $open_in_new_tab := "" }}
 {{ if $entry.Params.external_link }}
