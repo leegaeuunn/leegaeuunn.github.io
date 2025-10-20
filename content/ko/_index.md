@@ -125,54 +125,20 @@ sections:
       view: community/custom_card
       columns: '2'
 
-  - block: markdown
+  - block: collection
     content:
       title: Travel
       subtitle: 여행 기록을 함께 나눠요
-      text: |
-        <div class="row">
-          <div class="col-md-4 mb-4">
-            <div class="card h-100" style="border: none; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-radius: 12px; overflow: hidden; transition: transform 0.3s ease;">
-              <img src="/media/jejudo.jpg" class="card-img-top" alt="제주도" style="height: 200px; object-fit: cover;">
-              <div class="card-body d-flex flex-column">
-                <h5 class="card-title mb-2">제주도</h5>
-                <p class="card-text text-muted mb-3 flex-grow-1">한국의 아름다운 섬, 제주도의 자연과 문화를 만나보세요.</p>
-                <a href="/travel_jejudo" class="btn btn-primary mt-auto" style="background-color: #ffc0cb; border: none; border-radius: 25px; padding: 8px 20px; color: #000;">자세히 보기</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card h-100" style="border: none; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-radius: 12px; overflow: hidden; transition: transform 0.3s ease;">
-              <img src="/media/hanoi.jpg" class="card-img-top" alt="하노이" style="height: 200px; object-fit: cover;">
-              <div class="card-body d-flex flex-column">
-                <h5 class="card-title mb-2">하노이</h5>
-                <p class="card-text text-muted mb-3 flex-grow-1">베트남의 수도, 하노이의 역사와 현대가 공존하는 도시를 탐험해보세요.</p>
-                <a href="/travel_hanoi" class="btn btn-primary mt-auto" style="background-color: #ffc0cb; border: none; border-radius: 25px; padding: 8px 20px; color: #000;">자세히 보기</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card h-100" style="border: none; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-radius: 12px; overflow: hidden; transition: transform 0.3s ease;">
-              <img src="/media/philippines.jpg" class="card-img-top" alt="필리핀" style="height: 200px; object-fit: cover;">
-              <div class="card-body d-flex flex-column">
-                <h5 class="card-title mb-2">필리핀</h5>
-                <p class="card-text text-muted mb-3 flex-grow-1">열대의 천국, 필리핀의 아름다운 해변과 문화를 경험해보세요.</p>
-                <a href="/travel_philippines" class="btn btn-primary mt-auto" style="background-color: #ffc0cb; border: none; border-radius: 25px; padding: 8px 20px; color: #000;">자세히 보기</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <style>
-        .card:hover {
-          transform: translateY(-5px);
-        }
-        .btn-primary:hover {
-          background-color: #ffb3c6 !important;
-          color: #000 !important;
-          transform: translateY(-1px);
-        }
-        </style>
+      text:
+      count: 0
+      offset: 0
+      order: desc
+      filters:
+        folders:
+          - travel
+    design:
+      view: community/travel_card
+      columns: '3'
 
 
  
