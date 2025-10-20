@@ -1,0 +1,18 @@
+{{ $travels := .travels | default (slice) }}
+
+<div class="travel-cards-container">
+  <div class="row">
+    {{ range $travels }}
+    <div class="col-md-4 mb-4">
+      <div class="travel-card h-100">
+        <img src="{{ .image }}" class="travel-card-img" alt="{{ .title }}">
+        <div class="travel-card-body d-flex flex-column">
+          <h5 class="travel-card-title mb-2">{{ .title }}</h5>
+          <p class="travel-card-text text-muted mb-3 flex-grow-1">{{ .description }}</p>
+          <a href="{{ .link }}" class="travel-card-btn mt-auto">{{ .button_text | default "자세히 보기" }}</a>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>
