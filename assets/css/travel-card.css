@@ -66,26 +66,3 @@
 .travel-cards-container {
   margin: 2rem 0;
 }
-
-/* Ensure proper grid layout */
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-}
-
-.col-md-4 {
-  flex: 0 0 33.333333%;
-  max-width: 33.333333%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-bottom: 2rem;
-}
-
-@media (max-width: 768px) {
-  .col-md-4 {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-}
