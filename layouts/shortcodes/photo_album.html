@@ -3,7 +3,7 @@
 {{ $imageCount := .Get "count" | default 20 }}
 
 <style>
-/* 페이지별 특수 설정 */
+/* 페이지별 특수 설정 - 여행 사진첩 페이지에만 적용 */
 .article-container {
   max-width: 100%; 
   margin: 4rem;
@@ -28,11 +28,11 @@
 
 /* 사진첩 CSS - 통합 버전 */
 .photo-album {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* 사진첩 제목 스타일 */
 .photo-album h1 {
   text-align: center;
   padding: 20px 0;
@@ -40,26 +40,23 @@
   margin: 0;
 }
 
+/* 사진첩 이미지 스타일 */
 .photo-album .album {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 4px;
+  gap: 8px;
   padding: 10px;
   max-width: 1250px;
   margin: 0 auto;
-  box-sizing: border-box;
 }
 
+/* 각 사진 스타일 */
 .photo-album .album img {
   width: 200px;
   height: 250px;
   border-radius: 8px;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: block;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 .photo-album .album img:hover {
@@ -67,6 +64,7 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* 모달(팝업) 영역 */
 .photo-album .modal {
   display: none;
   position: fixed;
@@ -80,10 +78,12 @@
   z-index: 1000;
 }
 
+/* 클릭 시 팝업 표시 */
 .photo-album .modal.show {
   display: flex;
 }
 
+/* 팝업 이미지 스타일 */
 .photo-album .modal img {
   max-width: 90%;
   max-height: 80%;
@@ -97,24 +97,20 @@
 }
 
 /* 반응형 */
-@media (max-width: 480px) {
-  .photo-album .album { 
+@media (max-width: 600px) {
+  .album {
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 2px;
   }
 }
-@media (min-width: 481px) and (max-width: 768px) {
-  .photo-album .album { 
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 3px;
+
+@media (max-width: 900px) {
+  .album img {
+      width: 100%;
+      height: auto;
   }
 }
-@media (min-width: 1201px) {
-  .photo-album .album { 
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 6px;
-  }
-}
+
+/* html */
 </style>
 
 <div class="travel-container">
