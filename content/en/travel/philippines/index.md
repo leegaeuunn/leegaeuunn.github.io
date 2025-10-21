@@ -23,9 +23,6 @@ I ♥  CEBU
 - SM Mall
 - CPILS
 
-I was happy to be able to eat a lot of mangoes.
-I'm not sure about my English improvement.
-
 ## 📸 Travel Photos
 
 {{< photo_album album="philippines" count="21" >}} 

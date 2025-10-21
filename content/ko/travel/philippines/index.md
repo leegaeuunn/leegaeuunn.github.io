@@ -23,9 +23,6 @@ I ♥  CEBU
 - sm몰
 - cpils
 
-망고를 많이 먹을 수 있어 행복했습니다. 
-영어 실력 향상은 잘 모르겠습니다.
-
 ## 📸 여행 사진
 
 {{< photo_album album="philippines" count="21" >}} 
