@@ -1,0 +1,91 @@
+/* 전체 페이지 기본 설정 */
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+}
+
+/* 사진첩 제목 스타일 */
+.photo-album h1 {
+  text-align: center;
+  padding: 20px 0;
+  color: #333;
+}
+
+/* 📸 사진 앨범 영역 */
+.photo-album .album {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* 자동 열 조정 */
+  gap: 8px; /* 사진 간 간격 */
+  padding: 10px;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+/* 각 사진 스타일 */
+.photo-album .album img {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-album .album img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 🖼️ 모달(팝업) 영역 */
+.photo-album .modal {
+  display: none; /* 기본 숨김 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.photo-album .modal.show {
+  display: flex; /* 클릭 시 팝업 표시 */
+}
+
+/* 팝업 이미지 */
+.photo-album .modal img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* 팝업 등장 애니메이션 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* 📱 모바일 대응 */
+@media (max-width: 600px) {
+  .photo-album .album {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .photo-album .album img {
+      width: 100%;
+      height: auto;
+  }
+}

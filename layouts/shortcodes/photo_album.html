@@ -1,0 +1,52 @@
+{{ $page := .Page }}
+{{ $albumName := .Get "album" | default "hanoi" }}
+{{ $imageCount := .Get "count" | default 20 }}
+
+{{/* CSS 파일 로드 */}}
+{{ $css := resources.Get "css/photo-album.css" }}
+{{ if $css }}
+  {{ $css = $css | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+{{ end }}
+
+<div class="photo-album">
+  <h1>📸 {{ $albumName | title }} 여행 사진첩</h1>
+  
+  <div class="album" id="album-{{ $albumName }}">
+    {{ range $i := (seq 1 $imageCount) }}
+      <img src="/travel/{{ $albumName }}/img{{ $i }}.jpg" 
+           alt="{{ $albumName }} 여행 사진 {{ $i }}" 
+           onerror="this.style.display='none'"
+           onclick="openModal(this.src, this.alt)" />
+    {{ end }}
+  </div>
+
+  <!-- 팝업(모달) 영역 -->
+  <div class="modal" id="modal-{{ $albumName }}" onclick="closeModal()">
+    <img id="modalImage-{{ $albumName }}" alt="확대된 이미지" />
+  </div>
+</div>
+
+<script>
+function openModal(src, alt) {
+  const modal = document.getElementById('modal-{{ $albumName }}');
+  const modalImage = document.getElementById('modalImage-{{ $albumName }}');
+  
+  modalImage.src = src;
+  modalImage.alt = alt;
+  modal.classList.add('show');
+}
+
+function closeModal() {
+  const modal = document.getElementById('modal-{{ $albumName }}');
+  modal.classList.remove('show');
+}
+
+// ESC 키로 모달 닫기
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape') {
+    const modal = document.getElementById('modal-{{ $albumName }}');
+    modal.classList.remove('show');
+  }
+});
+</script>
