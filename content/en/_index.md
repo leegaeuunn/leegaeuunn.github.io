@@ -157,9 +157,9 @@ sections:
       order: desc
       filters:
         folders:
-          - travel_hanoi
-          - travel_jejudo
-          - travel_philippines
+          - trips/vietnam
+          - trips/jeju
+          - trips/philippines
     design:
       view: community/travel_card
       columns: '3'
