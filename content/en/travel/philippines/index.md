@@ -28,4 +28,4 @@ I'm not sure about my English improvement.
 
 ## 📸 Travel Photos
 
-{{< photo_album album="philippines" count="20" >}} 
+{{< photo_album album="philippines" count="21" >}} 
