@@ -16,7 +16,7 @@ body {
 /* 📸 사진 앨범 영역 */
 .photo-album .album {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* 자동 열 조정 */
+  grid-template-columns: repeat(5, 1fr); /* 5열 고정 */
   gap: 8px; /* 사진 간 간격 */
   padding: 10px;
   max-width: 1250px;
@@ -76,14 +76,17 @@ body {
   }
 }
 
-/* 📱 모바일 대응 */
+/* 모바일 대응 */
 @media (max-width: 600px) {
   .photo-album .album {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: repeat(2, 1fr); /* 모바일에서는 2열 */
   }
 }
 
 @media (max-width: 900px) {
+  .photo-album .album {
+    grid-template-columns: repeat(3, 1fr); /* 태블릿에서는 3열 */
+  }
   .photo-album .album img {
       width: 100%;
       height: auto;
