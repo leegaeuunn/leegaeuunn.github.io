@@ -9,7 +9,7 @@ date: 2025-01-12
 
 ## 📸 게임 스크린샷
 
-{{< photo_album album="mario" count="7" >}} 
+{{< screen_album album="mario" count="7" >}} 
 
 
 

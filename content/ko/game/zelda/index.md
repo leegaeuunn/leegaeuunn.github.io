@@ -34,4 +34,4 @@ date: 2025-10-21
 
 ## 📸 게임 스크린샷
 
-{{< photo_album album="zelda" count="14" >}} 
+{{< screen_album album="zelda" count="14" >}} 
