@@ -26,10 +26,13 @@
   }
 }
 
-/* 사진첩 CSS - 통합 버전 */
+/* 사진첩 CSS - Wowchemy 전역 CSS 충돌 방지 */
 .photo-album {
-  margin: 0;
-  padding: 0;
+  all: unset !important;                /* Wowchemy의 상속 스타일 완전히 초기화 */
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
 }
 
 /* 사진첩 제목 스타일 */
@@ -40,23 +43,33 @@
   margin: 0;
 }
 
-/* 사진첩 이미지 스타일 */
+/* 사진첩 이미지 스타일 - Wowchemy 전역 CSS 충돌 방지 */
 .photo-album .album {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 8px;
-  padding: 10px;
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)) !important;
+  column-gap: 4px !important;  /* 가로 간격 명시 */
+  row-gap: 4px !important;     /* 세로 간격 명시 */
+  justify-items: center;       /* 중앙 정렬 */
+  align-items: center;
+  padding: 10px !important;
   max-width: 1250px;
-  margin: 0 auto;
+  margin: 0 auto !important;
+  background-color: transparent;
+  box-sizing: border-box !important;
 }
 
-/* 각 사진 스타일 */
+/* 각 사진 스타일 - Wowchemy 전역 CSS 충돌 방지 */
 .photo-album .album img {
-  width: 200px;
-  height: 250px;
+  width: 200px !important;
+  height: 250px !important;
   border-radius: 8px;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+  object-fit: cover !important;
 }
 
 .photo-album .album img:hover {
@@ -96,17 +109,28 @@
   to { opacity: 1; transform: scale(1); }
 }
 
-/* 반응형 */
+/* 반응형 - Wowchemy 전역 CSS 충돌 방지 */
 @media (max-width: 600px) {
-  .album {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  .photo-album .album {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)) !important;
+    column-gap: 2px !important;
+    row-gap: 2px !important;
   }
 }
 
-@media (max-width: 900px) {
-  .album img {
-      width: 100%;
-      height: auto;
+@media (min-width: 601px) and (max-width: 900px) {
+  .photo-album .album {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)) !important;
+    column-gap: 3px !important;
+    row-gap: 3px !important;
+  }
+}
+
+@media (min-width: 1201px) {
+  .photo-album .album {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)) !important;
+    column-gap: 6px !important;
+    row-gap: 6px !important;
   }
 }
 
