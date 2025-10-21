@@ -3,7 +3,7 @@
 {{ $imageCount := .Get "count" | default 21 }}
 
 <style>
-/* 페이지별 특수 설정 - 여행 사진첩 페이지에만 적용 */
+/* 페이지별 특수 설정 - 사진첩 페이지에만 적용 */
 .article-container {
   max-width: 100%; 
   margin: 4rem;
@@ -165,8 +165,12 @@
     <div class="album" id="album-{{ $albumName }}">
     {{ range $i := (seq 1 $imageCount) }}
       {{ $extension := "jpeg" }}
-      <img src="/travel/{{ $albumName }}/img{{ $i }}.{{ $extension }}" 
-           alt="{{ $albumName }} 여행 사진 {{ $i }}" 
+      {{ $path := "/travel/" }}
+      {{ if or (eq $albumName "animalcrossing") (eq $albumName "mario") (eq $albumName "zelda") }}
+        {{ $path = "/game/" }}
+      {{ end }}
+      <img src="{{ $path }}{{ $albumName }}/img{{ $i }}.{{ $extension }}" 
+           alt="{{ $albumName }} 사진 {{ $i }}" 
            loading="lazy"
            decoding="async"
            fetchpriority="low"
