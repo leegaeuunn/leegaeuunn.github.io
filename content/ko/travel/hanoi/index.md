@@ -2,8 +2,8 @@
 title: 2025 베트남 하노이
 date: 2025-02-17
 ---
-
 {{< photo_album album="hanoi" count="20" >}}
+
 
 베트남의 수도인 하노이에 가보았습니다. 
 
