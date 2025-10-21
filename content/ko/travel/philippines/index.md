@@ -28,4 +28,4 @@ I ♥  CEBU
 
 ## 📸 여행 사진
 
-{{< photo_album album="philippines" count="20" >}} 
+{{< photo_album album="philippines" count="21" >}} 

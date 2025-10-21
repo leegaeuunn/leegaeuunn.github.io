@@ -21,4 +21,4 @@ The northern region of Vietnam in winter is (surprisingly) very cold, so I recom
 
 ## 📸 Travel Photos
 
-{{< photo_album album="hanoi" count="20" >}}
+{{< photo_album album="hanoi" count="21" >}}
