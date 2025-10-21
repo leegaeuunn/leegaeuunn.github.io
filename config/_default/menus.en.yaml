@@ -48,6 +48,24 @@ main:
     url: project/04-파이썬게임
     weight: 300
 
+  # 게임
+  - name: Game
+    url: game
+    weight: 400 
+
+  - parent: Game
+    name: Animal Crossing
+    url: game/animalcrossing
+    weight: 400
+  - parent: Game
+    name: Mario Odyssey
+    url: game/mario
+    weight: 400
+  - parent: Game
+    name: The Legend of Zelda
+    url: game/zelda
+    weight: 400
+
   # travel
   - name: travel
     url: travel

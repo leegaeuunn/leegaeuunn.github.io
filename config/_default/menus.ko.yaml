@@ -49,20 +49,20 @@
     url: project/04-파이썬게임
     weight: 300
 
-  # game
-  - name: game
+  # 게임
+  - name: 게임
     url: game
-    weight: 400
+    weight: 400 
 
-  - parent: game
+  - parent: 게임
     name: 동물의 숲
     url: game/animalcrossing
     weight: 400
-  - parent: game
+  - parent: 게임
     name: 마리오 오디세이
     url: game/mario
     weight: 400
-  - parent: game
+  - parent: 게임
     name: 젤다의 전설
     url: game/zelda
     weight: 400
