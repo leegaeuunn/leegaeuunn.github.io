@@ -164,10 +164,7 @@
      -->
     <div class="album" id="album-{{ $albumName }}">
     {{ range $i := (seq 1 $imageCount) }}
-      {{ $extension := "png" }}
-      {{ if or (eq $albumName "jeju") (eq $albumName "philippines") }}
-        {{ $extension = "jpeg" }}
-      {{ end }}
+      {{ $extension := "jpeg" }}
       <img src="/travel/{{ $albumName }}/img{{ $i }}.{{ $extension }}" 
            alt="{{ $albumName }} 여행 사진 {{ $i }}" 
            loading="lazy"
