@@ -10,11 +10,11 @@
 {{ end }}
 
 <div class="photo-album">
-  <h1>📸 {{ $albumName | title }} 여행 사진첩</h1>
-  
+  <!-- <h1>📸 {{ $albumName | title }} 여행 사진첩</h1>
+   -->
   <div class="album" id="album-{{ $albumName }}">
     {{ range $i := (seq 1 $imageCount) }}
-      <img src="/travel/{{ $albumName }}/img{{ $i }}.jpg" 
+      <img src="/travel/{{ $albumName }}/img{{ $i }}.png" 
            alt="{{ $albumName }} 여행 사진 {{ $i }}" 
            onerror="this.style.display='none'"
            onclick="openModal(this.src, this.alt)" />
