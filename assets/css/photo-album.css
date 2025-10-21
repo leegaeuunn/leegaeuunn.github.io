@@ -1,34 +1,23 @@
 
-/* 전체 페이지 기본 설정 */
-body {
-  font-family: 'Noto Sans KR', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #fafafa;
-}
-
-/* 사진첩 제목 스타일 */
+/* 사진첩 기본 스타일 */
 .photo-album h1 {
   text-align: center;
   padding: 20px 0;
   color: #333;
 }
 
-/* 📸 사진 앨범 영역 */
 .photo-album .album {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 5열 고정 */
-  gap: 8px; /* 사진 간 간격 */
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 8px;
   padding: 10px;
-  max-width: 1250px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
-/* 각 사진 스타일 */
 .photo-album .album img {
   width: 200px;
   height: 250px;
-  object-fit: cover;
   border-radius: 8px;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -39,9 +28,9 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* 🖼️ 모달(팝업) 영역 */
+/* 모달 스타일 */
 .photo-album .modal {
-  display: none; /* 기본 숨김 */
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -54,10 +43,9 @@ body {
 }
 
 .photo-album .modal.show {
-  display: flex; /* 클릭 시 팝업 표시 */
+  display: flex;
 }
 
-/* 팝업 이미지 */
 .photo-album .modal img {
   max-width: 90%;
   max-height: 80%;
@@ -65,54 +53,30 @@ body {
   animation: fadeIn 0.3s ease-in-out;
 }
 
-/* 팝업 등장 애니메이션 */
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
 }
 
-/* 모바일 대응 */
-@media (max-width: 600px) {
-  .photo-album .album {
-    grid-template-columns: repeat(2, 1fr); /* 모바일에서는 2열 */
-  }
+/* 반응형 */
+@media (max-width: 480px) {
+  .photo-album .album { grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .photo-album .album { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+}
+@media (min-width: 1201px) {
+  .photo-album .album { grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); }
 }
 
-@media (max-width: 900px) {
-  .photo-album .album {
-    grid-template-columns: repeat(3, 1fr); /* 태블릿에서는 3열 */
-  }
-  .photo-album .album img {
-      width: 100%;
-      height: auto;
-  }
-}
-
-/* 페이지별 특수 설정 */
+/* 페이지 레이아웃 */
 .article-container {
-  max-width: 100%; 
+  max-width: 100%;
   margin: 4rem;
   padding-bottom: 2rem;
 }
 
-.pt-3 {
-  display: none !important;
-}
+.pt-3 { display: none !important; }
 
-@media (max-width: 768px) {
-  .article-container {
-    margin: 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .article-container {
-    margin: 0.5rem;
-  }
-}
+@media (max-width: 768px) { .article-container { margin: 1rem; } }
+@media (max-width: 480px) { .article-container { margin: 0.5rem; } }
