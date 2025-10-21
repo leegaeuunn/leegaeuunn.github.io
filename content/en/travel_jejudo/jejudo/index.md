@@ -22,4 +22,4 @@ I experienced living in Jeju Island for one month.
 - Ara 1-dong
 
 It was a journey where I learned a lot.
-I recommend visiting Jeju Island for a short but intense trip. 
+I recommend visiting Jeju Island for a short but intense travel. 

@@ -48,23 +48,23 @@ main:
     url: project/04-파이썬게임
     weight: 300
 
-  # Travel
-  - name: Travel
+  # travel
+  - name: travel
     url: travel
     weight: 400
 
-  - parent: Travel
-    name: Jejudo
-    url: travel_jejudo
-    weight: 400
-  - parent: Travel
-    name: Hanoi
-    url: travel_hanoi
-    weight: 400
-  - parent: Travel
-    name: Philippines
-    url: travel_philippines
-    weight: 400
+  # - parent: travel
+  #   name: Jejudo
+  #   url: travel_jejudo
+  #   weight: 400
+  # - parent: travel
+  #   name: Hanoi
+  #   url: travel_hanoi
+  #   weight: 400
+  # - parent: travel
+  #   name: Philippines
+  #   url: travel_philippines
+  #   weight: 400
 
   # Skill
   - name: Skill

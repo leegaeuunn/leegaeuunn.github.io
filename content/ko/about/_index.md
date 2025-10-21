@@ -38,7 +38,7 @@ sections:
           position: center
           color: '#000'
 
-      - title: Travel
+      - title: travel
         content: 여행을 좋아하는
         align: center
         background:

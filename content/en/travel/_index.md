@@ -1,5 +1,5 @@
 ---
-title: Travel
+title: travel
 subtitle: Share travel memories together
 view: 1
 
@@ -9,7 +9,7 @@ banner:
   image: 'fukuoka.jpg'
 ---
 
-# Travel
+# travel
 
 Recording beautiful moments encountered while traveling around the world.
 

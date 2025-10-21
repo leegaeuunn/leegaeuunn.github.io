@@ -1,0 +1,68 @@
+/* travel Card Styles */
+.travel-card {
+  border: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+  
+  .travel-card:hover {
+    transform: translateY(-5px);
+  }
+  
+.travel-card-img {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.travel-card-body {
+  padding: 1.25rem;
+}
+  
+  .travel-card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .travel-card-title a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .travel-card-title a:hover {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+.travel-card-text {
+  color: #6c757d;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+  
+  .travel-card-btn {
+    background-color: #ffc0cb;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 20px;
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .travel-card-btn:hover {
+    background-color: #ffb3c6 !important;
+    color: #000 !important;
+    transform: translateY(-1px);
+    text-decoration: none;
+  }
+  
+.travel-cards-container {
+  margin: 2rem 0;
+}
