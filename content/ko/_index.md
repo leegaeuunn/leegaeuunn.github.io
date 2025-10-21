@@ -125,22 +125,22 @@ sections:
       view: community/custom_card
       columns: '2'
 
-  - block: collection
-    content:
-      title: Travel
-      subtitle: 여행 기록을 함께 나눠요
-      text:
-      count: 0
-      offset: 0
-      order: desc
-      filters:
-        folders:
-          - travel_hanoi
-          - travel_jejudo
-          - travel_philippines
-    design:
-      view: community/travel_card
-      columns: '3'
+  # - block: collection
+  #   content:
+  #     title: Travel
+  #     subtitle: 여행 기록을 함께 나눠요
+  #     text:
+  #     count: 0
+  #     offset: 0
+  #     order: desc
+  #     filters:
+  #       folders:
+  #         - travel/hanoi
+  #         - travel/jeju
+  #         - travel/philippines
+  #   design:
+  #     view: community/custom_card
+  #     columns: '3'
 
 
  

@@ -147,22 +147,22 @@ sections:
       view: community/custom_card
       columns: '2'
 
-  - block: collection
-    content:
-      title: Travel
-      subtitle: Let's share travel memories together
-      text:
-      count: 0
-      offset: 0
-      order: desc
-      filters:
-        folders:
-          - travel_hanoi
-          - travel_jejudo
-          - travel_philippines
-    design:
-      view: community/travel_card
-      columns: '3'
+  # - block: collection
+  #   content:
+  #     title: Travel
+  #     subtitle: Let's share travel memories together
+  #     text:
+  #     count: 0
+  #     offset: 0
+  #     order: desc
+  #     filters:
+  #       folders:
+  #         - travel/hanoi
+  #         - travel/jeju
+  #         - trave/_philippines
+  #   design:
+  #     view: community/travel_card
+  #     columns: '3'
 
 
  
