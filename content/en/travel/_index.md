@@ -1,7 +1,7 @@
 ---
-title: travel
+title: Travel
 subtitle: Share travel memories together
-view: 1
+view: 0
 
 # Optional header image (relative to `assets/media/` folder).
 banner:
