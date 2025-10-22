@@ -5,6 +5,6 @@ view: 3
 
 # Optional header image (relative to `assets/media/` folder).
 banner:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/)'
+  caption: 'Image credit: [**Pinterest**](https://pinterest.com/)'
   image: 'leaf.png'
 ---
