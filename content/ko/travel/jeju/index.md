@@ -28,4 +28,4 @@ date: 2024-06-22
 
 ## 📸 여행 사진
 
-{{< photo_album album="jeju" count="28" >}} 
+{{< screen_album album="jeju" count="28" >}} 

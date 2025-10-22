@@ -28,4 +28,4 @@ I recommend visiting Jeju Island for a short but meaningful trip.
 
 ## 📸 Travel Photos
 
-{{< photo_album album="jeju" count="28" >}} 
+{{< screen_album album="jeju" count="28" >}} 
