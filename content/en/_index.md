@@ -1,11 +1,24 @@
 ---
 # Main Page - Modern Minimalism Design
-title:
+title: "Jeonbuk National University Lee Gaeun | Portfolio"
 date: 2025-10-05
 type: landing
 
   
-sections:
+  sections:
+  - block: hero
+    content:
+      title: "Jeonbuk National University Lee Gaeun | Portfolio"
+      subtitle: "Computer Science and AI Student's Portfolio Website"
+      text_align: center
+      background:
+        image:
+          filename: desk.png
+          filters:
+            brightness: 0.35
+        position: center
+        color: '#000'
+
   # - block: features
   #   content:
   #     title: 안녕하세요. 이가은 입니다. 
