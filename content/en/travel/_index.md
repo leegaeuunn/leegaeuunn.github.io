@@ -1,10 +1,10 @@
 ---
-title: 여행
-subtitle: 저의 여행 기록들을 소개합니다! 
+title: Travel
+subtitle: Introducing my travel records! 
 view: 2
 
 # Optional header image (relative to `assets/media/` folder).
 banner:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com/)'
-  image: 'fukuoka.jpg'
+  image: 'flight.jpg'
 ---

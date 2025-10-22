@@ -63,28 +63,28 @@ main:
     url: game
     weight: 400
 
-  # - parent: Interests
+  # - parent: Game
   #   name: Animal Crossing
   #   url: game/animalcrossing
   #   weight: 400
-  # - parent: Interests
+  # - parent: Game
   #   name: Mario Odyssey
   #   url: game/mario
   #   weight: 400
-  # - parent: Interests
+  # - parent: Game
   #   name: The Legend of Zelda
   #   url: game/zelda
   #   weight: 400
 
-  # - parent: Interests
+  # - parent: Travel
   #   name: Jejudo
   #   url: travel_jejudo
   #   weight: 400
-  # - parent: Interests
+  # - parent: Travel
   #   name: Hanoi
   #   url: travel_hanoi
   #   weight: 400
-  # - parent: Interests
+  # - parent: Travel
   #   name: Philippines
   #   url: travel_philippines
   #   weight: 400
