@@ -26,8 +26,8 @@
   }
 }
 
-/* 사진첩 CSS - Wowchemy 전역 CSS 충돌 방지 */
-.photo-album {
+/* 스크린샷 CSS - Wowchemy 전역 CSS 충돌 방지 */
+.screen-shot {
   all: unset !important;                /* Wowchemy의 상속 스타일 완전히 초기화 */
   display: block !important;
   margin: 0 !important;
@@ -35,8 +35,8 @@
   box-sizing: border-box !important;
 }
 
-/* 사진첩 이미지 스타일 - Wowchemy 전역 CSS 충돌 방지 */
-.photo-album .album {
+/* 스크린샷 이미지 스타일 - Wowchemy 전역 CSS 충돌 방지 */
+.screen-shot .album {
   display: grid !important;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)) !important;
   column-gap: 4px !important;  /* 가로 간격 명시 */
@@ -51,7 +51,7 @@
 }
 
 /* 각 사진 스타일 - Wowchemy 전역 CSS 충돌 방지 + 로딩 최적화 */
-.photo-album .album img {
+.screen-shot .album img {
   width: 400px !important;
   height: 200px !important;
   border-radius: 8px;
@@ -75,7 +75,7 @@
 }
 
 /* 로딩 중 스켈레톤 효과 */
-.photo-album .album img:not([src]) {
+.screen-shot .album img:not([src]) {
   background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
   background-size: 200% 100%;
   animation: loading 1.5s infinite;
@@ -86,13 +86,13 @@
   100% { background-position: -200% 0; }
 }
 
-.photo-album .album img:hover {
+.screen-shot .album img:hover {
   transform: scale(1.03);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* 모달(팝업) 영역 */
-.photo-album .modal {
+.screen-shot .modal {
   display: none;
   position: fixed;
   top: 0;
@@ -106,12 +106,12 @@
 }
 
 /* 클릭 시 팝업 표시 */
-.photo-album .modal.show {
+.screen-shot .modal.show {
   display: flex;
 }
 
 /* 팝업 이미지 스타일 */
-.photo-album .modal img {
+.screen-shot .modal img {
   max-width: 90%;
   max-height: 80%;
   border-radius: 10px;
@@ -125,7 +125,7 @@
 
 /* 반응형 - Wowchemy 전역 CSS 충돌 방지 */
 @media (max-width: 600px) {
-  .photo-album .album {
+  .screen-shot .album {
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)) !important;
     column-gap: 2px !important;
     row-gap: 2px !important;
@@ -133,7 +133,7 @@
 }
 
 @media (min-width: 601px) and (max-width: 900px) {
-  .photo-album .album {
+  .screen-shot .album {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)) !important;
     column-gap: 3px !important;
     row-gap: 3px !important;
@@ -141,7 +141,7 @@
 }
 
 @media (min-width: 1201px) {
-  .photo-album .album {
+  .screen-shot .album {
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)) !important;
     column-gap: 6px !important;
     row-gap: 6px !important;
@@ -151,8 +151,8 @@
 </style>
 
 <div class="travel-container">
-  <div class="photo-album">
-    <!-- <h1>📸 {{ $albumName | title }} 여행 사진첩</h1>
+  <div class="screen-shot">
+    <!-- <h1>📸 {{ $albumName | title }} 스크린샷</h1>
      -->
     <div class="album" id="album-{{ $albumName }}">
     {{ range $i := (seq 1 $imageCount) }}

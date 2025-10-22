@@ -5,18 +5,18 @@ date: 2025-10-05
 type: landing
 
 sections:
-  - block: hero
-    content:
-      title: "Jeonbuk National University Lee Gaeun | Portfolio"
-      subtitle: "Computer Science and AI Student's Portfolio Website"
-      text_align: center
-      background:
-        image:
-          filename: desk.png
-          filters:
-            brightness: 0.35
-        position: center
-        color: '#000'
+  # - block: hero
+  #   content:
+  #     title: "Jeonbuk National University Lee Gaeun | Portfolio"
+  #     subtitle: "Computer Science and AI Student's Portfolio Website"
+  #     text_align: center
+  #     background:
+  #       image:
+  #         filename: desk.png
+  #         filters:
+  #           brightness: 0.35
+  #       position: center
+  #       color: '#000'
 
   # - block: features
   #   content:

@@ -6,18 +6,18 @@ type: landing
 
   
 sections:
-  - block: hero
-    content:
-      title: "전북대학교 이가은 | 포트폴리오"
-      subtitle: "컴퓨터인공지능학부 학생의 포트폴리오 사이트"
-      text_align: center
-      background:
-        image:
-          filename: desk.png
-          filters:
-            brightness: 0.35
-        position: center
-        color: '#000'
+  # - block: hero
+  #   content:
+  #     title: "전북대학교 이가은 | 포트폴리오"
+  #     subtitle: "컴퓨터인공지능학부 학생의 포트폴리오 사이트"
+  #     text_align: center
+  #     background:
+  #       image:
+  #         filename: desk.png
+  #         filters:
+  #           brightness: 0.35
+  #       position: center
+  #       color: '#000'
 
   - block: slider
     content:
