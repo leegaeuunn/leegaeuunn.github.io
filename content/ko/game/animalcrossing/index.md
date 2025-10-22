@@ -26,6 +26,5 @@ date: 2025-01-12
 동숲에 관심 있으시다면 아래 버튼을 눌러보세요!
 
 ## 📸 게임 스크린샷
-
 {{< screen_album album="animalcrossing" count="14" >}} 
 

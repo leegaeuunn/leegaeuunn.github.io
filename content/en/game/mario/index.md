@@ -9,7 +9,7 @@ In this Mario game, Bowser not only kidnaps Princess Peach but also tries to for
 
 ## 📸 Game Screenshots
 
-{{< photo_album album="mario" count="7" >}} 
+{{< screen_album album="mario" count="7" >}} 
 
 
 

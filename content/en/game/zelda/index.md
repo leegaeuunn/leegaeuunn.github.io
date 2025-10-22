@@ -33,4 +33,4 @@ If you like Zelda or are interested, click the button below!
 
 ## 📸 Game Screenshots
 
-{{< photo_album album="zelda" count="14" >}} 
+{{< screen_album album="zelda" count="14" >}} 

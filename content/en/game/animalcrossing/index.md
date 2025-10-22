@@ -27,5 +27,5 @@ If you're interested in Animal Crossing, click the button below!
 
 ## 📸 Game Screenshots
 
-{{< photo_album album="animalcrossing" count="14" >}} 
+{{< screen_album album="animalcrossing" count="14" >}} 
 

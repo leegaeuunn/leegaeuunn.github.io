@@ -52,7 +52,7 @@
   justify-items: center;       /* 중앙 정렬 */
   align-items: center;
   padding: 15px !important;
-  max-width: 1600px !important;  /* 최대 너비 증가 */
+  max-width: 1200px !important;  /* 최대 너비 증가 */
   margin: 0 auto !important;
   background-color: transparent;
   box-sizing: border-box !important;
@@ -144,17 +144,6 @@
   }
 }
 
-@media (min-width: 601px) and (max-width: 900px) {
-  .photo-album .album {
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)) !important;
-    column-gap: 6px !important;
-    row-gap: 6px !important;
-  }
-  .photo-album .album img {
-    width: 250px !important;
-    height: 300px !important;
-  }
-}
 
 @media (min-width: 1201px) {
   .photo-album .album {
