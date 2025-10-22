@@ -1,7 +1,7 @@
 ---
 title: Game
 subtitle: Introducing my favorite games!
-view: 2
+view: 3
 
 # Optional header image (relative to `assets/media/` folder).
 banner:
