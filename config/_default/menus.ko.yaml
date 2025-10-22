@@ -49,15 +49,25 @@
     url: project/04-파이썬게임
     weight: 300
 
-  # 게임
-  - name: 게임
-    url: game
-    weight: 400 
-
-  - parent: 게임
-    name: 동물의 숲
-    url: game/animalcrossing
+  # 관심사
+  - name: 관심사
+    url: #
     weight: 400
+
+  - parent: 관심사
+    name: 여행  
+    url: travel
+    weight: 400
+
+  - parent: 관심사
+    name: 게임
+    url: game
+    weight: 400
+
+  # - parent: 게임
+  #   name: 동물의 숲
+  #   url: game/animalcrossing
+  #   weight: 400
   # - parent: 게임
   #   name: 마리오 오디세이
   #   url: game/mario
@@ -66,11 +76,6 @@
   #   name: 젤다의 전설
   #   url: game/zelda
   #   weight: 400
-
-  # 여행
-  - name: 여행
-    url: travel
-    weight: 400
 
   # - parent: 여행
   #   name: 제주도
