@@ -8,3 +8,12 @@ banner:
   caption: 'Image credit: [**Pinterest**](https://pinterest.com/)'
   image: 'leaf.png'
 ---
+
+## 동물의 숲
+{{< screen_album album="animalcrossing" count="35" >}}
+
+## 마리오 오디세이
+{{< screen_album album="mario" count="35" >}}
+
+## 젤다의 전설
+{{< screen_album album="zelda" count="35" >}}
