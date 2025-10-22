@@ -4,8 +4,7 @@ title: "Jeonbuk National University Lee Gaeun | Portfolio"
 date: 2025-10-05
 type: landing
 
-  
-  sections:
+sections:
   - block: hero
     content:
       title: "Jeonbuk National University Lee Gaeun | Portfolio"
