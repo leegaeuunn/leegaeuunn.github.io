@@ -15,7 +15,7 @@ In contrast, Zelda has no talent and works hard but is disliked by her father, t
 So Zelda develops an inferiority complex toward Link and distances herself from him.
 When she goes out without a guard and faces a life-threatening situation (almost dying), she is helped by Link who was secretly guarding her, and she gradually opens her heart after learning that behind Link's talent was his constant effort.
 
-Just as she finally opens her heart and is about to fall in love (they're still teenage girl and boy after all...), the kingdom collapses. Link loses his life trying to protect Zelda, and Zelda, angry at her own incompetence and the deaths of her father, all the people, and Link, unleashes her previously sealed power. She protects the fallen kingdom with her talent, the Triforce.
+Just as she finally opens her heart and is about to fall in love (they're still teenage girl and boyㅈ after all...), the kingdom collapses. Link loses his life trying to protect Zelda, and Zelda, angry at her own incompetence and the deaths of her father, all the people, and Link, unleashes her previously sealed power. She protects the fallen kingdom with her talent, the Triforce.
 
 The user's perspective is 100 years later.
 Link awakens exactly 100 years later, having lost all his memories (for a full 100 years...), and rescuing Zelda who has been protecting the kingdom is the main quest of this open-world game.
