@@ -2,7 +2,7 @@
 title: Animal Crossing
 date: 2025-01-12
 ---
-## Animal Crossing
+## 🌳 Animal Crossing
 
 This was my first Switch game during the COVID-19 era.
 It's a game where you fish with villagers, drink coffee, watch fireworks, see shooting stars, and make snowmen. Isn't it really cute?
