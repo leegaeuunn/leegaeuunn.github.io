@@ -1,8 +1,8 @@
 ---
-title: The Legend of Zelda
+title: 🏰 The Legend of Zelda
 date: 2025-10-21
 ---
-## 🏰 The Legend of Zelda
+## The Legend of Zelda
 
 Why are there only screenshots of the princess in this game?
 I must have been a commoner in my past life
