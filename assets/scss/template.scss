@@ -22,9 +22,9 @@
 }
 
 /* 다크모드에서 호버 시 글자색 유지 */
-// [data-theme="dark"] .navbar a:hover {
-//   color: #ffffff !important;
-// }
+[data-theme="dark"] .navbar a:hover {
+  color: #ffffff !important;
+}
 
 /* 다크모드에서 서브메뉴 호버 시 글자색 유지 */
 [data-theme="dark"] .navbar .dropdown-menu a:hover {
