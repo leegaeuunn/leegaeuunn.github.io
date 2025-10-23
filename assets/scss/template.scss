@@ -21,6 +21,21 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 그림자 추가 */
 }
 
+/* 다크모드에서 호버 시 글자색 유지 */
+// [data-theme="dark"] .navbar a:hover {
+//   color: #ffffff !important;
+// }
+
+/* 다크모드에서 서브메뉴 호버 시 글자색 유지 */
+[data-theme="dark"] .navbar .dropdown-menu a:hover {
+  color: #ffffff !important;
+}
+
+/* 다크모드에서 모든 네비게이션 링크 호버 시 글자색 유지 */
+[data-theme="dark"] .navbar-nav .nav-link:hover {
+  color: #ffffff !important;
+}
+
 
 /* 메뉴를 감싸는 컨테이너 (예: .navbar)에 플렉스 박스를 적용하고 가운데 정렬 */
 .navbar {
