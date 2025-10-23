@@ -1,5 +1,5 @@
 ---
-title: Mario Odyssey
+title: 🍄 Mario Odyssey
 date: 2025-01-12
 ---
 
