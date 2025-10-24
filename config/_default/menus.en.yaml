@@ -48,17 +48,17 @@ main:
     url: project/04-파이썬게임
     weight: 300
 
-  # Interests
-  - name: Interests
+  # Hobby
+  - name: Hobby
     url: #
     weight: 400
 
-  - parent: Interests
+  - parent: Hobby
     name: Travel
     url: travel
     weight: 400
 
-  - parent: Interests
+  - parent: Hobby
     name: Game
     url: game
     weight: 400

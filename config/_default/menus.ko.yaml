@@ -49,17 +49,17 @@
     url: project/04-파이썬게임
     weight: 300
 
-  # 관심사
-  - name: 관심사
+  # 취미
+  - name: 취미
     url: #
     weight: 400
 
-  - parent: 관심사
+  - parent: 취미
     name: 여행  
     url: travel
     weight: 400
 
-  - parent: 관심사
+  - parent: 취미
     name: 게임
     url: game
     weight: 400
