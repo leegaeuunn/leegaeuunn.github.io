@@ -33,8 +33,8 @@
     url: project/00-챗봇시스템
     weight: 300
   - parent: 프로젝트
-    name: 넥플릭스클론
-    url: project/01-넥플릭스클론
+    name: 넷플릭스클론
+    url: project/01-넷플릭스클론
     weight: 300
   - parent: 프로젝트
     name: 개인포트폴리오사이트    
