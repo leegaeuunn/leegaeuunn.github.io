@@ -35,24 +35,16 @@
   box-sizing: border-box !important;
 }
 
-/* 사진첩 제목 스타일 */
-.photo-album h1 {
-  text-align: center;
-  padding: 20px 0;
-  color: #333;
-  margin: 0;
-}
-
 /* 사진첩 이미지 스타일 - Wowchemy 전역 CSS 충돌 방지 */
 .photo-album .album {
   display: grid !important;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
-  column-gap: 8px !important;  /* 가로 간격 명시 */
-  row-gap: 8px !important;     /* 세로 간격 명시 */
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)) !important;
+  column-gap: 4px !important;  /* 가로 간격 명시 */
+  row-gap: 4px !important;     /* 세로 간격 명시 */
   justify-items: center;       /* 중앙 정렬 */
   align-items: center;
-  padding: 15px !important;
-  max-width: 1200px !important;  /* 최대 너비 증가 */
+  padding: 10px !important;
+  max-width: 1500px;
   margin: 0 auto !important;
   background-color: transparent;
   box-sizing: border-box !important;
@@ -60,8 +52,8 @@
 
 /* 각 사진 스타일 - Wowchemy 전역 CSS 충돌 방지 + 로딩 최적화 */
 .photo-album .album img {
-  width: 200px !important;  /* 가로 크기 증가 */
-  height: 250px !important;  /* 세로 크기 증가 */
+  width: 500px !important;
+  height: 200px !important;
   border-radius: 8px;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
@@ -134,26 +126,37 @@
 /* 반응형 - Wowchemy 전역 CSS 충돌 방지 */
 @media (max-width: 600px) {
   .photo-album .album {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)) !important;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)) !important;
+    column-gap: 2px !important;
+    row-gap: 2px !important;
+  }
+  .photo-album .album img {
+    width: 200px !important;
+    height: 100px !important;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+  .photo-album .album {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
     column-gap: 4px !important;
     row-gap: 4px !important;
   }
   .photo-album .album img {
-    width: 200px !important;
-    height: 250px !important;
+    width: 400px !important;
+    height: 160px !important;
   }
 }
 
-
 @media (min-width: 1201px) {
   .photo-album .album {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
-    column-gap: 10px !important;
-    row-gap: 10px !important;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)) !important;
+    column-gap: 6px !important;
+    row-gap: 6px !important;
   }
   .photo-album .album img {
-    width: 300px !important;
-    height: 350px !important;
+    width: 500px !important;
+    height: 200px !important;
   }
 }
 
@@ -161,7 +164,7 @@
 
 <div class="travel-container">
   <div class="photo-album">
-    <!-- <h1>📸 {{ $albumName | title }} 여행 사진첩</h1>
+    <!-- <h1>📸 {{ $albumName | title }} 사진첩</h1>
      -->
     <div class="album" id="album-{{ $albumName }}">
     {{ range $i := (seq 1 $imageCount) }}

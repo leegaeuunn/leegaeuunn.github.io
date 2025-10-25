@@ -21,4 +21,4 @@ date: 2025-02-17
 
 ## 📸 여행 사진
 
-{{< screen_album album="hanoi" count="21" >}}
+{{< photo_album album="hanoi" count="21" >}}
