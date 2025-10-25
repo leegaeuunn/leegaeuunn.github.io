@@ -1,6 +1,6 @@
 ---
 title: 🎯 Goals
-date: 2025-10-26
+date: 2025-10-20
 ---
 
 I am majoring in **Computer Engineering** and striving to build not only academic knowledge but also **practical technical skills**. I have a deep interest in **Artificial Intelligence (AI)** and **Frontend Development**, and my goal is to create **intelligent services** that enhance user experience.

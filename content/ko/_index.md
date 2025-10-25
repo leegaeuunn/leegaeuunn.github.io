@@ -238,10 +238,10 @@ sections:
   - block: collection
     content:
       id: section-4
-      title: 게임
-      subtitle: 좋아하는 게임을 소개합니다
+      title: 경력
+      subtitle: 저의 경력을 소개합니다
       text:
-      count: 3
+      count: 2
       offset: 0
       order: desc
       filters:
@@ -249,7 +249,7 @@ sections:
           - career
     design:
       view: community/custom_compact
-      columns: '3'
+      columns: '2'
 
 
 

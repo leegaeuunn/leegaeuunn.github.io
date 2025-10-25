@@ -238,17 +238,18 @@ sections:
   - block: collection
     content:
       id: section-4
-      title: game
-      subtitle: Introducing my favorite games!
+      title: Career
+      subtitle: Introducing my career
       text:
-      count: 3
+      count: 2
       offset: 0
       order: desc
       filters:
         folders:
-          - game
+          - career
     design:
       view: community/custom_compact
-      columns: '3'
+      columns: '2'
+
 
 ---

@@ -2,6 +2,7 @@
 title: 🛠️ Tech Stack
 date: 2025-10-17
 type: page
+_draft: true
 ---
 
 

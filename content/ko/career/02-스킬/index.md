@@ -2,6 +2,7 @@
 title: 🛠️ 기술 스택
 date: 2025-10-17
 type: page
+_draft: true
 ---
 
 
