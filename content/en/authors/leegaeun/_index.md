@@ -15,7 +15,7 @@ last_name: Lee
 
 # Username (this should match the folder name)
 authors:
-  - leegaeun
+  - 이가은
 
 # Is this the primary user of the site?
 superuser: true
@@ -23,9 +23,6 @@ superuser: true
 # Role/position
 role: Student
 
-# Status emoji
-status:
-  icon: 👩🏻‍💻
 
 # Organizations/Affiliations
 organizations:

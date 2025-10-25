@@ -10,7 +10,7 @@ main:
 
   # About
   - name: About Me
-    url: author/leegaeun/
+    url: author/이가은/
     weight: 100 
 
   # Project
