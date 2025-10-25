@@ -3,71 +3,80 @@
 #     desired widget in your `content/home/` folder.
 #   The weight parameter defines the order that the links will appear in.
 
-main:
-  # - name: Home
-  #   url: /
-  #   weight: 1
+ main:
+#   - name: 홈
+#      url: /
+#      weight: 1
 
   # About
-  - name: About Me
+  - name: About
     url: author/leegaeun/
-    weight: 100 
+    weight: 100
 
-  # Project
-  - name: Project
+  # Career
+  - name: Career
+    url: career
+    weight: 200
+
+  - parent: Career
+    name: Skills
+    url: career/00-스킬
+    weight: 210
+  - parent: Career
+    name: BOJ
+    url: career/01-boj
+    weight: 220
+  - parent: Career
+    name: Internship
+    url: career/02-현장실습
+    weight: 230
+  - parent: Career
+    name: Goals
+    url: career/03-목표
+    weight: 240
+
+  # Projects
+  - name: Projects
     url: project
     weight: 300
-  - parent: Project
-    name: AI Chatbot System
+
+  - parent: Projects
+    name: Chatbot System
     url: project/00-챗봇시스템
-    weight: 300
-  - parent: Project
+    weight: 310
+  - parent: Projects
     name: Netflix Clone
-    url: project/01-넥플릭스클론
-    weight: 300
-  - parent: Project
-    name: Portfolio Website
-    url: project/02-개인포트폴리오사이트
-    weight: 300
-  - parent: Project
+    url: project/01-넷플릭스클론
+    weight: 320
+  - parent: Projects
+    name: Portfolio Website    
+    url: project/02-개인포트폴리오사이트    
+    weight: 330
+  - parent: Projects
     name: Java Cookie Run
     url: project/03-자바쿠키런
-    weight: 300
-  - parent: Project
-    name: Python Capital Quiz Game
+    weight: 340
+  - parent: Projects
+    name: Python Game
     url: project/04-파이썬게임
-    weight: 300
+    weight: 350
 
-  # Hobby
-  - name: Hobby
+  # Hobbies
+  - name: Hobbies
     url: #
     weight: 400
 
-  - parent: Hobby
-    name: Travel
+  - parent: Hobbies
+    name: Travel  
     url: travel
-    weight: 400
+    weight: 410
 
-  - parent: Hobby
-    name: Game
+  - parent: Hobbies
+    name: Games
     url: game
-    weight: 400
-
-  # Skill
-  - name: Skill
-    url: skill
-    weight: 500
-
-  - parent: Skill
-    name: Tech Stack
-    url: skill/00-langauge
-    weight: 500
-  - parent: Skill
-    name: Language
-    url: skill/01-boj
-    weight: 500
+    weight: 420
 
   # Contact
   - name: Contact
     url: contact
-    weight: 600
+    weight: 500
