@@ -1,4 +1,3 @@
-{{ $page := .Page }}
 {{ $albumName := .Get "album" | default "hanoi" }}
 {{ $imageCount := .Get "count" | default 21 }}
 {{ $type := .Get "type" | default "game" }}
@@ -29,7 +28,7 @@
 
 /* 스크린샷 CSS - Wowchemy 전역 CSS 충돌 방지 */
 .screen-shot {
-  all: unset !important;                /* Wowchemy의 상속 스타일 완전히 초기화 */
+  all: initial !important;              /* 브라우저 기본 렌더링 유지하며 초기화 */
   display: block !important;
   margin: 0 !important;
   padding: 0 !important;
@@ -53,8 +52,8 @@
 
 /* 각 스크린샷 스타일 - Wowchemy 전역 CSS 충돌 방지 + 로딩 최적화 */
 .screen-shot .album img {
-  width: 200px !important;
-  height: 300px !important;
+  width: 300px !important;
+  height: 200px !important;
   border-radius: 8px;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
@@ -62,7 +61,9 @@
   margin: 0 !important;
   padding: 0 !important;
   box-sizing: border-box !important;
-  object-fit: contain !important;
+  object-fit: cover !important;
+  image-orientation: none !important;
+  transform: rotate(0deg) scale(1) !important;
   /* 로딩 최적화 */
   background-color: #f0f0f0;
   opacity: 0;
@@ -132,8 +133,8 @@
     row-gap: 2px !important;
   }
   .screen-shot .album img {
-    width: 120px !important;
-    height: 180px !important;
+    width: 180px !important;
+    height: 120px !important;
   }
 }
 
@@ -144,8 +145,8 @@
     row-gap: 4px !important;
   }
   .screen-shot .album img {
-    width: 180px !important;
-    height: 270px !important;
+    width: 270px !important;
+    height: 180px !important;
   }
 }
 
@@ -156,8 +157,8 @@
     row-gap: 6px !important;
   }
   .screen-shot .album img {
-    width: 200px !important;
-    height: 300px !important;
+    width: 300px !important;
+    height: 200px !important;
   }
 }
 
@@ -165,8 +166,6 @@
 
 <div class="travel-container">
   <div class="screen-shot">
-    <!-- <h1>📸 {{ $albumName | title }} 스크린샷</h1>
-     -->
     <div class="album" id="album-{{ $albumName }}">
     {{ range $i := (seq 1 $imageCount) }}
       {{ $extension := "jpeg" }}
@@ -189,35 +188,9 @@
 </div>
 
 <script>
-// 이미지 로딩 최적화
-document.addEventListener('DOMContentLoaded', function() {
-  const images = document.querySelectorAll('#album-{{ $albumName }} img');
-  
-  // Intersection Observer로 지연 로딩 구현
-  const imageObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const img = entry.target;
-        if (img.dataset.src) {
-          img.src = img.dataset.src;
-          img.removeAttribute('data-src');
-          observer.unobserve(img);
-        }
-      }
-    });
-  });
-
-  images.forEach(img => {
-    if (img.dataset.src) {
-      imageObserver.observe(img);
-    }
-  });
-});
-
 function openModal(src, alt) {
   const modal = document.getElementById('modal-{{ $albumName }}');
   const modalImage = document.getElementById('modalImage-{{ $albumName }}');
-  
   modalImage.src = src;
   modalImage.alt = alt;
   modal.classList.add('show');
@@ -228,7 +201,6 @@ function closeModal() {
   modal.classList.remove('show');
 }
 
-// ESC 키로 모달 닫기
 document.addEventListener('keydown', function(event) {
   if (event.key === 'Escape') {
     const modal = document.getElementById('modal-{{ $albumName }}');
