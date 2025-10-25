@@ -32,15 +32,46 @@ featured: true
 
 # 인턴 개발일지
 
+## 📋 프로젝트 개요
+
+**메디앙 시스템** 연구소에서 진행한 하계 계절제 현장실습을 통해 **RAG(Retrieval-Augmented Generation) 기반 AI 챗봇 시스템**을 개발했습니다.
+
+### 🎯 프로젝트 목표
+전북특별자치도 먹거리 시스템, 로컬푸드, 시군매니저 사이트의 매뉴얼 문서를 활용하여 사용자 질문에 정확한 답변을 제공하는 지능형 챗봇 시스템 구축
+
+### 🔧 개발 환경 및 도구
+- **Backend**: Python, FastAPI, LangChain
+- **AI/ML**: OpenAI GPT-4, RAG, Vector Database (Chroma)
+- **Frontend**: Streamlit
+- **Database**: SQL
+- **API Testing**: Postman
+- **Deployment**: 로컬 환경 (Streamlit 기반 시연)
+
+### 📈 주요 성과
+- **RAG 시스템 구현**: 문서 기반 검색 및 생성 모델 통합
+- **메타데이터 구조화**: PDF 문서의 체계적 분할 및 인덱싱
+- **멀티모달 응답**: 텍스트와 이미지를 함께 제공하는 응답 시스템
+- **API 설계**: FastAPI를 활용한 RESTful API 구조 설계
+
+### 🚀 향후 계획
+현장실습 기간의 제약으로 인해 API 실사용 부분까지는 구현하지 못했으나, 이번 경험을 통해 **인공지능 분야에 대한 깊은 관심**을 가지게 되었으며, 향후 AI 기술 발전에 기여하고자 합니다.
+
+---
+
+## 🛠️ 사용 기술 스택
+
+| 분야 | 기술 |
+|------|------|
+| **언어** | Python |
+| **AI/ML** | LLM, RAG, OpenAI GPT-4 |
+| **프레임워크** | LangChain, FastAPI, Streamlit |
+| **데이터베이스** | Chroma (Vector DB), SQL |
+| **API 테스트** | Postman |
+| **배포** | 로컬 환경 |
+
 ## ☑️ 7월 4일 (1주차)
 
 ### 1️⃣ 1주차 - RAG 구조 및 개발환경 구축
-
-**참고 자료:**
-- [문서 전처리와 임베딩의 중요성 - RAG 프로젝트 성공하기](https://medium.com/@minji.sql/%EB%AC%B8%EC%84%9C-%EC%A0%84%EC%B2%98%EB%A6%AC%EC%99%80-%EC%9E%84%EB%B2%A0%EB%94%A9%EC%9D%98-%EC%A4%91%EC%9A%94%EC%84%B1-rag-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%84%B1%EA%B3%B5%ED%95%98%EA%B8%B0-97ae34e879b4)
-- [RAG 기초 가이드](https://wikidocs.net/231364)
-- [PDF에서 텍스트 추출하기](https://wooiljeong.github.io/python/pdf-to-text/#google_vignette)
-
 ### 1. RAG 방식의 개념 이해
 
 > **RAG(Retrieval-Augmented Generation)**은 **검색 기반 생성 방식**으로, 대형 언어 모델(LLM)이 자체 지식만으로 답변하는 것이 아니라 **외부 지식 기반**을 검색하여 **신뢰도 있는 응답**을 생성하는 방식입니다.
@@ -351,15 +382,9 @@ def merge_documents_by_id(docs: list[Document]) -> list[Document]:
 ### 최종 발표
 
 #### 발표 자료
-- AI 챗봇 시스템 중간 발표
 - AI 챗봇 시스템 최종 발표
+{{< icon name="download" pack="fas" >}} [발표 자료 PDF 다운로드](AI%20챗봇%20시스템%20중간%20발표%20최종.pdf)
 
-#### 시연 영상
-- AI 챗봇 시스템 시연 영상
 
-#### 코드
-- [GitHub Repository](https://github.com/landlove/mediengAIManual)
-
----
 
 이 개발일지는 RAG 기반 LLM Application 개발의 전 과정을 단계별로 기록한 것으로, 초기 개념 이해부터 실제 구현까지의 모든 과정을 포함하고 있습니다.
