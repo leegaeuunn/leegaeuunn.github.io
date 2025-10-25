@@ -35,6 +35,7 @@ featured: true
 ## 📋 프로젝트 개요
 
 **메디앙 시스템** 연구소에서 진행한 하계 계절제 현장실습을 통해 **RAG(Retrieval-Augmented Generation) 기반 AI 챗봇 시스템**을 개발했습니다.
+이 개발일지는 RAG 기반 LLM Application 개발의 전 과정을 단계별로 기록한 것으로, 초기 개념 이해부터 실제 구현까지의 모든 과정을 포함하고 있습니다.
 
 ### 🎯 프로젝트 목표
 전북특별자치도 먹거리 시스템, 로컬푸드, 시군매니저 사이트의 매뉴얼 문서를 활용하여 사용자 질문에 정확한 답변을 제공하는 지능형 챗봇 시스템 구축
@@ -386,5 +387,3 @@ def merge_documents_by_id(docs: list[Document]) -> list[Document]:
 {{< icon name="download" pack="fas" >}} [발표 자료 PDF 다운로드](AI%20챗봇%20시스템%20중간%20발표%20최종.pdf)
 
 
-
-이 개발일지는 RAG 기반 LLM Application 개발의 전 과정을 단계별로 기록한 것으로, 초기 개념 이해부터 실제 구현까지의 모든 과정을 포함하고 있습니다.
