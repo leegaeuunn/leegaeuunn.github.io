@@ -1,12 +1,11 @@
 ---
-title: 기술 스택
+title: 🛠️ 기술 스택
 date: 2025-10-17
 type: page
 ---
 
-## 🛠️ 기술 스택
 
-### 💻 Frontend Development
+### 💻 프론트엔드
 
 #### 📝 언어 & 프레임워크
 - **JavaScript** - 동적 웹 애플리케이션 개발
@@ -22,7 +21,7 @@ type: page
 - **SCSS** - CSS 전처리기
 - **Figma** - UI/UX 디자인 도구
 
-### ⚙️ Backend & AI Development
+### ⚙️ 백엔드
 
 #### 🐍 언어 & 프레임워크
 - **Python** - AI/ML 및 백엔드 개발
@@ -55,4 +54,4 @@ type: page
 - **Slack** - 팀 커뮤니케이션
 - **Notion** - 문서화 및 프로젝트 관리
 
----
+
