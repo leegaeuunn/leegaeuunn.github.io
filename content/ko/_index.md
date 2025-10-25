@@ -52,7 +52,7 @@ sections:
           position: center
           color: '#000'
 
-      - title: Contact
+      - title: Contact me!
         content: 저에 대해 더 알고 싶으신가요?
         align: center
         background:
@@ -76,7 +76,7 @@ sections:
 
   - block: markdown
     content:
-      title: ""
+      title: 자기소개
       text: |
         
         <div style="text-align: justify; max-width: 800px; margin: 0 auto; padding: 40px 20px;">
@@ -103,12 +103,51 @@ sections:
             </div>
           </div>
         </div>
+      link:
+          icon: arrow-right
+          icon_pack: fas
+          text: 자세히 보기
+          url: contact
 
+
+
+  - block: collection
+    content:
+      id: section-1
+      title: 프로젝트
+      subtitle: 진행했던 프로젝트들을 확인해보세요
+      text:
+      count: 3
+      offset: 0
+      order: desc
+      filters:
+        folders:
+          - project
+    design:
+      view: community/custom_card
+      columns: '3'
+
+
+  - block: collection
+    content:
+      id: section-3
+      title: Travel Collections
+      subtitle: 여행 기록을 함께 나눠요
+      text:
+      count: 3
+      offset: 0
+      order: desc
+      filters:
+        folders:
+          - travel
+    design:
+      view: community/custom_list
+      columns: '3'
 
   - block: features
     id: features
     content:
-      title: Information
+      title: 정보
       text: 이가은의 기본 정보
       items:
         - name: 이름
@@ -136,54 +175,6 @@ sections:
           icon_pack: fas
           description: 전북대학교 컴퓨터인공지능학부
     design:
-      columns: '3'
-
-  - block: collection
-    content:
-      id: section-1
-      title: Projects
-      subtitle: 진행했던 프로젝트들을 확인해보세요
-      text:
-      count: 3
-      offset: 0
-      order: desc
-      filters:
-        folders:
-          - project
-    design:
-      view: community/custom_card
-      columns: '3'
-
-  - block: collection
-    content:
-      id: section-2
-      title: More Projects
-      subtitle: 추가 프로젝트
-      text:
-      count: 3
-      offset: 3
-      order: desc
-      filters:
-        folders:
-          - project
-    design:
-      view: community/custom_list
-      columns: '3'
-
-  - block: collection
-    content:
-      id: section-3
-      title: Travel Collections
-      subtitle: 여행 기록을 함께 나눠요
-      text:
-      count: 3
-      offset: 0
-      order: desc
-      filters:
-        folders:
-          - travel
-    design:
-      view: community/travel_card
       columns: '3'
 
   - block: markdown
