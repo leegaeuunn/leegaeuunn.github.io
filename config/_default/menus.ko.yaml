@@ -32,7 +32,7 @@
     weight: 230
   - parent: 경력
     name: 목표
-    url: career/03-목표
+    url: career/03-goal
     weight: 240
 
   # 프로젝트
