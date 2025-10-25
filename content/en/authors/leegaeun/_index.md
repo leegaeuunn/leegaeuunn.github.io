@@ -1,6 +1,9 @@
 ---
 # Display name
-title: Lee Gaeun
+title: Lee_Gaeun
+
+name_ko: "이가은"
+name_en: "Lee_Geun"
 
 # Name pronunciation (optional)
 name_pronunciation: Lee Gaeun
@@ -9,9 +12,10 @@ name_pronunciation: Lee Gaeun
 first_name: Gaeun
 last_name: Lee
 
+
 # Username (this should match the folder name)
 authors:
-  - leegaeun
+  - Lee_Gaeun
 
 # Is this the primary user of the site?
 superuser: true

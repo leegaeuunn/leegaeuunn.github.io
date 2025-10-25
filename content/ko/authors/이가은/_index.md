@@ -2,12 +2,15 @@
 # Display name
 title: 이가은
 
+name_ko: "이가은"
+name_en: "Lee_Gaeun"
+
 # Name pronunciation (optional)
 name_pronunciation: Lee Gaeun
 
 # Full name (for SEO)
-first_name: 가은
-last_name: 이
+first_name: Gaeun
+last_name: Lee
 
 # Username (this should match the folder name)
 authors:

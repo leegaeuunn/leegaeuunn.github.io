@@ -10,7 +10,7 @@ main:
 
   # About
   - name: About Me
-    url: content/en/authors/leegaeun
+    url: author/Lee_Gaeun/
     weight: 100 
 
   # Project
