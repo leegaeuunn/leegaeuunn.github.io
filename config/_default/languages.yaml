@@ -6,10 +6,14 @@
 ko: 
   languageCode: ko
   contentDir: content/ko
+  params:
+    author: 이가은
 
 en:
   languageCode: en
   contentDir: content/en
+  params:
+    author: leegaeun
 
 # Uncomment the lines below to configure your website in a second language.
 #zh:
