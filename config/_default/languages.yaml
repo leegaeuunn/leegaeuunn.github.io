@@ -8,7 +8,7 @@ ko:
   # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
   contentDir: content/ko
 en:
-  languageCode: en-us
+  languageCode: en
   contentDir: content/en
   # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
   #contentDir: content/en
