@@ -1,6 +1,7 @@
 {{ $albumName := .Get "album" | default "hanoi" }}
 {{ $imageCount := .Get "count" | default 21 }}
 {{ $type := .Get "type" | default "game" }}
+{{ $lang := .Page.Language.Lang | default "en" }}
 
 <style>
 /* 페이지별 특수 설정 - 사진첩 페이지에만 적용 */
@@ -38,13 +39,13 @@
 /* 스크린샷 이미지 스타일 - Wowchemy 전역 CSS 충돌 방지 */
 .screen-shot .album {
   display: grid !important;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)) !important;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
   column-gap: 4px !important;  /* 가로 간격 명시 */
   row-gap: 4px !important;     /* 세로 간격 명시 */
   justify-items: center;       /* 중앙 정렬 */
   align-items: center;
   padding: 10px !important;
-  max-width: 1500px;
+  max-width: 1300px;
   margin: 0 auto !important;
   background-color: transparent;
   box-sizing: border-box !important;
@@ -52,8 +53,8 @@
 
 /* 각 스크린샷 스타일 - Wowchemy 전역 CSS 충돌 방지 + 로딩 최적화 */
 .screen-shot .album img {
-  width: 300px !important;
-  height: 200px !important;
+  width: 200px !important;
+  height: 250px !important;
   border-radius: 8px;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
@@ -169,7 +170,7 @@
     <div class="album" id="album-{{ $albumName }}">
     {{ range $i := (seq 1 $imageCount) }}
       {{ $extension := "jpeg" }}
-      {{ $imagePath := printf "/en/%s/%s/img%d.%s" $type $albumName $i $extension }}
+      {{ $imagePath := printf "/%s/%s/%s/img%d.%s" $lang $type $albumName $i $extension }}
       <img src="{{ $imagePath }}" 
            alt="{{ $albumName }} 사진 {{ $i }}" 
            loading="lazy"
