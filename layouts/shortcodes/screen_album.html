@@ -50,7 +50,7 @@
   box-sizing: border-box !important;
 }
 
-/* 각 사진 스타일 - Wowchemy 전역 CSS 충돌 방지 + 로딩 최적화 */
+/* 각 스크린샷 스타일 - Wowchemy 전역 CSS 충돌 방지 + 로딩 최적화 */
 .screen-shot .album img {
   width: 500px !important;
   height: 200px !important;
@@ -169,11 +169,8 @@
     <div class="album" id="album-{{ $albumName }}">
     {{ range $i := (seq 1 $imageCount) }}
       {{ $extension := "jpeg" }}
-      {{ $path := "/travel/" }}
-      {{ if or (eq $albumName "animalcrossing") (eq $albumName "mario") (eq $albumName "zelda") }}
-        {{ $path = "/game/" }}
-      {{ end }}
-      <img src="{{ $path }}{{ $albumName }}/img{{ $i }}.{{ $extension }}" 
+      {{ $imagePath := printf "/en/game/%s/img%d.%s" $albumName $i $extension }}
+      <img src="{{ $imagePath }}" 
            alt="{{ $albumName }} 사진 {{ $i }}" 
            loading="lazy"
            decoding="async"
