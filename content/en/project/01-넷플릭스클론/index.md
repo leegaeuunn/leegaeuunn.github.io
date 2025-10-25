@@ -131,4 +131,4 @@ src/
 
 ## 📸 Project Screenshots
 
-{{< photo_album album="넷플릭스클론" count="3" >}}
+{{< screen_album album="넷플릭스클론" count="3" type="project" >}}
