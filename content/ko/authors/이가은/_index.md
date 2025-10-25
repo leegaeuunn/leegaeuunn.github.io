@@ -6,7 +6,7 @@ title: 이가은
 name_pronunciation: Lee Gaeun
 
 # Full name (for SEO)
-first_name:  가은
+first_name: 가은
 last_name: 이
 
 # Username (this should match the folder name)
@@ -42,7 +42,10 @@ education:
     - course: 컴퓨터 인공지능 학부
       institution: 전북대
       year: 2023
-
+  courses:
+    - course: 유일여자고등학교
+      institution: 유일여자고등학교
+      year: 2019-202
 
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
