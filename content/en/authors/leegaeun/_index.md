@@ -3,11 +3,11 @@
 title: leegaeun
 
 # Name pronunciation (optional)
-name_pronunciation: leegaeun
+name_pronunciation: Lee Gaeun
 
 # Full name (for SEO)
-first_name: gaeun
-last_name: lee
+first_name: Gaeun
+last_name: Lee
 
 # Username (this should match the folder name)
 authors:
