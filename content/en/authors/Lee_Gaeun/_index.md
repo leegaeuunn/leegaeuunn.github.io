@@ -3,7 +3,7 @@
 title: Lee_Gaeun
 
 name_ko: "이가은"
-name_en: "Lee_Geun"
+name_en: "Lee_Gaeun"
 
 # Name pronunciation (optional)
 name_pronunciation: Lee Gaeun
