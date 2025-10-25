@@ -82,9 +82,6 @@ social:
   - icon: soundcloud
     icon_pack: fab
     link: https://soundcloud.com/leegaeuunn
-  - icon: pinterest
-    icon_pack: fab
-    link: https://kr.pinterest.com/ig5925208/
 
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
