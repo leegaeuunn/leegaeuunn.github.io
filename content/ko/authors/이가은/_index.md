@@ -45,7 +45,6 @@ education:
     - course: 컴퓨터 인공지능 학부
       institution: 전북대
       year: 2023
-  courses:
     - course: 유일여자고등학교
       institution: 유일여자고등학교
       year: 2019-202

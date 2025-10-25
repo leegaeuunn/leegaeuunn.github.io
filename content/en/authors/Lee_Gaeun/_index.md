@@ -45,7 +45,6 @@ education:
     - course: Department of Computer Artificial Intelligence
       institution: Jeonbuk National University
       year: 2023
-      courses:
     - course: Yuil girls high school
       institution: Yuil girls high school
       year: 2019-202
