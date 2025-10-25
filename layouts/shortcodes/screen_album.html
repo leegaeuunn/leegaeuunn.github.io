@@ -169,8 +169,7 @@
   <div class="screen-shot">
     <div class="album" id="album-{{ $albumName }}">
     {{ range $i := (seq 1 $imageCount) }}
-      {{ $extension := "jpeg" }}
-      {{ $imagePath := printf "/%s/%s/%s/img%d.%s" $lang $type $albumName $i $extension }}
+      {{ $imagePath := printf "/%s/%s/%s/img%d.jpeg" $lang $type $albumName $i }}
       <img src="{{ $imagePath }}" 
            alt="{{ $albumName }} 사진 {{ $i }}" 
            loading="lazy"
