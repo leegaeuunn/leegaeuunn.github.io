@@ -1,13 +1,13 @@
 ---
 # Display name
-title: Lee Gaeun
+title: leegaeun
 
 # Name pronunciation (optional)
-name_pronunciation: Lee Gaeun
+name_pronunciation: leegaeun
 
 # Full name (for SEO)
-first_name: Gaeun
-last_name: Lee
+first_name: gaeun
+last_name: lee
 
 # Username (this should match the folder name)
 authors:
