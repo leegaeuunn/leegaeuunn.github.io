@@ -20,13 +20,23 @@
 
 {{ $thumbnail := partial "blox-core/functions/get_featured_image.html" $entry }}
 
+{{/* CSS 파일 로드 */}}
+{{ $css := resources.Get "css/image-overlay.css" }}
+{{ if $css }}
+  {{ $css = $css | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+{{ end }}
+
 <div class="card-container">
   {{ with $thumbnail }}
   {{ $image_resized := .Resize "550x" }}
   {{ if ne $image_resized.MediaType.SubType "gif" }}{{ $image_resized = $image_resized.Process "webp" }}{{ end }}
-  <a href="{{ $url }}" {{ $open_in_new_tab | safeHTMLAttr }} class="image-link overlay-hover">
+  <a href="{{ $url }}" {{ $open_in_new_tab | safeHTMLAttr }} class="image-link overlay-hover image-overlay" style="position: relative; display: block;">
     <img src="{{ $image_resized.RelPermalink }}" height="{{ $image_resized.Height }}" width="{{ $image_resized.Width }}"
          alt="{{ $entry.Title }}" class="img-responsive" loading="lazy" style="margin-top: 15px;">
+    <div class="text">
+      자세히 보기
+    </div>
   </a>
   {{ end }}
   <div class="content-container">

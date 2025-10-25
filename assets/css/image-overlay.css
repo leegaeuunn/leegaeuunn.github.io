@@ -1,43 +1,51 @@
 .image-overlay {
-    position: relative;
-  }
-  
-  .image-overlay::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* 투명도 레이어 */
-    z-index: 1;
-  }
-  
-  .image-overlay img {
-    width: 100%;
-    height: auto;
-  }
-  
+  position: relative;
+}
 
-.image-overlay {
-    position: relative;
-    text-align: center; /* 텍스트 중앙 정렬 */
-    color: white;
-  }
-  
-  .image-overlay img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .image-overlay .text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* 텍스트를 수평, 수직으로 중앙에 배치 */
-    z-index: 2;
-    font-size: 24px;
-    font-weight: bold;
-    color: white; /* 텍스트 색상 */
-  }
+.image-overlay img {
+  width: 100%;
+  height: auto;
+  transition: filter 0.3s ease;
+}
+
+.image-overlay:hover img {
+  filter: brightness(0.6);
+}
+
+.image-overlay::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.image-overlay:hover::before {
+  opacity: 1;
+}
+
+.image-overlay .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.image-overlay:hover .text {
+  opacity: 1;
+}
   

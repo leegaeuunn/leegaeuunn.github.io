@@ -2,8 +2,6 @@
 # Display name
 title: leegaeun
 
-name_ko: "이가은"
-name_en: "leegaeun"
 
 # Name pronunciation (optional)
 name_pronunciation: Lee Gaeun

@@ -120,8 +120,6 @@ sections:
           description: 전북대학교 컴퓨터인공지능학부
     design:
       columns: '3'
-
-
   - block: collection
     content:
       id: section-1
@@ -136,7 +134,7 @@ sections:
           - project
     design:
       view: community/custom_card
-      columns: '2'
+      columns: '3'
 
   # - block: collection
   #   content:
