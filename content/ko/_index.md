@@ -97,9 +97,9 @@ sections:
           <div class="profile-section">
             <h3>관심 분야</h3>
             <div class="profile-tags-container">
-              <span class="profile-tag profile-tag-interest">🤖 인공지능</span>
-              <span class="profile-tag profile-tag-interest">💻 프론트 엔드</span>
-              <span class="profile-tag profile-tag-interest">⚙️ 백 엔드</span>
+              <a href="https://www.google.com/search?q=인공지능" target="_blank" class="profile-tag profile-tag-interest">🤖 인공지능</a>
+              <a href="https://www.google.com/search?q=프론트엔드+개발" target="_blank" class="profile-tag profile-tag-interest">💻 프론트 엔드</a>
+              <a href="https://www.google.com/search?q=백엔드+개발" target="_blank" class="profile-tag profile-tag-interest">⚙️ 백 엔드</a>
             </div>
           </div>
         </div>
