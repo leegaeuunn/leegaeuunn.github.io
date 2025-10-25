@@ -52,14 +52,6 @@
     name: 개인포트폴리오사이트    
     url: project/02-개인포트폴리오사이트    
     weight: 330
-  - parent: 프로젝트
-    name: 자바쿠키런
-    url: project/03-자바쿠키런
-    weight: 340
-  - parent: 프로젝트
-    name: 파이썬게임
-    url: project/04-파이썬게임
-    weight: 350
 
   # 취미
   - name: 취미

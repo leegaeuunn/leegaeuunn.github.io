@@ -52,14 +52,7 @@
     name: Portfolio Website    
     url: project/02-개인포트폴리오사이트    
     weight: 330
-  - parent: Projects
-    name: Java Cookie Run
-    url: project/03-자바쿠키런
-    weight: 340
-  - parent: Projects
-    name: Python Game
-    url: project/04-파이썬게임
-    weight: 350
+
 
   # Hobbies
   - name: Hobbies
