@@ -1,0 +1,61 @@
+/* Profile Tags Styles */
+.profile-tag {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid #dee2e6;
+  background-color: #f8f9fa;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.3s ease;
+}
+
+.profile-tag:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-decoration: none;
+}
+
+.profile-tag-interest {
+  color: #495057;
+}
+
+.profile-tag-organization {
+  color: #1976d2;
+  background-color: #e3f2fd;
+  border-color: #bbdefb;
+}
+
+.profile-tag-organization:hover {
+  background-color: #bbdefb;
+  color: #1565c0;
+}
+
+.profile-tag-department {
+  color: #388e3c;
+  background-color: #e8f5e8;
+  border-color: #c8e6c9;
+}
+
+.profile-tag-department:hover {
+  background-color: #c8e6c9;
+  color: #2e7d32;
+}
+
+.profile-tags-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.profile-section {
+  margin-top: 30px;
+}
+
+.profile-section h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
