@@ -2,7 +2,7 @@
 title: About me
 
 # Listing view
-view: 2
+view: 3 
 
 # Optional banner image (relative to `assets/media/` folder).
 banner:

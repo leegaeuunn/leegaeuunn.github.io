@@ -1,6 +1,7 @@
 ---
 # Display name
-title: leegaeun
+title: Lee Gaeun
+type: author
 
 # Name pronunciation (optional)
 name_pronunciation: Lee Gaeun

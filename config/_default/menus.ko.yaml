@@ -10,18 +10,9 @@
 
   # 자기소개
   - name: 소개
-    url: about
-    weight: 100 
-
-  - parent: 소개
-    name: 자기소개
     url: author/이가은/
     weight: 200
 
-  - parent: 소개
-    name: 뉴스
-    url: post
-    weight: 210
 
   # 프로젝트
   - name: 프로젝트

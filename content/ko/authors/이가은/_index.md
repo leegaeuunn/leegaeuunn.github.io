@@ -6,8 +6,8 @@ title: 이가은
 name_pronunciation: Lee Gaeun
 
 # Full name (for SEO)
-first_name:  Gaeun
-last_name: Lee
+first_name:  가은
+last_name: 이
 
 # Username (this should match the folder name)
 authors:

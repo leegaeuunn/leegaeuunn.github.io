@@ -9,19 +9,10 @@ main:
   #   weight: 1
 
   # About
-  - name: About
-    url: About
+  - name: About me
+    url: author/leegaeun/
     weight: 100 
 
-  - parent: About
-    name: About Me
-    url: author/leegaeun/
-    weight: 200
-
-  - parent: About
-    name: News
-    url: post
-    weight: 210
 
   # Project
   - name: Project
