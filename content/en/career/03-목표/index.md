@@ -1,10 +1,8 @@
 ---
-title: Goals
+title: 🎯 Goals
 date: 2025-10-26
-type: page
----
 
-## 🎯 My Goals
+---
 
 I am majoring in **Computer Science** and am working hard to build not only academic knowledge but also **practical technical skills**. I have a deep interest in **Artificial Intelligence (AI)** and **Frontend Development**, and my goal is to create **intelligent services** that enhance user experience.
 

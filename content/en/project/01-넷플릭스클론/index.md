@@ -128,7 +128,3 @@ src/
 ├── 📄 reportWebVitals.js
 └── 📄 setupTests.js
 ```
-
-## 📸 Project Screenshots
-
-{{< screen_album album="넷플릭스클론" count="3" type="project" >}}
