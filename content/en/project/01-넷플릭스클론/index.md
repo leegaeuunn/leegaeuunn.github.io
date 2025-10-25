@@ -35,10 +35,13 @@ tags: ['Netflix Clone', 'ChatGPT', 'Frontend', 'Backend', 'GitHub Pages', 'Login
 featured: true
 
 ---
+<div style="text-align: justify;">
+
 ## 🎬 Netflix Clone Project
 
 A React project implementing home/popular/search/wishlist/authentication (login·signup modal) based on TMDB data. It features an **expandable UI structure** with modal manager, custom hooks, and grid·row components.
 
+</div>
 ---
 
 ## ✨ Key Features

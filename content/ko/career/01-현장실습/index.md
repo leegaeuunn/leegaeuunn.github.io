@@ -30,6 +30,8 @@ tags: ['RAG', 'LLM', 'FastAPI', 'Langchain', 'Vector DB', '현장실습']
 featured: true
 ---
 
+<div style="text-align: justify;">
+
 # 인턴 개발일지
 
 ## 📋 프로젝트 개요
@@ -39,6 +41,8 @@ featured: true
 
 ### 🎯 프로젝트 목표
 전북특별자치도 먹거리 시스템, 로컬푸드, 시군매니저 사이트의 매뉴얼 문서를 활용하여 사용자 질문에 정확한 답변을 제공하는 지능형 챗봇 시스템 구축
+
+</div>
 
 ### 🔧 개발 환경 및 도구
 - **Backend**: Python, FastAPI, LangChain
