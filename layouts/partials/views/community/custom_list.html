@@ -23,7 +23,7 @@
 <div class="showcase-item card" onclick="window.location.href='{{ $link }}'" style="cursor: pointer;">
   <div class="showcase-header">
     {{ with $resource }}
-    {{ $image := .Resize "550x300" }}  <!-- Resize the image -->
+    {{ $image := .Resize "400x250" }}  <!-- Resize the image -->
     {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
     <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="card-image hover-overlay" style="text-decoration: none;">
       <img src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}"
