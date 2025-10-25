@@ -9,10 +9,9 @@ main:
   #   weight: 1
 
   # About
-  - name: About me
+  - name: About Me
     url: author/leegaeun/
     weight: 100 
-
 
   # Project
   - name: Project
