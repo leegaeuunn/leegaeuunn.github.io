@@ -1,25 +1,10 @@
-
 ---
-# 메인 페이지 - Modern Minimalism Design
 title: "전북대학교 이가은 | 포트폴리오"
 date: 2025-10-05
 type: landing
 
   
 sections:
-  # - block: hero
-  #   content:
-  #     title: "전북대학교 이가은 | 포트폴리오"
-  #     subtitle: "컴퓨터인공지능학부 학생의 포트폴리오 사이트"
-  #     text_align: center
-  #     background:
-  #       image:
-  #         filename: desk.png
-  #         filters:
-  #           brightness: 0.35
-  #       position: center
-  #       color: '#000'
-
   - block: slider
     content:
       slides:
@@ -95,10 +80,7 @@ sections:
       text: |
         <div style="text-align: justify; max-width: 800px; margin: 0 auto; padding: 40px 20px;">
           <h2 style="text-align: center;">안녕하세요, 이가은입니다</h2>
-          <p>안녕하세요. 저는 전북대학교 컴퓨터 인공지능 학부에 재학 중 인 이가은입니다. 저는 무언갈 표현하고 만들어 내는 것을 좋아해서 입시 미술을 했었습니다. 
-        개인 사정으로 입시 미술을 그만두게 되었지만 비슷한 매력을 가진 코딩에 흥미가 생겼고, 
-        디자인 요소를 사용할 수 있는 프론트엔드에 관심을 가지게 되었습니다.
-        여러 경험을 통해 다양한 기술과 능력을 향상시켜 편리한 UX를 제공할 수 있는 프론트엔드 개발자가 되고 싶습니다.</p>
+          <p>안녕하세요. 저는 전북대학교 컴퓨터 인공지능 학부에 재학 중 인 이가은입니다. 여러 경험을 통해 다양한 기술과 능력을 향상시켜 편리한 UX를 제공할 수 있는 프론트엔드 개발자가 되고 싶습니다.</p>
         </div>
 
   - block: features

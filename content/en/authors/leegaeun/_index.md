@@ -21,14 +21,20 @@ superuser: true
 # Role/position
 role: Student
 
+# Status emoji
+status:
+  icon: 👩🏻‍💻
+
+
+# Short bio (displayed in user profile at end of posts)
+bio: 저의 연구 관심 분야는 프론트 엔드, 인공지능입니다.
 
 # Organizations/Affiliations
 organizations:
   - name: Jeonbuk National University
     url: https://www.jbnu.ac.kr/kor/
-
-# Short bio (displayed in user profile at end of posts)
-bio: My research interests include front-end, mobile computing, and programming.
+  - name: Department of Computer Artificial Intelligence
+    url: "https://csai.jbnu.ac.kr"
 
 interests:
   - Web Development

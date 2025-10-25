@@ -23,17 +23,18 @@ superuser: true
 # Role/position
 role: 학생
 
+
 # Status emoji
 status:
   icon: 👩🏻‍💻
 
-# Organizations/Affiliations
-organizations:
-  - name: 전북대학교
-    url: https://www.jbnu.ac.kr/kor/
 
-# Short bio (displayed in user profile at end of posts)
-#bio: 저의 연구 관심 분야는 프론트 엔드, 모바일 컴퓨팅 및 프로그래밍 입니다.
+organizations:
+- name: 전북대학교
+  url: "https://www.jbnu.ac.kr"
+- name: 전북대학교 컴퓨터인공지능학부
+  url: "https://csai.jbnu.ac.kr"
+
 
 interests:
   - 인공지능
