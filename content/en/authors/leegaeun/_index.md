@@ -1,4 +1,4 @@
---- 
+---
 # Display name
 title: Lee Gaeun
 
@@ -23,14 +23,13 @@ role: Student
 status:
   icon: 👩🏻‍💻
 
-
 # Organizations/Affiliations
 organizations:
   - name: Jeonbuk National University
     url: https://www.jbnu.ac.kr/kor/
 
 # Short bio (displayed in user profile at end of posts)
-#bio: My research interests include front-end, mobile computing, and programming.
+bio: My research interests include front-end, mobile computing, and programming.
 
 interests:
   - Web Development
@@ -43,13 +42,16 @@ education:
       institution: Jeonbuk National University
       year: 2023
 
+
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "#contact" for contact widget.
 
+
 # Social Networking
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
+
 
 social:
   - icon: envelope
@@ -83,6 +85,9 @@ social:
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: 'igaeun8@gmail.com'
 
+
+
 ---
 
 Hello. I am Lee Gaeun, a student in the Department of Computer Artificial Intelligence at Jeonbuk National University. I used to enjoy expressing and creating things, which led me to study art for college entrance exams. Due to personal reasons, I had to stop pursuing art, but I became interested in coding, which shares a similar creative appeal. This sparked my interest in front-end development, where I can incorporate design elements. Through various experiences, I aim to improve my skills and abilities to become a front-end developer capable of providing a convenient UX. Although I am currently a second-year undergraduate, I will continue to work hard to become a great developer.
+
