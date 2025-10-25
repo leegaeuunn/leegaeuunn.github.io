@@ -4,7 +4,8 @@ date: 2025-10-17
 type: page
 ---
 
-### 💻 Frontend Development
+
+### 💻 Frontend
 
 #### 📝 Languages & Frameworks
 - **JavaScript** - Dynamic web application development
@@ -12,7 +13,7 @@ type: page
 - **HTML5** - Web standard markup language
 - **CSS3** - Styling and responsive design
 - **React** - Component-based UI library
-- **Next.js** - Full-stack React framework
+- **Next.js** - React-based full-stack framework
 
 #### 🎨 Styling & UI/UX
 - **Styled-components** - CSS-in-JS styling
@@ -20,7 +21,7 @@ type: page
 - **SCSS** - CSS preprocessor
 - **Figma** - UI/UX design tool
 
-### ⚙️ Backend Development
+### ⚙️ Backend
 
 #### 🐍 Languages & Frameworks
 - **Python** - AI/ML and backend development
@@ -53,15 +54,4 @@ type: page
 - **Slack** - Team communication
 - **Notion** - Documentation and project management
 
----
 
-## 📊 Technical Proficiency
-
-| Field | Proficiency | Key Technologies |
-|-------|-------------|------------------|
-| **Frontend** | ⭐⭐⭐⭐ | React, TypeScript, CSS |
-| **Backend** | ⭐⭐⭐ | Python, Java, FastAPI, Node.js |
-| **Programming** | ⭐⭐⭐⭐ | Java, C++, C, Python |
-| **AI/ML** | ⭐⭐⭐ | LangChain, RAG, OpenAI |
-| **Database** | ⭐⭐⭐ | MongoDB, SQL |
-| **DevOps** | ⭐⭐ | Git, Docker, GitHub |

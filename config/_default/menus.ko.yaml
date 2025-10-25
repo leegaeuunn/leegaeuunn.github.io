@@ -19,20 +19,20 @@
     weight: 200
 
   - parent: 경력
-    name: 기술 스택
-    url: career/00-스킬
+    name: 백준
+    url: career/00-백준
     weight: 210
   - parent: 경력
-    name: 백준
-    url: career/01-boj
+    name: 현장실습
+    url: career/01-현장실습
     weight: 220
   - parent: 경력
-    name: 현장실습
-    url: career/02-현장실습
+    name: 스킬
+    url: career/02-스킬 
     weight: 230
   - parent: 경력
     name: 목표
-    url: career/03-goal
+    url: career/03-목표
     weight: 240
 
   # 프로젝트
@@ -40,18 +40,18 @@
     url: project
     weight: 300
 
-  - parent: 프로젝트
-    name: 챗봇시스템
-    url: project/00-챗봇시스템
-    weight: 310
-  - parent: 프로젝트
-    name: 넷플릭스클론
-    url: project/01-넷플릭스클론
-    weight: 320
-  - parent: 프로젝트
-    name: 개인포트폴리오사이트    
-    url: project/02-개인포트폴리오사이트    
-    weight: 330
+  # - parent: 프로젝트
+  #   name: 챗봇시스템
+  #   url: project/00-챗봇시스템
+  #   weight: 310
+  # - parent: 프로젝트
+  #   name: 넷플릭스클론
+  #   url: project/01-넷플릭스클론
+  #   weight: 320
+  # - parent: 프로젝트
+  #   name: 개인포트폴리오사이트    
+  #   url: project/02-개인포트폴리오사이트    
+  #   weight: 330
 
   # 취미
   - name: 취미

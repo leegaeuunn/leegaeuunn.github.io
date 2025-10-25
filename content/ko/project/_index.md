@@ -2,7 +2,7 @@
 title: 프로젝트
 
 # Listing view
-view: community/custom_compact
+view: 1
 
 # Optional banner image (relative to `assets/media/` folder).
 banner:

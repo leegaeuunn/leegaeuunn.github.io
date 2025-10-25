@@ -235,5 +235,20 @@ sections:
       view: community/custom_list
       columns: '3'
 
+  - block: collection
+    content:
+      id: section-4
+      title: game
+      subtitle: Introducing my favorite games!
+      text:
+      count: 3
+      offset: 0
+      order: desc
+      filters:
+        folders:
+          - game
+    design:
+      view: community/custom_compact
+      columns: '3'
 
 ---

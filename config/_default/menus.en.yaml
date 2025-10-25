@@ -19,19 +19,19 @@
     weight: 200
 
   - parent: Career
-    name: Skills
-    url: career/00-스킬
+    name: BOJ
+    url: career/00-boj
     weight: 210
   - parent: Career
-    name: BOJ
-    url: career/01-boj
+    name: Internship
+    url: career/01-internship
     weight: 220
   - parent: Career
-    name: Internship
-    url: career/02-현장실습
+    name: Skill
+    url: career/02-skill
     weight: 230
   - parent: Career
-    name: Goals
+    name: Goal
     url: career/03-goal
     weight: 240
 
@@ -40,18 +40,18 @@
     url: project
     weight: 300
 
-  - parent: Projects
-    name: Chatbot System
-    url: project/00-챗봇시스템
-    weight: 310
-  - parent: Projects
-    name: Netflix Clone
-    url: project/01-넷플릭스클론
-    weight: 320
-  - parent: Projects
-    name: Portfolio Website    
-    url: project/02-개인포트폴리오사이트    
-    weight: 330
+  # - parent: Projects
+  #   name: Chatbot System
+  #   url: project/00-챗봇시스템
+  #   weight: 310
+  # - parent: Projects
+  #   name: Netflix Clone
+  #   url: project/01-넷플릭스클론
+  #   weight: 320
+  # - parent: Projects
+  #   name: Portfolio Website    
+  #   url: project/02-개인포트폴리오사이트    
+  #   weight: 330
 
 
   # Hobbies

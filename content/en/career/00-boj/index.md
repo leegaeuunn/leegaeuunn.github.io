@@ -1,13 +1,13 @@
 ---
-title: BOJ (Baekjoon Online Judge)
+title: BOJ
 date: 2025-10-09
 ---
 
-Here is the link to my Baekjoon Online Judge profile.
+My Baekjoon Online Judge site link.
 
 <!--more-->
 
-I am currently participating in the Alps Study Group.
+I am currently participating in the Alps study group.
 
 __Benefits of Coding Practice__
 
@@ -16,7 +16,7 @@ __Benefits of Coding Practice__
 - Low blood pressure treatment
 - Hair loss treatment
 
-BOJ Link: https://www.acmicpc.net/user/igaeun8
+Baekjoon Link: https://www.acmicpc.net/user/igaeun8
 
 Solved.ac Link: https://solved.ac/profile/igaeun8
 

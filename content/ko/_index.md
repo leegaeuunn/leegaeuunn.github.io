@@ -235,5 +235,22 @@ sections:
       view: community/custom_list
       columns: '3'
 
+  - block: collection
+    content:
+      id: section-4
+      title: 게임
+      subtitle: 좋아하는 게임을 소개합니다
+      text:
+      count: 3
+      offset: 0
+      order: desc
+      filters:
+        folders:
+          - career
+    design:
+      view: community/custom_compact
+      columns: '3'
+
+
 
 ---
