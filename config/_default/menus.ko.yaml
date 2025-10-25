@@ -11,7 +11,29 @@
   # 자기소개
   - name: 소개
     url: author/이가은/
+    weight: 100
+
+  # 경력
+  - name: 경력
+    url: career
     weight: 200
+
+  - parent: 경력
+    name: 기술 스택
+    url: career/00-스킬
+    weight: 210
+  - parent: 경력
+    name: 백준
+    url: career/01-boj
+    weight: 220
+  - parent: 경력
+    name: 현장실습
+    url: career/02-현장실습
+    weight: 230
+  - parent: 경력
+    name: 목표
+    url: career/03-목표
+    weight: 240
 
   # 프로젝트
   - name: 프로젝트
@@ -21,23 +43,23 @@
   - parent: 프로젝트
     name: 챗봇시스템
     url: project/00-챗봇시스템
-    weight: 300
+    weight: 310
   - parent: 프로젝트
     name: 넷플릭스클론
     url: project/01-넷플릭스클론
-    weight: 300
+    weight: 320
   - parent: 프로젝트
     name: 개인포트폴리오사이트    
     url: project/02-개인포트폴리오사이트    
-    weight: 300
+    weight: 330
   - parent: 프로젝트
     name: 자바쿠키런
     url: project/03-자바쿠키런
-    weight: 300
+    weight: 340
   - parent: 프로젝트
     name: 파이썬게임
     url: project/04-파이썬게임
-    weight: 300
+    weight: 350
 
   # 취미
   - name: 취미
@@ -47,54 +69,14 @@
   - parent: 취미
     name: 여행  
     url: travel
-    weight: 400
+    weight: 410
 
   - parent: 취미
     name: 게임
     url: game
-    weight: 400
-
-  # - parent: 게임
-  #   name: 동물의 숲
-  #   url: game/animalcrossing
-  #   weight: 400
-  # - parent: 게임
-  #   name: 마리오 오디세이
-  #   url: game/mario
-  #   weight: 400
-  # - parent: 게임
-  #   name: 젤다의 전설
-  #   url: game/zelda
-  #   weight: 400
-
-  # - parent: 여행
-  #   name: 제주도
-  #   url: travel_jejudo
-  #   weight: 400
-  # - parent: 여행
-  #   name: 하노이
-  #   url: travel_hanoi
-  #   weight: 400
-  # - parent: 여행
-  #   name: 필리핀
-  #   url: travel_philippines
-  #   weight: 400
-
-  # 기술 스택
-  - name: 기술
-    url: skill
-    weight: 500
-
-  - parent: 기술
-    name: 기술 스택
-    url: skill/00-langauge
-    weight: 500
-  - parent: 기술
-    name: 언어
-    url: skill/01-boj
-    weight: 500
+    weight: 420
 
   # 연락처
   - name: 연락처
     url: contact
-    weight: 600
+    weight: 500
