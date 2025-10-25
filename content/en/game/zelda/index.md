@@ -28,7 +28,6 @@ But I'm sure most users won't know the above story.
 Because you can only learn that story in the middle of the game, but the entry barrier in the early part of the game is high.
 
 This was my story about my life game that I've played for 1000 hours.
-If you like Zelda or are interested, click the button below!
 
 
 ## 📸 Game Screenshots

@@ -20,19 +20,19 @@
 
 {{ $resource := partial "blox-core/functions/get_featured_image.html" $item }}
 
-<div class="showcase-item card">
+<div class="showcase-item card" onclick="window.location.href='{{ $link }}'" style="cursor: pointer;">
   <div class="showcase-header">
     {{ with $resource }}
     {{ $image := .Resize "550x300" }}  <!-- Resize the image -->
     {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
-    <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="card-image hover-overlay">
+    <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="card-image hover-overlay" style="text-decoration: none;">
       <img src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}"
            alt="{{ $item.Title }}" class="img-responsive" loading="lazy" style="margin-right: 10px; display: inline-block;">  <!-- Style the image -->
     </a>
     {{ end }}
 
     <h4 style="display: inline-block;">
-      <a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{ $item.Title | markdownify | emojify }}</a>
+      <a href="{{ $link }}" {{ $target | safeHTMLAttr }} style="text-decoration: none; color: inherit;">{{ $item.Title | markdownify | emojify }}</a>
     </h4>
   </div>
 

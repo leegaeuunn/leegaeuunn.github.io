@@ -23,7 +23,6 @@ It feels like the game is slapping you on the back of the head saying "That's en
 Cute 3D characters and motions, calm BGM, an island you can decorate as you please...
 I hope you can feel the happiness of ending your day while listening to the encouraging messages, good quotes, nicknames, and songs from your island residents.
 
-If you're interested in Animal Crossing, click the button below!
 
 ## 📸 Game Screenshots
 
