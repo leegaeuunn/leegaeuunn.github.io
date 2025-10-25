@@ -16,6 +16,7 @@ last_name: Lee
 # Username (this should match the folder name)
 authors:
   - 이가은
+  - leegaeun
 
 # Is this the primary user of the site?
 superuser: true
