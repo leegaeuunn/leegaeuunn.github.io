@@ -82,7 +82,7 @@ sections:
         <div style="text-align: justify; max-width: 800px; margin: 0 auto; padding: 40px 20px;">
           <div style="text-align: center; margin-bottom: 30px;">
             <img src="avatar.jpg" alt="이가은 프로필 사진" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; margin: 0 auto 20px auto; display: block;">
-            <h2>안녕하세요, 이가은입니다</h2>
+            <h2> 안녕하세요, 이가은입니다 😊</h2>
           </div>
           <p>안녕하세요. 저는 전북대학교 컴퓨터 인공지능 학부에 재학 중인 이가은입니다. 여러 경험을 통해 다양한 기술과 능력을 향상시켜 편리한 UX를 제공할 수 있는 프론트엔드 개발자가 되고 싶습니다.</p>
           
@@ -97,9 +97,9 @@ sections:
           <div class="profile-section">
             <h3>관심 분야</h3>
             <div class="profile-tags-container">
-              <a href="https://www.google.com/search?q=인공지능" target="_blank" class="profile-tag profile-tag-interest">🤖 인공지능</a>
-              <a href="https://www.google.com/search?q=프론트엔드+개발" target="_blank" class="profile-tag profile-tag-interest">💻 프론트 엔드</a>
-              <a href="https://www.google.com/search?q=백엔드+개발" target="_blank" class="profile-tag profile-tag-interest">⚙️ 백 엔드</a>
+              <a href="https://www.google.com/search?q=인공지능" target="_blank" class="profile-tag profile-tag-interest"> 인공지능</a>
+              <a href="https://www.google.com/search?q=프론트엔드+개발" target="_blank" class="profile-tag profile-tag-interest"> 프론트 엔드</a>
+              <a href="https://www.google.com/search?q=백엔드+개발" target="_blank" class="profile-tag profile-tag-interest"> 백 엔드</a>
             </div>
           </div>
         </div>
