@@ -38,23 +38,17 @@ igaeun8.github.io/
 
 ### 설치 및 실행
 
-1. 저장소 클론
-```bash
-git clone https://github.com/igaeun8/igaeun8.github.io.git
-cd igaeun8.github.io
-```
-
-2. Hugo 모듈 다운로드
+1. Hugo 모듈 다운로드
 ```bash
 hugo mod get
 ```
 
-3. 로컬 서버 실행
+2. 로컬 서버 실행
 ```bash
 hugo server
 ```
 
-4. 브라우저에서 `http://localhost:1313` 접속
+3. 브라우저에서 `http://localhost:1313` 접속
 
 ## 📝 주요 기능
 
@@ -89,12 +83,6 @@ hugo server
 ## 📄 라이선스
 
 이 프로젝트는 MIT 라이선스 하에 배포됩니다.
-
-## 📞 연락처
-
-- **이메일**: igaeun8@gmail.com
-- **GitHub**: [@igaeun8](https://github.com/igaeun8)
-- **웹사이트**: [https://igaeun8.github.io](https://igaeun8.github.io)
 
 ---
 
