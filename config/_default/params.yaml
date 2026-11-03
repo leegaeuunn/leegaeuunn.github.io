@@ -31,7 +31,7 @@ appearance:
     twitter: ''
     open_graph:
       title: '전북대학교 이가은 | 포트폴리오'
-      image: 'https://igaeun8.github.io/assets/media/logo.png'
+      image: 'https://leegaeuunn.github.io/assets/media/logo.png'
   analytics:
     google: 'a7iVzef2Zp3fd2Fg0BNgp2R7iR-jRh_bZPFrt20xfIE'
     google_analytics: 'a7iVzef2Zp3fd2Fg0BNgp2R7iR-jRh_bZPFrt20xfIE'
@@ -89,7 +89,7 @@ features:
   privacy_pack:
     enable: false
   repository: 
-    url: 'https://github.com/igaeun8/igaeun8.github.io'
+    url: 'https://github.com/leegaeuunn/leegaeuunn.github.io'
     content_dir: content
     branch: main
   avatar:
@@ -142,7 +142,7 @@ ogImage: "assets/media/logo.png"  # Ensure the image exists at this path
 #   - icon: github
 #     icon_pack: fab
 #     name: GitHub
-#     url: https://github.com/igaeun8
+#     url: https://github.com/leegaeuunn
 #   - icon: linkedin
 #     icon_pack: fab
 #     name: LinkedIn

@@ -20,7 +20,7 @@
 ## 📁 프로젝트 구조
 
 ```
-igaeun8.github.io/
+leegaeuunn.github.io/
 ├── content/           # 콘텐츠 파일들
 │   ├── ko/           # 한국어 콘텐츠
 │   └── en/           # 영어 콘텐츠

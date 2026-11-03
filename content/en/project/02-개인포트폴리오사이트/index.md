@@ -33,11 +33,11 @@ tags: ['GitHub', 'Hugo Template', 'Personal Project']
 
 # Display this page in the Featured widget?
 featured: true
-#url_pdf: 'C:\Users\USER\igaeun8.github.io\igaeun8.github.io\content\ko\publication\0008-Self-mutating Network For Domain Adaptive Segmentation In Aerial Images copy\0008-Self-Mutating Network for Domain Adaptive Segmentation in Aerial Images.pdf'
+#url_pdf: 'C:\Users\USER\leegaeuunn.github.io\igaeun8.github.io\content\ko\publication\0008-Self-mutating Network For Domain Adaptive Segmentation In Aerial Images copy\0008-Self-Mutating Network for Domain Adaptive Segmentation in Aerial Images.pdf'
 ---
 I created a personal portfolio website using GitHub and Hugo templates.
 
-# [2024 Gaeun Lee Portfolio Website](https://igaeun8.github.io/igaeun8.github.io_2024ver/)
+# [2024 Gaeun Lee Portfolio Website](https://leegaeuunn.github.io/igaeun8.github.io_2024ver/)
 
 ---
 

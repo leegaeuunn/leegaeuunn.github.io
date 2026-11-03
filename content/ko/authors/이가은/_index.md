@@ -66,7 +66,7 @@ social:
     link: 'mailto:igaeun8@gmail.com'
   - icon: github
     icon_pack: fab
-    link: https://github.com/igaeun8
+    link: https://github.com/leegaeuunn
   - icon: instagram
     icon_pack: fab
     link: https://www.instagram.com/korlrol/
